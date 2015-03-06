@@ -1,0 +1,623 @@
+/* Main CSS Code */
+/* http://www.thisisjordan.co.uk */
+
+/** RESET **/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+
+/* Site-wide */
+
+html {
+	background: rgb(255,192,0);
+	font-family: "Roboto Slab", sans-serif;
+}
+
+
+h5:before {
+    display: block;
+    content: " ";
+    margin-top: -50px;
+    height: 50px;
+    visibility: hidden;
+}
+
+h2{
+    background: rgb(255,255,255);
+    color: rgb(0,0,0);
+    display:inline;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 5px 10px 5px 10px;
+}
+h3 {
+    line-height: 50px;
+    font-weight:300;
+    font-size: 30px;
+	color: rgb(255,255,255);
+}
+
+.heading {
+    text-align:left;
+    background: rgb(245,245,245);
+    font-size: 50px;
+    font-weight:300;
+    line-height: 50px;
+    padding:10px;
+}
+
+.heading p{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Arrows */
+
+.arrow-down {
+	margin: 0 auto 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid rgba(255,255,255,1);
+}
+
+.arrow-down:hover {
+	animation: bounce 1s;
+	-moz-animation: bounce 1s; /* Firefox */
+	-webkit-animation: bounce 1s; /* Safari and Chrome */
+	-o-animation: bounce 1s; /* Opera */
+}
+
+.arrow-up {
+	opacity: 0.8;
+	margin: 0 auto 5 auto;
+	width: 0px;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid rgba(255,255,255,1);
+}
+
+.arrow-up:hover {
+	animation: bounce 1s;
+	-moz-animation: bounce 1s; /* Firefox */
+	-webkit-animation: bounce 1s; /* Safari and Chrome */
+	-o-animation: bounce 1s; /* Opera */
+}
+
+
+/* Titlebar */
+
+.titlebar {
+	width: 100%;
+	height: 110px;
+	position: relative;
+	background: rgb(255,192,0);
+	animation: fadeInDown 0.5s;
+	-webkit-animation: fadeInDown 0.5s;
+	-moz-animation: fadeInDown 0.5s;
+	-o-animation: fadeInDown 0.5s;
+}
+
+.titlebar img {
+    width: 100px;
+    height: auto;
+}
+
+.titlebar .contents {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Menu */
+.menufloat {
+	width: 100%;
+	position: fixed;
+	background: rgb(60,60,60);
+	height: 50px;
+	list-style: none;
+	animation:fadeInDown 2s;
+	-webkit-animation:fadeInDown 2s;
+	-moz-animation:fadeInDown 2s;
+	-o-animation:fadeInDown 2s;
+}
+.menu {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu li {
+    float:right;
+	display:inline-block;
+    margin-top:5px;
+    margin-left: 30px;
+    margin-right: 13px;
+    color: rgb(255,255,255);
+	font: 30px "Roboto Slab", sans-serif;
+    font-weight:300;
+}
+
+.menu img {
+    width: auto;
+    height: 30px;
+    padding-top: 10px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: rgb(0,0,0);
+}
+
+.menu li:hover{
+	animation: pulse 0.5s;
+	-moz-animation: pulse 0.5s; /* Firefox */
+	-webkit-animation: pulse 0.5s; /* Safari and Chrome */
+	-o-animation: pulse 0.5s; /* Opera */
+}
+
+
+/* home */
+
+.home {
+    max-width: 1100px;
+    height: 2000px;
+	font-size: 20px;
+    margin: 0 auto;
+    padding: 30px;
+    background-image:url(img/me.png);
+    background-size:400px;
+    background-position:top right;
+    background-repeat:no-repeat;
+}
+
+.home p {
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    display:inline;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 5px 10px 5px 10px;
+}
+
+.home .right img {
+    width: 100px;
+    height: auto;
+}
+
+.home .arrow-down {
+	margin-top:10%;
+	
+	animation: bounce 1s;
+	animation-delay: 1.0s;
+	-webkit-animation: bounce 1s;
+	-webkit-animation-delay: 1.0s;	
+	-moz-animation: bounce 1s;
+	-moz-animation-delay: 1.0s;	
+	-o-animation: bounce 1s;
+	-o-animation-delay: 1.0s;	
+	
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	border-top: 80px solid rgb(0,0,0);
+}
+
+.home .arrow-down:hover {
+	animation: bounce 1s;
+	-moz-animation: bounce 1s; /* Firefox */
+	-webkit-animation: bounce 1s; /* Safari and Chrome */
+	-o-animation: bounce 1s; /* Opera */
+}
+
+
+/* Welcome carousel */
+.welcome {
+    height: 200px;
+}
+
+.welcome h1 {
+    font-size: 80px;
+    font-weight: 400;
+	position: absolute;
+	opacity: 0;
+    background: rgb(255,255,255);
+    padding: 10px;
+    
+    z-index:-1000;
+	-webkit-animation: rotateWord 10s linear infinite 0s;
+	-moz-animation: rotateWord 10s linear infinite 0s;
+	-o-animation: rotateWord 10s linear infinite 0s;
+	-ms-animation: rotateWord 10s linear infinite 0s;
+	animation: rotateWord 10s linear infinite 0s;
+}
+
+.welcome h1:nth-child(2) {
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+	-o-animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	animation-delay: 5s;
+}
+
+@-webkit-keyframes rotateWord {
+    0% { opacity: 0; -webkit-transform: translateY(-30px); }
+	5% { opacity: 1; -webkit-transform: translateY(0px);}
+    50% { opacity: 1; -webkit-transform: translateY(0px); }
+	55% { opacity: 0; -webkit-transform: translateY(30px); }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes rotateWord {
+    0% { opacity: 0; -moz-transform: translateY(-30px); }
+	5% { opacity: 1; -moz-transform: translateY(0px);}
+    50% { opacity: 1; -moz-transform: translateY(0px); }
+	55% { opacity: 0; -moz-transform: translateY(30px); }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes rotateWord {
+    0% { opacity: 0; -o-transform: translateY(-30px); }
+	5% { opacity: 1; -o-transform: translateY(0px);}
+    50% { opacity: 1; -o-transform: translateY(0px); }
+	55% { opacity: 0; -o-transform: translateY(30px); }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes rotateWord {
+    0% { opacity: 0; -ms-transform: translateY(-30px); }
+	5% { opacity: 1; -ms-transform: translateY(0px);}
+    50% { opacity: 1; -ms-transform: translateY(0px); }
+	55% { opacity: 0; -ms-transform: translateY(30px); }
+    100% { opacity: 0; }
+}
+
+@keyframes rotateWord {
+    0% { opacity: 0; transform: translateY(-30px); }
+	5% { opacity: 1; transform: translateY(0px);}
+    50% { opacity: 1; transform: translateY(0px); }
+	55% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 0; }
+}
+
+
+
+/* Skills */
+
+.skills {
+    background-color:rgb(59,121,179);
+    text-align:center;
+}
+
+
+.skills .container {
+	padding: 40px;
+	height: 1600px;
+    display:inline-block;
+}
+
+.skills .skillholder{
+    display:inline-block;
+    padding-bottom:20px;
+}
+
+.skill {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    display:inline-block;
+    margin: 10px 10px 10px 0px;
+    text-align:center;
+    font-size: 20px;
+}
+
+.skill p {
+    color: rgb(230,230,230);
+    text-align:center;
+}
+
+.skill img {
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+/* Projects */
+
+.projects{
+    background-color:rgb(255,255,255);
+    text-align:center;
+	height: 1600px;
+}
+
+.projects .projectholder{
+    width: auto;
+    display:inline-block;
+    padding-bottom:20px;
+}
+
+.projects .heading {
+    width: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+    background:none;
+    font-size: 30px;
+    color:rgb(100,100,100);
+    text-align:center;
+    border-bottom: 1px solid rgb(100,100,100);
+}
+
+.project {
+    width: auto;
+    max-width: 1000px;
+    height: 200px;
+    display:block;
+    background: rgb(255,255,255);
+    font-size: 16px;
+    line-height: 18px;
+    text-align:left;
+}
+
+.project p{
+    background: rgb(240,240,240);
+    margin-left: 250px;
+    margin-right: 0px;
+    padding: 10px;
+}
+
+.project h1 {
+    font-size: 20px;
+    text-align:left;
+    background: rgb(0,0,0);
+    color: rgb(255,255,255);
+    display:inline-block;
+    line-height: 20px;
+    padding: 10px;
+    margin-bottom:10px;
+}
+.project h2 {
+    float:left;
+    font-size: 20px;
+    text-align:left;
+    background: rgb(68,140,203);
+    color: rgb(255,255,255);
+    display:inline-block;
+    line-height: 20px;
+    font-weight:300;
+    padding: 10px;
+    margin-bottom:10px;
+} 
+
+.project img {
+    float:left;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 40px;
+    padding: 20px;
+}
+
+.projects .arrow-down {
+	border-top: 40px solid rgba(0,0,0,1);
+}
+
+.projects .arrow-up {
+	border-bottom: 40px solid rgba(0,0,0,1);
+}
+
+
+/* Grades */
+
+.grades {
+	padding: 20px;
+    background:rgb(65,50,85);
+	height: 1600px;
+    text-align:center;
+}
+
+.grades img{
+    width: 100px;
+    display:block;
+    padding-bottom:10px;
+    margin:0 auto;
+}
+
+.grades .gradeholder{
+    width: 100%;
+    display:inline-block;
+    padding-bottom:20px;
+}
+
+.grade {
+    display:inline-block;
+    margin: 30px;
+}
+
+.grades table {
+    margin: 10px;
+}
+
+.grades table td{
+    padding: 10px;
+    background:rgb(255,255,255);
+}
+
+.grades table .letter{
+    text-align:center;
+    font-weight:700;
+    background:rgb(200,200,200);
+}
+
+/* Contact */
+
+.contact {
+	padding: 40px;
+    background:rgb(235,235,235);
+    text-align:center;
+}
+
+.contact .container {
+    display:inline-block;
+}
+
+.contact .left{
+    float: left;
+    text-align:left;
+    width: 550px;
+}
+.contact .left img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+.contact .right {
+    text-align:left;
+    margin-left: 550px;
+    padding-bottom:200px;
+}
+
+.contact .links a{
+    background: rgb(255,255,255);
+    color: rgb(0,0,0);
+    display:inline;
+    font-size: 30px;
+    line-height: 60px;
+    padding: 5px 10px 5px 10px;
+    text-decoration:none;
+    font-weight:300;
+}
+.contact .links a:hover{
+    font-weight:400;
+    background:rgb(0,0,0);
+    color:rgb(255,255,255);
+}
+.contact .links a:active{
+    font-weight:400;
+    background:rgb(83,200,200);
+    color:rgb(255,255,255);
+}
+
+.contact .minilinks a{
+    color: rgb(255,255,255);
+    display:inline;
+    font-size: 25px;
+    line-height: 50px;
+    padding: 5px 10px 5px 10px;
+    text-decoration:none;
+    font-weight:400;
+}
+
+.contact .minilinks .inst{
+    background: rgb(117,76,36);
+}
+
+.contact .minilinks .goog{
+    background: rgb(240,30,30);
+}
+
+.contact .minilinks .link{
+    background: rgb(0,85,170);
+}
+
+.contact .minilinks .beha{
+    background: rgb(50,50,50);
+}
+
+.contact .minilinks a:hover{
+    font-weight:400;
+    background:rgb(0,0,0);
+    color:rgb(255,255,255);
+}
+.contact .minilinks a:active{
+    font-weight:400;
+    background:rgb(83,200,200);
+    color:rgb(255,255,255);
+}
+
+
+
+/** MEDIA QUERIES **/
+
+@media only screen and (max-width : 840px) {
+    
+    .grades {
+        height: 1800px;
+    }
+    
+    .home {
+        background-image:none;
+    }
+    
+    .contact .left {
+        width: 200px;
+    }
+    
+    .contact .left img {
+        width: 200px;
+    }
+    
+    .contact .right {
+        margin-left:0;
+    }
+
+}
+
+@media only screen and (max-width : 625px) {
+    
+    h5:before {
+        margin-top: 0px;
+        height: 0px;
+    }
+    
+    .menufloat {
+        display:none;
+        height: 0;
+    }
+
+    .welcome {
+        display:none;
+        height:0;
+    }
+    
+    .home {
+        height: 300px;
+    }
+    
+    .heading {
+        text-align:center;
+    }
+    
+    .arrow-down{
+        display:none;
+    }
+    
+    .arrow-up{
+        display:none;
+    }
+    
+    .skills .container {
+        padding:0;
+    }
+    
+    .projects {
+        display:none;
+        height:0;
+    }
+    
+    #projects {
+        display:none;
+    }
+    
+    .contact .left {
+        display:none;
+        height:0;
+    }
+    
+    .contact .right {
+        margin: 0;
+        width: auto;
+    }
+}
+
