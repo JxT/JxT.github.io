@@ -1,0 +1,324 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+
+body {
+	font-family: "DIN";
+	background: rgb(248,248,248);
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	border-top: 14px solid #1C83F8;
+	position: fixed;
+	background: rgba(248,248,248,0.8);
+}
+
+header img {
+	width: 252px;
+	height: 35px;
+	margin-top: 43px;
+	margin-left: 65px;
+}
+
+header nav {
+	float:right;
+	margin-top: 43px;
+	margin-right: 65px;
+}
+
+header nav button {
+	font-family: "DIN";
+	font-weight:200;
+	height: 35px;
+	font-size: 20px;
+	background: none;
+	border: none;
+	text-transform: uppercase;
+}
+
+header nav button#btnHome {
+
+}
+
+header nav button#btnProj {
+	
+}
+
+header nav button#btnBlog {
+	
+}
+
+header nav button#btnGit {
+	
+}
+
+header nav button#btnContact {
+	
+}
+
+section#intro,
+section#win98intro .wrapper,
+section.summary,
+section.notice,
+footer .wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+section#intro {
+	padding-top: 200px;
+}
+
+section#intro img {
+	width: 406px;
+	height: 329px;
+	margin-top: -60px;
+}
+
+section#intro .textWrapper {
+	float:right;
+}
+
+section#intro .textWrapper h1 {
+	font-size: 52px;
+	font-weight: 500;
+}
+
+section#intro .textWrapper h2 {
+	font-size: 50px;
+	font-weight: 300;
+	letter-spacing: -2.45px;
+}
+
+section#intro .textWrapper h3 {
+	font-size: 25px;
+	font-weight: 300;
+	padding-top: 40px;
+	line-height: 0px;
+	letter-spacing: -1px;
+}
+
+section#intro .textWrapper b {
+	font-weight: 400;
+}
+
+section#win98intro {
+	margin-top: 70px;
+	height: 254px;
+	width: 100%;
+	background-size: 100%;
+	background-position: center;
+	background-image: url('../img/win98intro/clouds.png');
+}
+
+section#win98intro .wrapper img {
+	height: 254px;
+}
+
+section#win98intro .wrapper .textWrapper {
+	float:right;
+	padding: 20px;
+}
+
+section#win98intro .wrapper .textWrapper h1 {
+	font-family: "DIN Condensed";
+	font-size: 38px;
+	color: rgb(255,255,255);
+	background: rgb(0,0,0);
+	padding: 20px 15px 5px 15px;
+	text-transform: uppercase;
+}
+
+section#win98intro .wrapper .textWrapper h1 span {
+	font-size: 26px;
+}
+
+section#win98intro .wrapper .textWrapper h2 {
+	font-weight: 200;
+	font-style: italic;
+	font-size: 21px;
+	background: rgb(255,255,255);
+	padding: 10px 0 10px 10px;
+	width: 520px;
+}
+
+section#win98intro .wrapper .textWrapper h3 {
+	width: 150px;
+	font-weight: 500;
+	font-style: italic;
+	font-size: 21px;
+	padding-top: 17px;
+	color: rgb(255,255,255);
+	text-shadow: 0px 0px 3px rgb(0,0,0);
+	float:left;
+}
+
+section#win98intro .wrapper .textWrapper .langWrapper {
+	float: right;
+}
+
+section#win98intro .wrapper .textWrapper .langWrapper .lang {
+	background: rgb(255,255,255);
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+}
+
+section#win98intro .wrapper .textWrapper .langWrapper .lang p{
+	font-family: "DIN Condensed";
+	font-size: 25px;
+	font-weight: 500;
+	margin-top: 42px;
+	text-align: center;
+	-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+}
+
+section#win98intro .wrapper .textWrapper .langWrapper .lang p#twoline {
+	margin-top: 32px;
+	font-size: 27px;
+	margin-left: 5px;
+}
+
+section#win98intro .wrapper .textWrapper .langWrapper .lang p#threeline {
+	margin-top: 22px;
+	margin-left: 3px;
+	font-size: 22px;
+}
+
+section .summaryIntro {
+	font-family: "DIN-LightItalicAlt";
+	height: 40px;
+}
+
+section .summaryIntro h1 {
+	font-size: 31px;
+	font-style: italic;
+	font-weight: 100;
+	float: left;
+}
+
+section .summaryIntro h2 {
+	float: right;
+	font-size: 23px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+section.summary {
+	height: 380px;
+	padding-top: 50px;
+}
+
+section.summary#blog .summaryIntro h2 {
+	color: #1FCD1C;
+}
+
+section.summary#project .summaryIntro h2 {
+	color: #18B6B4;
+}
+
+section.summary .post {
+	width: 213px;
+	height: 335px;
+	background: rgb(255,255,255);
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	border-radius: 3px;
+	float: left;
+	border-spacing: 20px;
+}
+
+section.summary#whyJordan {
+	height: auto;
+	padding-bottom: 20px;
+}
+
+section.summary#whyJordan .reason {
+	width: 100%;
+	background: rgb(255,255,255);
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	border-radius: 3px;
+	padding: 15px 10px 30px 10px;
+	margin-bottom: 20px;
+}
+
+section.summary#whyJordan .reason h1 {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+section.summary#whyJordan .reason h2 {
+	font-size: 20px;
+	padding-top: 10px;
+	font-weight: 200;
+	line-height: 30px;
+}
+
+footer {
+	width: 100%;
+	height: 220px;
+	background: #333333;
+	padding-top: 50px;
+	line-height: 25px;
+	font-size: 16px;
+	color: rgb(255,255,255);
+}
+
+footer .wrapper img {
+	width: 55.6px;
+	height: 31px;
+	padding-bottom: 10px;
+}
+
+footer .wrapper a {
+	display: block;
+}
+
+footer .wrapper a, footer .wrapper b {
+	font-style: italic;
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-weight:200;
+}
+
+footer .wrapper p {
+	padding-top: 20px;
+	font-weight: 500;
+}
+
+section.notice {
+	height: 380px;
+	padding-top: 300px;
+}
+
+section.notice h1 {
+	font-size: 60px;
+}
+
+section.notice h2 {
+	padding-top:10px;
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

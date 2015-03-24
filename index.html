@@ -1,269 +1,138 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-	<title>This is Jordan</title>
-    <meta charset="utf-8">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="content-language" content="en" />
-	<meta name="description" content="The online home of Jordan Thomas - developer, student, Instagrammer and all-round geek." />
-	<meta name="keywords" content="Jordan Thomas Online Portfolio Blog Images Photography Work Web Design Instagram Developer Development" />
-	<meta name="country" content="GB" />
-	<meta name="copyright" content="(c) 2013 Jordan Thomas. All rights reserved." />
-	<meta name="reply-to" content="me@thisisjordan.co.uk" />
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=2.0"  />
-	
-    <link rel="shortcut icon" href="img/favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="main.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'>
-    
-	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
-	<script type="text/javascript" src="js/scroll.js"></script>
-    
+	<link rel='stylesheet' href='css/style.css' type='text/css'/>
+	<title>JordanThom.as - Developer, Designer, Student</title>
 </head>
-
 <body>
-<h5 id="home"/>
+	<header>
+		<a href="/"><img id='mainLogo' src='img/mainLogo.svg'/></a>
+		<nav>
+			<a href="/"><button id='btnHome'>Home</button></a>
+			<a href="/projects"><button id-'btnProj'>Projects</button></a>
+			<a href="http://blog.jordanthom.as"><button id='btnBlog'>Blog</button></a>
+			<a href="http://www.github.com/user/JxT"><button id='btnGit'>GitHub</button></a>
+			<a href="/contact"><button id='btnContact'>Contact</button></a>
+		</nav>
+	</header>
 
-<!-- Menubar -->
-<div class="menufloat">
-<div class="menu">
-    <a href="#home"><img src="img/jt.png"/></a>
-    <a href="#contact"><li id="menu5">Contact</li></a>
-    <a href="#grades"><li id="menu4">Grades</li></a>
-    <a href="#projects"><li id="menu3">Projects</li></a>
-    <a href="#skills"><li id="menu2">Skills</li></a>
+	<section id='intro'>
+		<img src='img/intro/cartoon.png' alt='A rather badly drawn cartoon of me. A speech bubble is next to it saying Hey.'/>
+		<div class='textWrapper'>
+			<h1>I&#39m Jordan</h1>
+			<h2>I develop and design</h2>
+			<h3>I&#39m from the "sunshine" coast in <b>Eastbourne</b></h3>
+			<h3>I study with Robin Hood in <b>Nottingham</b></h3>
+		</div>
+	</section>
 
-</div>
-</div>
+	<section id='win98intro'>
+		<div class='wrapper'>
+			<img src='img/win98intro/me.png' alt='A photo of me trying to look rather dapper.. well you can be the judge of that!'>
+			<div class='textWrapper'>
+				<h1><span>Compatible with</span> C, Java, Haskell and Python</h1>
+				<h2>The latest innovation from the University of Nottingham</h2>
+				<h3>Comes with all the latest WWW SuperHighWay Tools for FREE!</h3>
+				<div class='langWrapper'>
+					<div class='lang'><p>JavaScript!</p></div>
+					<div class='lang'><p>PHP!</p></div>
+					<div class='lang'><p id='twoline'>HTML5 + CSS3!</p></div>
+					<div class='lang'><p id='threeline'>Django! WordPress! Node.js!</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<!-- Titlebar -->
-<div class="titlebar">
-    <div class="contents">
-        <img src="img/logo.png"/>
-    </div>
-</div>
+	<section class='summary' id='blog'>
+		<div class='summaryIntro'>
+			<h1>What are you up to?</h1>
+			<h2>View all blog posts ></h2>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+	</section>
 
-<!-- Home -->
-<div class="home">
+	<section class='summary' id='project'>
+		<div class='summaryIntro'>
+			<h1>Nice. But what's brewing?</h1>
+			<h2>View all projects ></h2>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+		<div class='post'>
+			<img src=''/>
+			<h1>I&#39m busy doing something about this over here</h1>
+			<button>Find out more</button>
+		</div>
+	</section>
 
-    <!-- Welcome carousel -->
-    <div class="welcome">
-        <h1>Why, hello<br />there!</h1>
-        <h1>Bien le bonjour<br />à vous!</h1>
-    </div>
-    
-    <p>I’m Jordan Thomas.</p><br/>
-    <p>A 17 year old developer from the UK.</p>
+	<section class='summary' id='whyJordan'>
+		<div class='summaryIntro'>
+			<h1>I still don't get it. Why Jordan?</h1>
+		</div>
+		<div class='reason'>
+			<img src=''/>
+			<h1>Multilingual</h1>
+			<h2>I speak intermediate French and basic Mandarin,<br>so I&#39m ready for working globally, with different ways of thinking. </h2>
+		</div>
+		<div class='reason'>
+			<img src=''/>
+			<h1>Multi-talented</h1>
+			<h2>More than just a developer, I grew up with my dad&#39s print studio <br>and have Photoshop, InDesign, Quark and Illustrator skills</h2>
+		</div>
+		<div class='reason'>
+			<img src=''/>
+			<h1>Multi-platform</h1>
+			<h2>I&#39ve used Android, iOS and Windows Phones as my daily driver</br>and use both a Mac and PC daily.</h2>
+		</div>
+		<div class='reason'>
+			<img src=''/>
+			<h1>Multi-cultural</h1>
+			<h2>I&#39m a quarter Chinese, and my family has roots in South Africa,<br>England, Ireland and Wales. As a result, I&#39m good at networking<br>with people of all backgrounds, and have fresh perspectives.</h2>
+		</div>
+	</section>
 
-    <a href="#skills"><div class="arrow-down"></div></a>
-</div>
-
-<!-- Skills -->
-<h5 id="skills"/>
-<div class="skills">
-    <div class="heading"> <p>Skills</p> </div>
-     <div class="container">
-            <div>
-                <h2>I can code in many languages</h2>
-                <h3>across platforms</h3>
-            </div>                    
-            <div class="skillholder">
-            <div class="skill">
-                <img src="http://www.w3.org/html/logo/downloads/HTML5_1Color_White.svg"/>
-                <p>HTML5</p>
-            </div>
-            
-            <div class="skill">
-                <img src="img/css3.png"/>
-                <p>CSS3</p>
-            </div>
-            
-            <div class="skill">
-                <img src="img/python.png"/>
-                <p>Python</p>
-            </div>
-            <br/>
-            <div class="skill">
-                <img src="img/WordPress.png"/>
-                <p>WordPress</p>
-            </div>
-            
-            <div class="skill">
-                <img src="img/terminal.png"/>
-                <p>C</p>
-            </div>
-            
-            <div class="skill">
-                <img src="img/c.png"/>
-                <p>Objective-C</p>
-            </div>
-            
-            <div class="skill">
-                <img src="http://theblu.com/_img/windows-logo-white.png"/>
-                <p>Visual Basic</p>
-            </div>
-            </div>
-        <a href="#home"><div class="arrow-up"></div></a>
-        <a href="#projects"><div class="arrow-down"></div></a>           
-    </div>
-</div>
-
-<!-- Projects section -->
-<h5 id="projects"/>
-<div class="heading" id="projects"> <p>Projects</p> </div>
-<div class="projects">
-    <div class="projectholder">
-        <div class="heading"> <p>Coming up soon</p> </div>
-            <div class="project">
-                <img src="https://si0.twimg.com/profile_images/3597379752/55f9e9720dfb8bc86a89e2d4ead043af.png"/>
-                <h1>Brighton Digital Festival</h1><h2>Sept 2013</h2>
-                <p>This September, I’m going to be attending Unity3D’s GAMELAB, here I’ll be competing against professionals and Unity3D staff to create a Unity3D project</p>
-            </div>
-        <div class="heading"> <p>2013</p> </div>
-            <div class="project">
-                <img src="img/sdc.png"/>
-                <h1>Sussex Downs College</h1><h2>June</h2>
-                <p>In June, I helped at a promotion event at Chailey School in Sussex to promote the study of Modern Foreign Languages at A level to GCSE students, with the language department.</p>
-            </div>
-            <div class="project">
-                <img src="https://si0.twimg.com/profile_images/1764376695/BETT_new_logo_purple.jpg"/>
-                <h1>BETT 2013</h1><h2>February</h2>
-                <p>Last February, I helped host a workshop at the BETT 2013 conference in London, by providing technical assistance and helping out with attendee’s questions, during a presentation held by AppShed. We also demonstrated how to build using AppShed, and gave product feedback which will be used in the next version of AppShed.</p>
-            </div>
-        <div class="project">
-                <img src="http://www.brighton.ac.uk/masthead/images/uob-logo.gif"/>
-                <h1>University of Brighton</h1><h2>January</h2>
-                <p>At the beginning of the year, I helped out at workshops which were held for pre-GCSE students at the University of Brighton, in order to help inspire and educate young people considering entering a career involving technology. We looked at some basic HTML and CSS skills, and helped a team develop a project which was entered into a mini-competition.</p>
-            </div>
-    </div>
-
-    <a href="#skills"><div class="arrow-up"></div></a>
-    <a href="#grades"><div class="arrow-down"></div></a>
-    
-</div>
-
-<!-- Grades -->
-<h5 id="grades"/>
-<div class="heading"> <p>Grades</p> </div>
-<div class="grades">
-    <div class="gradeholder">
-    <div class="grade">
-        <img src="img/badge.png"/>
-        <h2>GCSE</h2>
-        <table>
-            <tr>
-                <td>Business Studies</td>
-                <td class="letter">A*</td>
-            </tr>
-            <tr>
-                <td>Classical Greek (Short Course)</td>
-                <td class="letter">A</td>
-            </tr>
-            <tr>
-                <td>Drama</td>
-                <td class="letter">B</td>
-            </tr>
-            <tr>
-                <td>French</td>
-                <td class="letter">A*</td>
-            </tr>
-            <tr>
-                <td>Geography</td>
-                <td class="letter">A</td>
-            </tr>
-            <tr>
-                <td>Latin</td>
-                <td class="letter">A*</td>
-            </tr>
-            <tr>
-                <td>Maths</td>
-                <td class="letter">A</td>
-            </tr>
-            <tr>
-                <td>Science</td>
-                <td class="letter">A</td>
-            </tr>
-            <tr>
-                <td>Science (Double Award)</td>
-                <td class="letter">A</td>
-            </tr>
-        </table>
-    </div>
-    
-    <div class="grade">
-        <img src="img/badge.png"/>
-        <h2>IGCSE</h2>
-        <table>
-            <tr>
-                <td>English (First Language)</td>
-                <td class="letter">A*</td>
-            </tr>
-            <tr>
-                <td>English (Literature)</td>
-                <td class="letter">B</td>
-            </tr>
-            <tr>
-                <td>Computer Studies</td>
-                <td class="letter">B</td>
-            </tr>
-        </table>
-    </div>
-        
-    <div class="grade">
-        <img src="img/badge.png"/>
-        <h2>AS</h2>
-        <table>
-            <tr>
-                <td>Computing</td>
-                <td class="letter">TBA</td>
-            </tr>
-            <tr>
-                <td>French</td>
-                <td class="letter">TBA</td>
-            </tr>
-            <tr>
-                <td>Maths (with Mechanics)</td>
-                <td class="letter">TBA</td>
-            </tr>
-            <tr>
-                <td>Physics</td>
-                <td class="letter">TBA</td>
-            </tr>
-            <tr>
-                <td>Software BTEC</td>
-                <td class="letter">TBA</td>
-            </tr>
-        </table>
-    </div>
-    </div>
-    <a href="#projects"><div class="arrow-up"></div></a>
-    <a href="#contact"><div class="arrow-down"></div></a>
-</div>
-
-<!-- Contact -->
-<h5 id="contact"/>
-<div class="heading"> <p>Contact</p> </div>
-<div class="contact">
-    <div class="container">
-        <div class="left">
-            <img src="img/me.png"/>
-        </div>
-        <div class="right">
-            <div class="links">
-            <a href="cv.pdf">Download CV</a><br/>
-            <a href="mailto:me@thisisjordan.co.uk">E-mail me</a><br/>
-            <a href="http://www.twitter.com/JordanxThomas">Tweet me</a><br/><br/>
-            </div>
-            <div class="minilinks">
-            <a class="inst" href="http://www.instagram.com/JordanxThomas">Instagram</a><br/>
-            <a class="goog" href="http://plus.google.com/107249139270418550102">Google+</a><br/>
-            <a class="link" href="http://uk.linkedin.com/in/jordanxthomas">LinkedIn</a><br/>
-            <a class="beha" href="http://www.behance.com/JordanxThomas">Behance</a>
-            </div>
-        </div>
-    </div>
-</div>
+	<footer>
+		<div class='wrapper'>
+			<img src='img/footer/footerLogo.svg'>
+			<div class='footerWrapper'>
+				<a href='mailto:me@jordanthom.as'>me@jordanthom.as</a>
+				<a>+44 7907 011 252</a>
+				<a href='http://www.twitter.com/ThisIsJxT'>@ThisIsJxT</a>
+				<p>Handcoded in the UK. <b>&#169; 2015</b></p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
