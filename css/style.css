@@ -1,7 +1,34 @@
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
 
+@font-face {
+    font-family: mainFont;
+    src: url(mainfont.ttf);
+}
+
+@font-face {
+    font-family: mainFont;
+    font-weight: 500;
+    src: url(mediumfont.otf);
+}
+
+@font-face {
+    font-family: mainFont;
+    font-weight: 200;
+    src: url(lightfont.otf);
+}
+
+@font-face {
+    font-family: condensedFont;
+    src: url(condensedFont.ttf);
+}
+
+@font-face {
+    font-family: lightItalicFont;
+    src: url(lightItalicFont.otf);
+}
+
 body {
-	font-family: "DIN";
+	font-family: mainFont;
 	background: rgb(248,248,248);
 }
 
@@ -27,7 +54,7 @@ header nav {
 }
 
 header nav button {
-	font-family: "DIN";
+	font-family: mainFont;
 	font-weight:200;
 	height: 35px;
 	font-size: 20px;
@@ -121,7 +148,7 @@ section#win98intro .wrapper .textWrapper {
 }
 
 section#win98intro .wrapper .textWrapper h1 {
-	font-family: "DIN Condensed";
+	font-family: condensedFont;
 	font-size: 38px;
 	color: rgb(255,255,255);
 	background: rgb(0,0,0);
@@ -168,7 +195,7 @@ section#win98intro .wrapper .textWrapper .langWrapper .lang {
 }
 
 section#win98intro .wrapper .textWrapper .langWrapper .lang p{
-	font-family: "DIN Condensed";
+	font-family: condensedFont;
 	font-size: 25px;
 	font-weight: 500;
 	margin-top: 42px;
@@ -191,13 +218,12 @@ section#win98intro .wrapper .textWrapper .langWrapper .lang p#threeline {
 }
 
 section .summaryIntro {
-	font-family: "DIN-LightItalicAlt";
+	font-family: lightItalicFont;
 	height: 40px;
 }
 
 section .summaryIntro h1 {
 	font-size: 31px;
-	font-style: italic;
 	font-weight: 100;
 	float: left;
 }
@@ -205,7 +231,6 @@ section .summaryIntro h1 {
 section .summaryIntro h2 {
 	float: right;
 	font-size: 23px;
-	font-style: italic;
 	font-weight: 100;
 }
 
