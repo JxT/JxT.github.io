@@ -197,7 +197,6 @@ section#win98intro .wrapper .textWrapper .langWrapper .lang {
 section#win98intro .wrapper .textWrapper .langWrapper .lang p{
 	font-family: condensedFont;
 	font-size: 25px;
-	font-weight: 500;
 	margin-top: 42px;
 	text-align: center;
 	-ms-transform: rotate(-10deg); /* IE 9 */
