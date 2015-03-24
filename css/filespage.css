@@ -1,5 +1,11 @@
 
+section.notice {
+	height: 500px;
+	padding-top: 200px;
+}
+
 section.notice .textWrapper a {
 	text-decoration: none;
 	font-size: 20px;
+	line-height: 25px;
 }
