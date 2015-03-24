@@ -19,12 +19,12 @@
 
 @font-face {
     font-family: condensedFont;
-    src: url(condensedFont.ttf);
+    src: url(condensedfont.ttf);
 }
 
 @font-face {
     font-family: lightItalicFont;
-    src: url(lightItalicFont.otf);
+    src: url(lightItalicfont.otf);
 }
 
 body {
