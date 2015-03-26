@@ -61,6 +61,12 @@ header nav button {
 	background: none;
 	border: none;
 	text-transform: uppercase;
+	cursor: pointer;
+}
+
+header nav button:hover {
+	background: black;
+	color: white;	
 }
 
 header nav button#btnHome {
