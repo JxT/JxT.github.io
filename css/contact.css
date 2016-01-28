@@ -1,7 +1,7 @@
 section.title {
 	width: 100%;
 	height: 40px;
-	background: rgb(228, 92, 120);
+	background: rgb(1,190,186);
 	padding-top: 75px;
 }
 
@@ -16,29 +16,13 @@ section.title .container h1 {
 	color: rgb(255,255,255);
 }
 
-section.description {
-	width: 900px;
-	margin: 0 auto;
-	padding-top: 20px;
-	padding-bottom: 600px;
-}
-
-section.description h1 {
-	font-size: 26px;
-}
-
-
 section.contact {
 	width: 900px;
-	height: 390px;
+	height: 800px;
 	margin: 0 auto;
 	padding: 40px 0;
 }
 
-section.contact h1 {
-	font-size: 32px;
-	color: rgb(1,190,186);
-}
 section.contact h2 {
 	padding: 7px 0 30px;
 	line-height: 25px;
