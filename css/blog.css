@@ -79,6 +79,10 @@ nav.mainMenu a {
 	padding-left: 25px;
 }
 
+nav.mainMenu a:hover {
+	text-decoration: underline;
+}
+
 nav.mainMenu img {
 	height: 25px;
 }
