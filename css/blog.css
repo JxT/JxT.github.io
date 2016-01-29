@@ -17,6 +17,10 @@ header nav {
 	text-decoration: underline;
 }
 
+.article img {
+  object-fit: cover;
+}
+
 .category {
 	background: rgb(100,100,100);
 	font-size: 15px;
