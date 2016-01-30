@@ -3,6 +3,9 @@
 
 	{block:IndexPage}
 
+		<!-- Add jQuery to get images from posts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 		{block:TagPage}
 			<title>
 		    	{Tag} - Daily Zest
@@ -85,25 +88,6 @@
 
 				<h1 class='title'>Top stories</h1>
 
-				<a class='article'>
-					<img src=''>
-					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
-				</a>
-
-				<a class='article'>
-					<img src=''>
-					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
-				</a>
-
-				<a class='article'>
-					<img src=''>
-					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
-				</a>
-
-				<a class='article'>
-					<img src=''>
-					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
-				</a>
 			</div>
 
 		</section>
@@ -113,13 +97,34 @@
 
     			{block:Posts}
 
-				<a class='article' href='{Permalink}'>
+				<a class='article' id='{PostID}' href='{Permalink}'>
 					<div class='category' id='{TagsAsClasses}'>{TagsAsClasses}</div>
-					<img src='{PhotoURL-500}'/>
-					<h1>{block:Title}{Title}{/block:Title}</h1>
-				</a>
 
+					<script>
+					$('.bottomArticles #{PostID}.article').ready(function(){
+
+						var article = '{Body}';
+						var start = article.indexOf("<img");
+						var end = article.indexOf(">", start) + 1;
+						
+						var img = article.substring(start, end);
+						
+						$('.bottomArticles #{PostID}.article').ready(function(){
+						   $(".bottomArticles #{PostID}.article ").append(
+
+						   	img + 
+
+						   	"<h1>{block:Title}{Title}{/block:Title}</h1>"
+
+						   	);
+						});
+
+					});
+					</script>
+				</a>
 				{/block:Posts}
+
+
 			</div>
 		</section>
 
