@@ -31,27 +31,27 @@ header nav {
 	letter-spacing: 2px;
 }
 
-.category#technology, .category#Technology {
+#technology, #Technology {
 	background: rgb(37,178,255);
 }
 
-.category#life, .category#Life {
+#life, #Life {
 	background: rgb(253,47,189);
 }
 
-.category#travel, .category#Travel {
+#travel, #Travel {
 	background: rgb(13,216,101);
 }
 
-.category#people, .category#People {
+#people, #People {
 	background: rgb(255,37,37);
 }
 
-.category#university, .category#University {
+#university, #University {
 	background: rgb(0,84,128);
 }
 
-.category#projects, .category#Projects {
+#projects, #Projects {
 	background: rgb(255,179,73);
 }
 
@@ -65,9 +65,7 @@ nav.mainMenu {
 }
 
 nav.mainMenu .container {
-	width: 900px;
 	padding-top: 15px;
-	margin: 0 auto;
 }
 
 nav.mainMenu a {
@@ -110,9 +108,7 @@ section.showcase {
 }
 
 section.showcase .container {
-	width: 900px;
 	padding-bottom: 25px;
-	margin: 0 auto;
 }
 
 section.showcase .story .category {
@@ -182,9 +178,7 @@ section.showcase .picks .article h1 {
 
 /* Showcase story description */
 
-section.showcaseDescription {
-	width: 900px;
-	margin: 0 auto;
+section.showcaseDescription .container {
 	border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 
@@ -251,11 +245,6 @@ section.photoArticle {
 	-o-background-size: cover;
 }
 
-section.photoArticle .container {
-	width: 900px;
-	margin: 0 auto;
-}
-
 section.photoArticle .category {
 	margin-top: -20px;
 	font-size: 16px;
@@ -284,9 +273,8 @@ section.photoArticle p {
 /* Bottom article section */
 
 section.bottomArticles {
-	width: 900px;
-	height: 830px;
 	margin: 0 auto;
+	text-align: center;
 	padding-top: 50px 
 }
 
@@ -294,7 +282,8 @@ section.bottomArticles .article {
 	width: 280px;
 	height: 400px;
 	margin-right: 20px;
-	float: left;
+	text-align: left;
+	display: inline-block;
 }
 
 section.bottomArticles .article:last-of-type {

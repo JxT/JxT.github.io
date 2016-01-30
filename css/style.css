@@ -30,6 +30,11 @@ section {
 	cursor: pointer;
 }
 
+.container {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
 
 /* Header bar styling */
 
@@ -39,9 +44,7 @@ header {
 }
 
 header nav {
-	width: 900px;
 	padding-top: 25px;
-	margin: 0 auto;
 }
 
 header img {
