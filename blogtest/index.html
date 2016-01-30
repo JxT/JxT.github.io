@@ -9,6 +9,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://jordanthom.as/css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="http://jordanthom.as/css/blog.css"/>
+	{block:PermalinkPage}
+	<link rel="stylesheet" type="text/css" href="http://jordanthom.as/css/blogArticle.css"/>
+	{/block:PermalinkPage}
 
 </head>
 
@@ -53,170 +56,80 @@
 
 
 
+
+
+
+
     <!-- For article pages -->
     {block:PermalinkPage}
+    {block:Posts}
 
-      <!-- Post content -->
-      {block:Posts}
+    <div class='main'>
 
-        <!-- Text block -->
-        {block:Text}
-          {block:Title}
-          <a href="{Permalink}">
-            <h1>{Title}</h1>
-          </a>
-          {/block:Title}
-            <p>{Body}</p>
-        {/block:Text}
+		<article>
 
-        <!-- Photo block -->
-        {block:Photo}
-          {LinkOpenTag}
-            {block:IfUseHighResPhotos}
-              <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
-            {/block:IfUseHighResPhotos}
-          {LinkCloseTag}
+			<section class='title'>
 
-          {block:Caption}
-            <figcaption>
-              {Caption}
-            </figcaption>
-            {/block:Caption}
-        {/block:Photo}
+          		{block:Title}
+				<h1>{Title}</h1>
+				{/block:Title}
 
-        <!-- Photoset block -->
-        {block:Photoset}
-          <figure>
-            {Photoset-500}
-            {block:Caption}
-              <figcaption>
-                {Caption}
-              </figcaption>
-            {/block:Caption}
-          </figure>
-        {/block:Photoset}
+				{block:Date}
+		        <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}T{24HourWithZero}:{Minutes}:{Seconds}">
+		          <a href="{Permalink}">
+		              {TimeAgo}
+		          </a>
+		        </time>
+		        {/block:Date}
 
-        <!-- Quote block -->
-        {block:Quote}
-          <blockquote>{Quote}</blockquote>
-          {block:Source}
-            <footer>{Source}</footer>
-          {/block:Source}
-        {/block:Quote}
+				<span>|</span>
 
-        <!-- Link block -->
-        {block:Link}
-            <a href="{URL}" {Target}>{Name}</a>
-            {block:Description}
-            <p> {Description} </p>
-            {/block:Description}
-        {/block:Link}
+				
+		        {block:HasTags}
+		            {block:Tags}
+		            <a href="{TagURL}">
+		            	<div class='category' id='{Tag}'>{Tag}</div>
+		            </a>
+		            {/block:Tags}
+		        {/block:HasTags}
 
-        <!-- Chat block -->
-        {block:Chat}
-            {block:Title}
-            <h2>{Title}</h2>
-            {/block:Title}
-            <dialog>
-              {block:Lines}
-                {block:Label}
-                  <dt class="{Alt} {UserNumber}">
-                    {Label}
-                  </dt>
-                {/block:Label}
-                <dd> {Line} </dd>
-              {/block:Lines}
-            </dialog>
-        {/block:Chat}
+			</section>
 
-        <!-- Audio block -->
-        {block:Audio}
-            {block:Artist}
-              {Artist}
-            {/block:Artist}
+			<section class='story'>
+				<!-- Article content -->
+				{Body}
+			</section>
+			
+		</article>
 
-            {block:TrackName}
-              {TrackName}
-            {/block:TrackName}  
-            <figure>
-              {block:AlbumArt}
-                <img src="{AlbumArtURL}"/>
-              {/block:AlbumArt}
+		<aside>
 
-              {block:AudioPlayer}
-                {AudioPlayer}
-              {/block:AudioPlayer}
+			<section class='connect'>
+				<h1>Spread the zest!</h1>
+				<p>FacebookButton</p>
+				<p>TwitterButton</p>
+				<p>TumblrButton</p>
+			</section>
 
-              {block:Caption}
-                <figcaption>
-                  {Caption}
-                </figcaption>
-              {/block:Caption}
-            </figure>
-        {/block:Audio}
+			<section class='recentArticles'>
 
-        <!-- Video block -->
-        {block:Video}
-            <figure>
-              {Video-500}
-              {block:Caption}
-                <figcaption>
-                  {Caption}
-                </figcaption>
-              {/block:Caption}
-            </figure>
-        {/block:Video}
+				<h1>Recent articles</h1>
 
-        <!-- Answer block -->
-        {block:Answer}
-            <dialog>
-              <dt><img src="{AskerPortraitURL-16}"> {lang:Asker asked 2}: </dt>
-              <dd>{Question}</dd>
+				<a class='article'>
+					<img src=''/>
+					<div class='category'>Life</div>
+					<h1>Test</h1>
+				</a>
 
-              <dd>{Answer}</dd>
-            </dialog>
-        {/block:Answer}
+			</section>
 
-        <!-- Note count -->
-        {block:NoteCount}
-          <a href="{Permalink}">{lang:Notes}: {NoteCount}</a>
-        {/block:NoteCount}
+		</aside>
 
-        <!-- Tags -->
-        {block:HasTags}
-            {block:Tags}
-            <a href="{TagURL}">{Tag}</a>
-            {/block:Tags}
-        {/block:HasTags}
-
-        <!-- Date time -->
-        {block:Date}
-        <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}T{24HourWithZero}:{Minutes}:{Seconds}">
-          <a href="{Permalink}">
-            {block:IfUseTimeAgo}
-              {TimeAgo}
-            {/block:IfUseTimeAgo}
-            {block:IfNotUseTimeAgo}
-              {DayOfMonth} {ShortMonth} {Year}
-            {/block:IfNotUseTimeAgo}
-          </a>
-        </time>
-        {/block:Date}
-
-        <!--Post notes-->
-        {block:PermalinkPage}
-          {block:PostNotes}<div>{PostNotes}</div>{/block:PostNotes}
-        {/block:PermalinkPage}
-        
-        <!-- Prev/Next arrows -->
-        {block:PermalinkPagination}
-            {block:PreviousPost}<a href="{PreviousPost}">{lang:Previous}</a>{/block:PreviousPost}
-            {block:NextPost}<a href="{NextPost}">{lang:Next}</a>{/block:NextPost}
-        {/block:PermalinkPagination}
-        
-      {/block:Posts}
-
+	</div>
+	{/block:Posts}
     {/block:PermalinkPage}
+
+
 
 
 

@@ -31,27 +31,27 @@ header nav {
 	letter-spacing: 2px;
 }
 
-.category#technology {
+.category#technology, .category#Technology {
 	background: rgb(37,178,255);
 }
 
-.category#life {
+.category#life, .category#Life {
 	background: rgb(253,47,189);
 }
 
-.category#travel {
+.category#travel, .category#Travel {
 	background: rgb(13,216,101);
 }
 
-.category#people {
+.category#people, .category#People {
 	background: rgb(255,37,37);
 }
 
-.category#university {
+.category#university, .category#University {
 	background: rgb(0,84,128);
 }
 
-.category#projects {
+.category#projects, .category#Projects {
 	background: rgb(255,179,73);
 }
 
