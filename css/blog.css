@@ -307,20 +307,37 @@ section.bottomArticles .article h1 {
 
 /* Connect section */
 
-section.connect {
-
-}
-
 section.connect h1{
 	font-weight: 600;
 	font-size: 20px;
 	border-bottom: 1px solid rgba(0,0,0,0.5);
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	padding-bottom: 10px;
 }
 
+section.connect .fb-like.fb_iframe_widget {
+	padding-bottom: 7px;
+}
+
+section.connect #twitter-widget-0 {
+	display: block;
+	padding-bottom: 15px;
+}
 
 
+/* Recent articles */
+
+section.recentArticles {
+	margin-top: 40px;
+}
+
+section.recentArticles h1{
+	font-weight: 600;
+	font-size: 20px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+}
 
 
 
