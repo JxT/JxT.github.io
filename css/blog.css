@@ -284,6 +284,7 @@ section.bottomArticles .article {
 	margin-right: 20px;
 	text-align: left;
 	display: inline-block;
+	vertical-align: top;
 }
 
 section.bottomArticles .article:last-of-type {

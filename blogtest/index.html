@@ -12,6 +12,9 @@
 	{block:PermalinkPage}
 	<link rel="stylesheet" type="text/css" href="http://jordanthom.as/css/blogArticle.css"/>
 	{/block:PermalinkPage}
+	{block:TagPage}
+	<link rel="stylesheet" type="text/css" href="http://jordanthom.as/css/blogTag.css"/>
+	{/block:TagPage}
 
 </head>
 
@@ -53,7 +56,57 @@
 
 	<!-- For tag pages -->
 	{block:TagPage}
-		<h1>{Tag}</h1>
+
+		<header class='tag' id='{Tag}'>
+			<div class='container'>
+				<h1>{Tag}</h1>
+			</div>
+		</header>
+
+		<section class='topArticles'>
+
+			<div class='container'>
+
+				<h1 class='title'>Top stories</h1>
+
+				<a class='article'>
+					<img src=''>
+					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
+				</a>
+
+				<a class='article'>
+					<img src=''>
+					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
+				</a>
+
+				<a class='article'>
+					<img src=''>
+					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
+				</a>
+
+				<a class='article'>
+					<img src=''>
+					<h1>Steve Jobs, the nerd who became a pop culture icon</h1>
+				</a>
+			</div>
+
+		</section>
+
+		<section class='bottomArticles'>
+			<div class='container'>
+
+    			{block:Posts}
+
+				<a class='article' href='{Permalink}'>
+					<div class='category' id='{TagsAsClasses}'>{TagsAsClasses}</div>
+					<img src='{PhotoURL-HighRes}'/>
+					<h1>{block:Title}{Title}{/block:Title}</h1>
+				</a>
+
+				{/block:Posts}
+			</div>
+		</section>
+
 	{/block:TagPage}
 
 
@@ -139,6 +192,11 @@
 
 	<!-- Homepage -->
 	{block:IndexPage}
+
+    {block:SearchPage}<div style="display: none;">{/block:SearchPage}
+    {block:TagPage}<div style="display: none;">{/block:TagPage}
+
+
 		<section class='showcase'>
 			<div class='container'>
 				<div class='story'>
@@ -261,6 +319,11 @@
 				</a>
 			</div>
 		</section>
+
+
+    {block:SearchPage}</div>{/block:SearchPage}
+    {block:TagPage}</div>{/block:TagPage}
+
 	{/block:IndexPage}
 
 	<footer>
