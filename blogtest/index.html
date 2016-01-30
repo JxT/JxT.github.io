@@ -2,9 +2,25 @@
 <head>
 
 	{block:IndexPage}
-	<title>DAILY ZEST: A blog from JordanThom.as</title>
+
+		{block:TagPage}
+			<title>
+		    	{Tag} - Daily Zest
+		    </title>
+		{/block:TagPage}
+
+		<title>Daily Zest: A blog from JordanThom.as</title>
 	{/block:IndexPage}
-    <title>Daily Zest{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
+
+	{block:PermalinkPage}
+	
+	    <title>
+	    	{block:PostTitle}{PostTitle}{/block:PostTitle}
+	    	{block:Tags} - {Tag}
+	    	{/block:Tags} - Daily Zest
+	    </title>
+	
+    {/block:PermalinkPage}
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="http://jordanthom.as/css/style.css"/>
@@ -43,12 +59,12 @@
 				<img src='http://jordanthom.as/img/dailyzest/logo.svg'/>
 			</a>
 			<a href=''>Search</a>
-			<a href='/tagged/projects'>Projects</a>
-			<a href='/tagged/university'>University</a>
-			<a href='/tagged/people'>People</a>
-			<a href='/tagged/travel'>Travel</a>
-			<a href='/tagged/life'>Life</a>
-			<a href='/tagged/technology'>Technology</a>
+			<a href='/tagged/Projects'>Projects</a>
+			<a href='/tagged/University'>University</a>
+			<a href='/tagged/People'>People</a>
+			<a href='/tagged/Travel'>Travel</a>
+			<a href='/tagged/Life'>Life</a>
+			<a href='/tagged/Technology'>Technology</a>
 		</div>
 	</nav>
 
@@ -99,7 +115,7 @@
 
 				<a class='article' href='{Permalink}'>
 					<div class='category' id='{TagsAsClasses}'>{TagsAsClasses}</div>
-					<img src='{PhotoURL-HighRes}'/>
+					<img src='{PhotoURL-500}'/>
 					<h1>{block:Title}{Title}{/block:Title}</h1>
 				</a>
 
@@ -161,7 +177,20 @@
 
 			<section class='connect'>
 				<h1>Spread the zest!</h1>
-				<p>FacebookButton</p>
+
+				<!-- Load Facebook SDK for JavaScript -->
+				<div id="fb-root"></div>
+				<script>(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));</script>
+
+				<!-- Your like button code -->
+				<div class="fb-like" data-href="{Permalink}" data-width="50px" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+
 				<p>TwitterButton</p>
 				<p>TumblrButton</p>
 			</section>
