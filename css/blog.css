@@ -126,7 +126,7 @@ section.showcase .story h1 {
 	margin-top: 3px;
 }
 
-section.showcase .story h1:hover {
+section.showcase .story a:hover h1{
 	text-decoration: underline;
 }
 
