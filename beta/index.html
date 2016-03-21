@@ -1,0 +1,368 @@
+<html>
+<head>
+	<title>JordanThom.as - Student, Developer, Entrepreneur</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body class='home'>
+
+	<header>
+		<nav>
+			<div class='container'>
+
+				<!-- Inline svg for CSS :/ -->
+				<svg class='logo' width="34px" height="17px" viewBox="0 0 34 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				        <g transform="translate(-59.000000, -39.000000)" fill="#535760">
+				            <path d="M78.6176394,39.0240264 L92.5836352,39.0240264 L92.5836352,41.3846954 L81.1228669,41.3846954 L81.1228669,55.8 L78.6176394,55.8 L78.6176394,39.0240264 Z M59,39 L76.7837248,39 C76.7837248,39 77.3953594,47.4072227 72.4148816,52.007274 C67.4344038,56.6073254 59,55.7338229 59,55.7338229 L59,53.3056897 C59,53.3056897 65.3578855,53.8520794 69.7125174,50.418523 C74.0671493,46.9849666 74.0671493,41.3915475 74.0671493,41.3915475 L59,41.3915474 L59,39 Z" id="Rectangle-1"></path>
+				        </g>
+				    </g>
+				</svg>
+
+				<div class='links' data-toggle="collapse" data-target="#menu">
+
+					<!-- Inline svg for CSS :/ -->
+					<svg width="84px" height="17px" viewBox="0 0 84 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					        <g transform="translate(-879.000000, -39.000000)" >
+					            <path fill="#535760" d="M942,39 L963,39 L963,41 L942,41 L942,39 Z M942,53 L963,53 L963,55 L942,55 L942,53 Z M942,46 L963,46 L963,48 L942,48 L942,46 Z M879.510742,55 L879.510742,40.0361328 L881.132812,40.0361328 L885.515625,50.5957031 C886.01693,51.7988341 886.296224,52.5615218 886.353516,52.8837891 L886.375,52.8837891 C886.475261,52.3395155 886.715167,51.5839892 887.094727,50.6171875 L891.262695,40.0361328 L892.949219,40.0361328 L892.949219,55 L891.563477,55 L891.563477,45.9550781 C891.563477,44.0787667 891.610026,42.7145225 891.703125,41.8623047 L891.670898,41.8623047 C891.405923,42.8577524 891.040692,43.9498638 890.575195,45.1386719 L886.729492,55 L885.891602,55 L881.841797,45.2353516 C881.354815,44.0751895 880.996746,43.0475305 880.767578,42.1523438 L880.746094,42.1523438 C880.846355,42.9472696 880.896484,44.0823494 880.896484,45.5576172 L880.896484,55 L879.510742,55 Z M895.742188,49.6933594 C895.742188,48.0963462 896.179032,46.7965545 897.052734,45.7939453 C897.926437,44.7913361 899.065097,44.2900391 900.46875,44.2900391 C901.936856,44.2900391 903.066565,44.7913361 903.85791,45.7939453 C904.649255,46.7965545 905.044922,48.1035076 905.044922,49.7148438 L905.044922,49.8974609 L897.084961,49.8974609 L897.084961,50.0478516 C897.084961,51.3512435 897.417965,52.355628 898.083984,53.0610352 C898.750003,53.7664423 899.598628,54.1191406 900.629883,54.1191406 C902.226896,54.1191406 903.397783,53.3421302 904.142578,51.7880859 L905.141602,52.421875 C904.203446,54.3125095 902.685232,55.2613932 900.586914,55.2685547 C899.090162,55.2685547 897.908533,54.77979 897.041992,53.8022461 C896.175451,52.8247021 895.742188,51.4550869 895.742188,49.6933594 L895.742188,49.6933594 Z M897.12793,48.8447266 L903.637695,48.8447266 C903.637695,47.9352168 903.349449,47.1277705 902.772949,46.4223633 C902.196449,45.7169561 901.430181,45.3642578 900.474121,45.3642578 C899.518062,45.3642578 898.742842,45.6757781 898.148438,46.2988281 C897.554033,46.9218781 897.213868,47.7705024 897.12793,48.8447266 L897.12793,48.8447266 Z M907.859375,55 L907.859375,44.5263672 L909.15918,44.5263672 L909.15918,46.2666016 C909.381186,45.708005 909.780433,45.2389342 910.356934,44.859375 C910.933434,44.4798158 911.640621,44.2900391 912.478516,44.2900391 C913.595709,44.2900391 914.458656,44.6266242 915.067383,45.2998047 C915.418296,45.6936869 915.659993,46.1430639 915.79248,46.6479492 C915.924968,47.1528346 915.991211,47.9638616 915.991211,49.0810547 L915.991211,55 L914.702148,55 L914.702148,49.3710938 C914.702148,47.7024656 914.480145,46.6318383 914.036133,46.1591797 C913.627928,45.7080056 913.004887,45.4788412 912.166992,45.4716797 C911.271805,45.4716797 910.559247,45.7581352 910.029297,46.3310547 C909.442054,46.9326202 909.152018,47.7454376 909.15918,48.7695312 L909.15918,55 L907.859375,55 Z M919.224609,51.0791016 L919.224609,44.5263672 L920.513672,44.5263672 L920.513672,50.5097656 C920.513672,51.906257 920.735675,52.8587214 921.179688,53.3671875 C921.587893,53.8183616 922.210933,54.047526 923.048828,54.0546875 C924.044276,54.0546875 924.78727,53.7252637 925.277832,53.0664062 C925.768394,52.4075488 926.013672,51.6376997 926.013672,50.7568359 L926.013672,44.5263672 L927.313477,44.5263672 L927.313477,55 L926.013672,55 L926.013672,53.28125 C925.791666,53.8398465 925.39958,54.3107077 924.837402,54.6938477 C924.275225,55.0769876 923.5752,55.2685547 922.737305,55.2685547 C921.620112,55.2685547 920.757165,54.9283888 920.148438,54.2480469 C919.532549,53.5605434 919.224609,52.5042389 919.224609,51.0791016 L919.224609,51.0791016 Z"></path>
+					        </g>
+					    </g>
+					</svg>
+					</button>
+					<!-- </svg> -->
+
+					<div id="menu" class="collapse">
+						<a href='#welcome'>Home</a>
+						<a href='#whoami'>Who am I?</a>
+						<a href='#projects'>Projects</a>
+						<a href='#education'>Education</a>
+						<a href='#blog'>Blog</a>
+						<a href='#contact'>Contact</a>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class='welcome' id='welcome'>
+
+		<div class='container'>
+			<img class='cartoon' src='img/cartoon.svg'/>
+			<h1><span>Hello there!</span>I'm Jordan.</h1>
+			<p>A developer, designer and student <br> at the University of Nottingham</p>
+		</div>
+
+		<a href='#whoami'>
+			<img class='downArrow' src='img/downArrow.svg'/>
+		</a>
+
+	</section>
+
+
+	<section class='whoami' id='whoami'>
+
+		<img class='topImage' src="img/cliffs.png"/>
+
+		<div class='container'>
+			<h1>Who am I?</h1>
+			<h2>I'm Jordan and I come from down south.</h2>
+		</div>
+
+	</section>
+
+
+	<section class='projects' id='projects'>
+
+		<img class='topImage' src="img/zestSketch.png"/>
+
+		<div class='container'>
+
+			<h1>Projects</h1>
+			<h2>I've been involved with startups, hackathons,<br>personal projects and have awards too!</h2>
+
+			<div class='project' id='pinpoint'>
+				<p>I built the first website for<br>
+				social startup PinPoint</p>
+				<a href='projects/pinpoint'>View Project ></a>
+			</div>
+
+			<div class='project' id='msft'>
+				<p>I'm a Microsoft Student Partner<br>
+				for Nottingham University</p>
+				<a href='projects/msp'>View Project ></a>
+				</a>
+			</div>
+
+			<div class='project' id='javoo'>
+				<p>I built Javoo a Node.js server using<br>
+				Azure for their prototype app</p>
+				<a href='projects/javoo'>View Project ></a>
+			</div>
+
+			<div class='project' id='unitu'>
+				<p>Our brilliant team of 4<br>won 1st place at this<br>education hackathon</p>
+				<a href='projects/unituhack'>View Project ></a>
+			</div>
+
+			<div class='project' id='lingoflow'>
+				<p>I helped out with idea<br>generation and business<br>development</p>
+				<a href='projects/lingoflow'>View Project ></a>
+			</div>
+
+			<div class='project' id='afg'>
+				<p>I was a runner up in<br>their 2012 edition.<br>We visited Facebook!</p>
+				<a href='projects/appsforgood'>View Project ></a>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class='education' id='education'>
+
+		<img class='topImage' src="img/bedes.png"/>
+
+		<div class='container'>
+
+			<h1>Education</h1>
+
+			<h2>Find out about my degree at Nottingham,
+			<br>and the academic results I've achieved</h2>
+
+			<div class='educard'>
+				<img src='img/education/notts.png'/>
+				<h1>University of Nottingham</h1>
+				<h2>Computer Science BSc (Hons)<br>with Year in Industry</h2>
+				<a href='education/uni'>
+					<div class='link'>Read more<span>></span></div>
+				</a>
+			</div>
+
+			<div class='educard'>
+				<img src='img/education/lewes.png'/>
+				<h1>Sussex Downs College</h1>
+				<h2>A Level courses in Computing,<br>
+				French and Mathematics</h2>
+				<a href='education/college'>
+					<div class='link'>Read more<span>></span></div>
+				</a>
+			</div>
+
+			<div class='educard'>
+				<img src='img/education/bedes.png'/>
+				<h1>Bede's Senior School</h1>
+				<h2>GCSE and IGCSE examinations</h2>
+				<a href='education/school'>
+					<div class='link'>Read more <span>></span></div>
+				</a>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class='blog' id='blog'>
+
+		<img class='topImage' src="img/shanghai.png"/>
+
+		<div class='container'>
+
+			<h1>Blog</h1>
+			<h2>Find out what's going on inside<br>
+			my head at my blog, Daily Zest!</h2>
+
+			<div class='blogsquare'>
+				<img src='img/blog/baozi.png'/>
+				<h1>Learn about mystical travels!</h1>
+				<p>Find about about my time in Asia<br>and Jiaotong Uni last summer!</p>
+			</div>
+
+			<div class='blogsquare'>
+				<img src='img/blog/backpack.png'/>
+				<h1>Follow my journey</h1>
+				<p>Anecdotes from volunteering,<br>work, hackathons and uni life!</p>
+			</div>
+
+			<div class='blogsquare'>
+				<img src='img/blog/bubbles.png'/>
+				<h1>Get the latest from me</h1>
+				<p>Hear about my newest projects<br>and my opinions on current topics</p>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class='contact' id='contact'>
+
+		<img class='topImage' src="img/me.png"/>
+
+		<div class='container'>
+			<h1>Get in touch</h1>
+			<h2>Send emails to <a href='mailto:me@jordanthom.as'>me@jordanthom.as</a><br>or have a chat on <span>+44 7907 011 252</span></h2>
+
+			<a href='http://twitter.com/ThisIsJxT'>
+				<div class='contactcircle'>
+					<img src='img/contact/twitter.png'>
+					<h1>Twitter</h1>
+					<h1>(Work)</h1>
+				</div>
+			</a>
+
+			<a href='https://www.linkedin.com/in/jordanxthomas'>
+				<div class='contactcircle'>
+					<img src='img/contact/linkedin.png'>
+					<h1>LinkedIn</h1>
+				</div>
+			</a>
+
+			<a href='https://www.behance.net/JordanxThomas'>
+				<div class='contactcircle'>
+					<img src='img/contact/behance.png'>
+					<h1>Behance</h1>
+				</div>
+			</a>
+
+			<a href='http://twitter.com/j0x0t'>
+				<div class='contactcircle'>
+					<img src='img/contact/twitteralt.png'>
+					<h1>Twitter</h1>
+					<h1>(Personal)</h1>
+				</div>
+			</a>
+
+			<a href='https://www.facebook.com/jordanxthomas'>
+				<div class='contactcircle'>
+					<img src='img/contact/facebook.png'>
+					<h1>Facebook</h1>
+				</div>
+			</a>
+
+			<a href='http://instagram.com/JordanxThomas'>
+				<div class='contactcircle'>
+					<img src='img/contact/instagram.png'>
+					<h1>Instagram</h1>
+				</div>
+			</a>
+
+		</div>
+
+	</section>
+
+	<footer>
+		<div class='container'>
+			<img src='img/logoicon.svg'>
+			<p>&copy; 2016 Jordan Thomas</p>
+		</div>
+	</footer>
+
+	<script type='text/javascript'>
+
+	/* Smooth scrolling */
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash;
+		    var $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+	});
+
+
+	/* SVG colour changing */
+
+
+		var changeMenuColor = {
+
+		  //change these to elements to use at waypoints
+		  toTrack: "section",
+		  tracked: {},
+
+		  // utility function to check if its within the tracked area
+		  inObject: function(val){
+		    var self = this;
+		    var ret = false;
+		    var keys= Object.keys(this.tracked);
+		    keys.push(keys[keys.length-1]);
+		    var index = 0;
+		    $.each(this.tracked, function(k,v){
+		      var next = self.tracked[keys[index+1]];
+		      if (v<=val && val<=next){
+		        ret =  k;
+		      }
+		       index++;
+		    });
+		    return ret;
+		  },
+
+		  //sets up tracked elements for events
+		  init : function(){
+		  var self = this;
+		   //create a collecion of tracked offsets
+		    $(this.toTrack).each(function(){
+		       self.tracked[$(this).attr("id")] = $(this).offset().top;
+		    });
+
+		    //on scroll, we compare current position and tracked offsets,
+		    // if they match we trigger the isOnElement.changeMenuColor event
+		    // on the element
+		    $(document).on("scroll", function(){
+		        var currentPosition = $(this).scrollTop();
+		        var trackFound = self.inObject(currentPosition);
+		        if (trackFound){
+		          $("#"+trackFound).trigger("isOnElement.changeMenuColor");
+		        }
+		    });
+		  }
+		}
+
+		//on dom load we initalize the changeMenuColor operation
+		//now we just need to listen for the evemt amd do whatrever
+		$(function(){
+			changeMenuColor.init();
+
+			$("#welcome").on("isOnElement.changeMenuColor", function(){
+			  $("header .logo path").css("fill", "rgb(83,87,96)");
+			  $("header .links svg path").css("fill", "rgb(83,87,96)");
+			});
+
+			$("#whoami").on("isOnElement.changeMenuColor", function(){
+			  $("header .logo path").css("fill", "rgb(255,255,255)");
+			  $("header .links svg path").css("fill", "rgb(255,255,255)");
+			});
+
+			$("#projects").on("isOnElement.changeMenuColor", function(){
+			  $("header .logo path").css("fill", "rgb(83,87,96)");
+			  $("header .links svg path").css("fill", "rgb(83,87,96)");
+			});
+
+			$("#education").on("isOnElement.changeMenuColor", function(){
+			  $("header .logo path").css("fill", "rgb(83,87,96)");
+			  $("header .links svg path").css("fill", "rgb(83,87,96)");
+			});
+
+			$("#blog").on("isOnElement.changeMenuColor", function(){
+			  $("header .logo path").css("fill", "rgb(83,87,96)");
+			  $("header .links svg path").css("fill", "rgb(83,87,96)");
+			});
+
+			$("#contact").on("isOnElement.changeMenuColor", function(){
+			  $("header .logo path").css("fill", "rgb(83,87,96)");
+			  $("header .links svg path").css("fill", "rgb(83,87,96)");
+			});
+		});
+
+
+	</script>
+</body>
+</html>
