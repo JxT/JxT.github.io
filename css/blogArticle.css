@@ -6,6 +6,7 @@
 	padding: 40px;
 	margin: 30px auto;
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .main article {
@@ -24,6 +25,7 @@
 	font-size: 35px;
 	line-height: 40px;
 	padding-bottom: 20px;
+	font-weight: 600;
 }
 
 .main article section.title span {
@@ -36,9 +38,8 @@
 }
 
 .main article section.story {
-	font-size: 17px;
-	line-height: 27px;
-	letter-spacing: 0.09px
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .main article section.story p, h2 {
