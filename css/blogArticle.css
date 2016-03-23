@@ -2,14 +2,14 @@
 /* Main */
 
 .main {
-	width: 820px;
+	width: 940px;
 	padding: 40px;
 	margin: 30px auto;
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .main article {
-	width: 550px;
+	width: 580px;
 	display: inline-block;
 }
 
@@ -58,5 +58,5 @@
 .main aside {
 	float: right;
 	text-align: left;
-	width: 250px;
+	width: 310px;
 }
