@@ -82,11 +82,50 @@ nav.mainMenu a {
 	letter-spacing: 2px;
 	padding-top: 5.5px;
 	padding-left: 25px;
+	background: rgb(255,255,255);
+}
+
+nav.mainMenu a#projects, nav.mainMenu a#university, nav.mainMenu a#technology,
+nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life, {
+	background: rgb(255,255,255);
 }
 
 nav.mainMenu a:hover {
 	text-decoration: underline;
+	background: rgb(0,0,0);
+	color: rgb(255,255,255);
+	height: 34px;
+	padding-right: 10px;
+	padding-left: 15px;
+	padding-top: 21px;
+	margin-top: -15px;
+	margin-right: -10.5px;
 }
+
+nav.mainMenu a#projects:hover {
+	background: rgb(255,179,73);
+}
+
+nav.mainMenu a#university:hover {
+	background: rgb(0,84,128);
+}
+
+nav.mainMenu a#people:hover {
+	background: rgb(255,37,37);
+}
+
+nav.mainMenu a#travel:hover {
+	background: rgb(13,216,101);
+}
+
+nav.mainMenu a#life:hover {
+	background: rgb(253,47,189);
+}
+
+nav.mainMenu a#technology:hover {
+	background: rgb(37,178,255);
+}
+
 
 nav.mainMenu a.logo {
 	float:left;
