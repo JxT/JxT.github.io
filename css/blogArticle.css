@@ -22,16 +22,6 @@
 	text-align: center;
 }
 
-.main article a {
-	color: rgb(29, 136, 215);
-}
-
-.main article a:hover {
-	color: rgb(215, 126, 108);
-	border-bottom: 1px solid rgb(215, 126, 108);
-	padding-bottom: 3px;
-}
-
 .main article section.title {
 	width: 100%;
 	padding-bottom: 20px;
@@ -58,14 +48,18 @@
 	line-height: 25px;
 }
 
-
-.main article section.title a:hover .category {
-	border: 0;
-}
-
-
 .main article section.story {
 	text-align: left;
+}
+
+.main article section.story a {
+	color: rgb(29, 136, 215);
+}
+
+.main article section.story a:hover {
+	color: rgb(215, 126, 108);
+	border-bottom: 1px solid rgb(215, 126, 108);
+	padding-bottom: 3px;
 }
 
 .main article section.story p, h2 {
