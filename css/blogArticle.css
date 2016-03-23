@@ -70,6 +70,16 @@
 	font-weight: 700;
 }
 
+.main article section.story blockquote {
+	/* Used for image descriptions */
+	margin-top: -20px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	color: rgb(150, 150, 150);
+	font-style: italic;
+	font-size: 18px;
+}
+
 .main article section.story i {
 	font-style: italic;
 }
