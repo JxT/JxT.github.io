@@ -91,7 +91,7 @@ nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life {
 }
 
 nav.mainMenu a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	background: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
 	height: 34px;
@@ -101,6 +101,7 @@ nav.mainMenu a:hover {
 	margin-top: -15px;
 	margin-left: 10.5px;
 	margin-right: -10.5px;
+	border-bottom: 3px solid rgb(255,255,255);
 }
 
 nav.mainMenu a#projects:hover {
@@ -141,7 +142,12 @@ nav.mainMenu a.logo img.jt {
 }
 
 nav.mainMenu a.logo:hover {
-	text-decoration: none;
+	background: none;
+	color: none;
+	height: none;
+	padding: 0 0 6px; 0;
+	margin: 0;
+	border-bottom: 3px solid rgb(23,243,8);
 }
 
 nav.mainMenu img {
