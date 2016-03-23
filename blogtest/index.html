@@ -154,9 +154,9 @@
 				{/block:Title}
 
 				{block:Date}
-		        <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}T{24HourWithZero}:{Minutes}:{Seconds}">
+		        <time datetime="{DayOfMonth} {Month} {Year} - {24HourWithZero}:{Minutes}">
 		          <a href="{Permalink}">
-		              {TimeAgo}
+		              {DayOfMonth} {Month} {Year}
 		          </a>
 		        </time>
 		        {/block:Date}
