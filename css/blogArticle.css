@@ -2,10 +2,8 @@
 /* Main */
 
 .main {
-	width: 940px;
-	padding: 40px;
-	margin: 30px auto;
-	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	width: 980px;
+	margin: 40px auto 0;
 	font-family: Helvetica, Arial, sans-serif;
 }
 

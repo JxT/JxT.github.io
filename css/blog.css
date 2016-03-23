@@ -11,6 +11,10 @@ header nav {
 	height: 35px;
 }
 
+container {
+	max-width: 980px;
+}
+
 /* Global */
 
 .article h1:hover {
