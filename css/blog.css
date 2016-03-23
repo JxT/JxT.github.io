@@ -86,7 +86,7 @@ nav.mainMenu a {
 }
 
 nav.mainMenu a#projects, nav.mainMenu a#university, nav.mainMenu a#technology,
-nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life, {
+nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life {
 	background: rgb(255,255,255);
 }
 
