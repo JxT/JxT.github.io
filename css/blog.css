@@ -92,13 +92,14 @@ nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life {
 
 nav.mainMenu a:hover {
 	text-decoration: underline;
-	background: rgb(0,0,0);
-	color: rgb(255,255,255);
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	height: 34px;
 	padding-right: 10px;
 	padding-left: 15px;
 	padding-top: 21px;
 	margin-top: -15px;
+	margin-left: 10.5px;
 	margin-right: -10.5px;
 }
 
