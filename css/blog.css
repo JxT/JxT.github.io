@@ -11,7 +11,7 @@ header nav {
 	height: 35px;
 }
 
-container {
+.container {
 	max-width: 980px;
 }
 
