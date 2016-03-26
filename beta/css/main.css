@@ -6,12 +6,6 @@
 
 @font-face {
     font-family: Theinhardt;
-    src: url(fonts/theinhardtthin-webfont.ttf);
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: Theinhardt;
     src: url(fonts/theinhardtlight-webfont.ttf);
     font-weight: 200;
 }
@@ -64,34 +58,40 @@ section {
 
 .topImage {
 	width: 100%;
-	height: 390px;
+	height: 272px;
 	object-fit: cover;
 	margin-bottom: 50px;
 }
 
 .container {
-	width: 80%;
+	width: 945px;
 	margin: 0 auto;
 }
 
+.container .description {
+	padding-bottom: 35px;
+}
 
-.container h1 {
-	font-size: 40px;
+.container .description h1 {
+	font-size: 22px;
 	font-weight: 300;
-	color: rgb(83,87,96);
+	color: rgb(86,62,57);
+	padding-right: 20px;
+	float: left;
 }
 
-.container h2 {
-	font-size: 27px;
-	color: rgb(83,87,96);
+.container .description h2 {
+	height: 50px;
+	padding-left: 20px;
+	margin-top: -3.6px;
+	border-left: 2px solid rgb(86,62,57);
+	display: inline-block;
+	
+	font-size: 17px;
 	font-weight: 200;
-	line-height: 34px;
-	padding-top: 7px;
-}
-
-.downArrow {
-	width: 30px;
-	margin: 0 auto;
+	color: rgb(83,87,96);
+	letter-spacing: 0.87px;
+	line-height: 24px;
 }
 
 
@@ -130,9 +130,8 @@ header .links #menu {
 	width: 100%;
 	left: 0;
 	top: 100px;
-	padding-bottom: 200px;
 	position: absolute;
-	background: dimgray;
+	background: rgb(105,105,105);
 }
 
 header .links #menu a {
@@ -140,8 +139,12 @@ header .links #menu a {
 	width: 100%;
 	text-align: right;
 	display: block;
-	font-size: 80px;
-	margin: 40px 0 0 -150px;
+	font-size: 42px;
+	margin: 40px 0;
+}
+
+header .links #menu a:last-of-type {
+	padding-bottom: 200px;
 }
 
 header .links #menu a:hover {
@@ -153,43 +156,30 @@ header .links #menu a:hover {
 /* Homepage styling */
 
 .home section.welcome {
-	padding-top: 230px;
-	height: 880px;
+	padding-top: 150px;
+	height: 335px;
 	text-align: center;
 	width: 100%;
 	color: rgb(83,87,96);
 }
 
-.home section.welcome .container {
-	width: 720px;
-	height: 451px;
-	margin: 0 auto;
-	text-align: left;
-}
-
-.home section.welcome img.cartoon{
-	height: 450px;
-	float: left;
-	padding-right: 50px;
-}
-
 .home section.welcome h1 {
-	padding-top: 150px;
-	font-size: 40px;
-	font-weight: 200;
+	color: rgb(0,0,0);
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 3.6px;
 }
 
-.home section.welcome span {
-	font-family: "Calendas";
-	font-style: italic;
-	color: rgb(0,190,185);
-	margin-right: 15px;
+.home section.welcome a {
+	border-bottom: 1px solid rgb(83,87,96);
+	color: rgb(83,87,96);
 }
 
 .home section.welcome p {
-	font-size: 27px;
-	font-weight: 100;
-	line-height: 34px;
+	font-size: 18px;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	line-height: 32px;
 	padding-top: 10px;
 }
 
@@ -198,40 +188,25 @@ header .links #menu a:hover {
 }
 
 
-/* Who am I section */
-
-.home section.whoamI {
-	height: 1024px;
-}
-
-.home section.whoamI .container h1 {
-	color: rgb(103,172,18);
-}
-
-
 /* Featured projects section */
 
-.home section.projects {
-	height: 1500px;
-}
-
-.home section.projects h1 {
-	color: rgb(255,121,62);
-}
-
-.home section.projects h2 {
-	padding-bottom: 40px;
+.home section.projects .container{
+	width: 1026px;
+	height: 726px;
 }
 
 .home section.projects .project {
-	width: 445px;
-	height: 165px;
+	width: 342px;
+	height: 242px;
 	float: left;
-	margin: 20px 20px 20px 0;
 	padding: 25px;
 	font-size: 18px;
 	font-weight: 200;
 	line-height: 21px;
+}
+
+.home section.projects .project .hover {
+	display: none;
 }
 
 .home section.projects .project:last-of-type {
@@ -253,71 +228,97 @@ header .links #menu a:hover {
 
 /* Specific projects */
 
-.home section.projects .project#pinpoint {
+.home section.projects .project#a {
+	background: rgb(241,208,154);
+}
+
+.home section.projects .project#b {
+	background: rgb(217,217,217);
+}
+
+.home section.projects .project#c {
+	background: rgb(255,252,252);
+}
+
+.home section.projects .project#d {
+}
+
+.home section.projects .project#e {
+	background: rgb(193,176,176);
+}
+
+.home section.projects .project#f {
+	background: rgb(159,159,159);
+}
+
+.home section.projects .project#g {
+	background: rgb(206,226,212);
+}
+
+.home section.projects .project#h {
+	background: rgb(242,242,242);
+}
+
+.home section.projects .project#i {
+	background: rgb(213,213,213);
+}
+
+
+/* About section */
+
+.home section.about {
+	height: 480px;
+	padding-top: 60px;
+}
+
+.home section.about h1{
+	font-size: 22px;
 	color: rgb(86,62,57);
-	background: url('../img/projects/pinpoint.png');
-	background-size: cover;
 }
 
-.home section.projects .project#pinpoint a {
-	color: rgb(86,62,57);
+.home section.about img {
+	float: left;
+	width: 159px;
+	height: 268px;
+	margin-top: 20px;
+	margin-left: -10px;
+	margin-right: 40px;
 }
 
-.home section.projects .project#msft {
-	color: rgb(255,255,255);
-	background: url('../img/projects/msft.png');
-	background-size: cover;
+.home section.about p {
+	float: left;
+	width: 220px;
+	margin-right: 45px;
+	color: rgb(109,109,109);
+	font-size: 17px;
+	font-weight: 200;
+	letter-spacing: 0.87px;
+	line-height: 29px;
 }
 
-.home section.projects .project#msft a {
-	color: rgb(255,255,255);
+.home section.about p:last-of-type {
+	margin: 0;
 }
-
-.home section.projects .project#javoo {
-	background: url('../img/projects/javoo.png');
-	background-size: cover;
-}
-
-.home section.projects .project#unitu {
-	background: url('../img/projects/unitu.png');
-	background-size: cover;
-}
-
-.home section.projects .project#afg {
-	background: url('../img/projects/afg.png');
-	background-size: cover;
-}
-
-.home section.projects .project#lingoflow {
-	color: rgb(255,255,255);
-	background: url('../img/projects/lingoflow.png');
-	background-size: cover;
-}
-
-.home section.projects .project#lingoflow a{
-	color: rgb(255,255,255);
-}
-
 
 /* Education section */
 
 .home section.education {
-	height: 1700px;
+	height: 820px;
 }
 
-.home section.education h1 {
-	color: rgb(228,92,120);
+.home section.education .description h1 {
+	color: rgb(121,160,4);
+}
+
+.home section.education .description h2 {
+	border-color: rgb(121,160,4);
 }
 
 .home section.education .educard {
 	width: 285px;
 	height: 345px;
 	float: left;
-	margin: 10px;
-}
-
-.home section.education .educard:first-of-type {
-	margin-left: 35px;
+	margin-right: 45px;
 }
 
 .home section.education .educard:last-of-type {
@@ -342,13 +343,14 @@ header .links #menu a:hover {
 	font-weight: 200;
 	font-size: 17px;
 	line-height: 20px;
+	padding-top: 5px;
 }
 
 .home section.education .educard .link {
 	font-size: 18px;
-	color: rgb(228,92,120);
+	color: rgb(121,160,4);
 	padding-bottom: 5px;
-	border-bottom: 1px solid rgb(228,92,120);
+	border-bottom: 1px solid rgb(121,160,4);
 }
 
 .home section.education .educard .link span {
@@ -356,84 +358,25 @@ header .links #menu a:hover {
 }
 
 .home section.education .educard .link:hover {
-	color: rgb(0, 0, 0);
-	border-color: rgb(0,0,0);
+	color: rgb(255, 255, 255);
+	background: rgb(121, 160, 4);
+	padding: 10px 10px 6px 10px;
+	margin: -10px;
 }
 
-/* Blog section */
-
-.home section.blog {
-	height: 1700px;
-}
-
-.home section.blog h1 {
-	color: rgb(79,183,187);
-}
-
-.home section.blog h2 {
-	padding-bottom: 80px;
-}
-
-.home section.blog .blogsquare {
-	width: 275px;
-	height: 200px;
-	float: left;
-	margin: 0 8px;
-}
-
-.home section.blog .blogsquare:first-of-type {
-	margin-left: 0;
-}
-
-.home section.blog .blogsquare:last-of-type {
-	margin-right: 0;
-}
-
-.home section.blog .blogsquare h1 {
-	font-size: 20px;
-	font-weight: 500;
-	padding-bottom: 5px;
-	color: rgb(0,0,0);
-}
-
-
-.home section.blog .blogsquare p {
-	font-size: 17px;
-	font-weight: 200;
-	line-height: 19px;
-}
-
-.home section.blog .blogsquare img {
-	height: 80px;
-	padding: 18px 0;
-}
 
 /* Contact section */
 
 .home section.contact {
-	height: 1700px;
+	height: 800px;
 }
 
-.home section.contact h1 {
+.home section.contact .description h1 {
 	color: rgb(217,157,37);
 }
 
-.home section.contact h2 {
-	padding-bottom: 100px;
-}
-
-.home section.contact h2 a {
-	color: rgb(51,168,202);
-	font-weight: 300;
-	text-decoration: underline;
-}
-
-.home section.contact h2 a:hover {
-	color: rgb(0,0,0);
-}
-
-.home section.contact h2 span {
-	font-weight: 300;
+.home section.contact .description h2 {
+	border-color: rgb(217,157,37);
 }
 
 .home section.contact .contactcircle {
@@ -456,7 +399,7 @@ header .links #menu a:hover {
 
 .home section.contact .contactcircle h1 {
 	font-size: 19px;
-	font-weight: 500;
+	font-weight: 300;
 	letter-spacing: 0.4px;
 	color: rgb(0,0,0);
 	line-height: 23px;
