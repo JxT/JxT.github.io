@@ -45,15 +45,15 @@ $(window).scroll(function (event) {
 $(window).on('scroll', function(){
 
 	if ($(".about").visible()){
-		$(".about p").css("display", "block");
+		$(".about p").css("display", "inline-block");
 	}
 
 	if ($(".education .container").visible()){
-		$(".education .educard").css("display", "block");
+		$(".education .educard").css("display", "inline-block");
 	}
 
 	if ($(".contact .container").visible()){
-		$(".contact .contactcircle").css("display", "block");
+		$(".contact .contactcircle").css("display", "inline-block");
 	}
 
  });

@@ -1,0 +1,48 @@
+
+@media screen and (max-width: 1025px) {
+
+	.container {
+		width: 100%;
+		padding: 0 30px;
+	}
+
+	.container .description h1 {
+		width: 100%;
+	}
+
+	.container .description h2 {
+		margin-top: 10px;
+	}
+
+	.home section.projects .container {
+		width: 100%;
+		height: auto;
+	}
+
+	.home section.projects .project {
+		width: 100%;
+	}
+
+	.home section.about img {
+		margin: 20px 0 0 0;
+	}
+
+	.home section.about p {	
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.home section.about p:last-of-type {	
+		padding-bottom: 60px;
+	}
+
+	.home section.education .educard {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.home section.contact .contactcircle {
+		margin: 0;
+		margin-right: 40px;
+	}
+}

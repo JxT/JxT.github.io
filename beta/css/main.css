@@ -208,12 +208,13 @@ header .links #menu a#f {
 .home section.projects .container{
 	width: 1026px;
 	height: 726px;
+	font-size: 0; /* Remove sucky inline-block whitespace */
 }
 
 .home section.projects .project {
 	width: 342px;
 	height: 242px;
-	float: left;
+	display: inline-block;
 	padding: 25px;
 	font-size: 18px;
 	font-weight: 200;
@@ -290,8 +291,8 @@ header .links #menu a#f {
 /* About section */
 
 .home section.about {
-	height: 480px;
 	padding-top: 60px;
+	font-size: 0;  /* Fix inline-block whitespace */
 }
 
 .home section.about h1{
@@ -300,16 +301,13 @@ header .links #menu a#f {
 }
 
 .home section.about img {
-	float: left;
 	width: 159px;
 	height: 268px;
-	margin-top: 20px;
-	margin-left: -10px;
-	margin-right: 40px;
+	margin: 20px 30px 70px 0;
+	display: inline-block;
 }
 
 .home section.about p {
-	float: left;
 	width: 220px;
 	margin-right: 45px;
 	color: rgb(109,109,109);
@@ -317,6 +315,7 @@ header .links #menu a#f {
 	font-weight: 200;
 	letter-spacing: 0.87px;
 	line-height: 29px;
+    vertical-align:top;
 	display: none;
 }
 
@@ -337,7 +336,7 @@ header .links #menu a#f {
 /* Education section */
 
 .home section.education {
-	height: 820px;
+	font-size: 0; /* Fix inline-block whitespace */
 }
 
 .home section.education .description h1 {
@@ -351,8 +350,9 @@ header .links #menu a#f {
 .home section.education .educard {
 	width: 285px;
 	height: 345px;
-	float: left;
 	margin-right: 45px;
+	margin-bottom: 70px;
+	vertical-align: top;
 	display: none;
 }
 
@@ -371,6 +371,7 @@ header .links #menu a#f {
 .home section.education .educard img {
 	object-fit: cover;
 	height: 155px;
+	width: 100%;
 }
 
 .home section.education .educard h1 {
@@ -411,8 +412,9 @@ header .links #menu a#f {
 /* Contact section */
 
 .home section.contact {
-	height: 800px;
+	font-size: 0; /* Fix inline-block whitespace */
 }
+
 
 .home section.contact .description h1 {
 	color: rgb(217,157,37);
@@ -423,9 +425,10 @@ header .links #menu a#f {
 }
 
 .home section.contact .contactcircle {
-	float: left;
-	margin: 0 30px;
+	height: 200px;
+	margin: 0 30px 50px;
 	text-align: center;
+	vertical-align: top;
 	display: none;
 }
 
@@ -461,22 +464,16 @@ footer {
 	background: rgb(233,233,233);
 	border: 1px solid rgb(188,188,188);
 	border-bottom: none;
-	height: 160px;
-}
-
-footer .container {
-	width: 900px;
-	padding: 30px 0;
-	margin: 0 auto;
 }
 
 footer img {
-	height: 20px;
-	padding-bottom: 70px;
+	width: 30px;
+	margin: 40px 0 70px;
 }
 
 footer p {
-	font-size: 14px;
+	font-size: 11px;
+	padding-bottom: 40px;
 }
 
 
