@@ -339,10 +339,6 @@ header .links #menu a#f {
 	font-size: 0; /* Fix inline-block whitespace */
 }
 
-.home section.education .topImage {
-	object-fit: cover; /* Fix MS Edge issues */
-}
-
 .home section.education .description h1 {
 	color: rgb(121,160,4);
 }
@@ -419,10 +415,6 @@ header .links #menu a#f {
 	font-size: 0; /* Fix inline-block whitespace */
 }
 
-
-.home section.contact .topImage {
-	object-fit: cover; /* Fix MS Edge issues */
-}
 
 .home section.contact .description h1 {
 	color: rgb(217,157,37);
