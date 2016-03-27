@@ -41,10 +41,6 @@ a, a:visited, a:hover, a:active {
 	color: black;
 }
 
-section {
-	width: 100%;
-}
-
 .button {
 	display: inline-block;
 	padding: 10px 20px;
@@ -99,11 +95,10 @@ section {
 
 header {
 	width: 100%;
+	padding: 40px 0 20px 0;
+	background: rgb(255,255,255);
 	position: fixed;
-}
-
-header nav {
-	padding-top: 40px;
+	transition: padding 0.5s;
 }
 
 header .logo {
@@ -114,7 +109,6 @@ header .logo {
 header .links {
 	width: 84px;
 	height: 17px;
-	padding-top: 8px;
 	float: right;
 }
 
@@ -129,7 +123,7 @@ header .links:hover svg path {
 header .links #menu {
 	width: 100%;
 	left: 0;
-	top: 100px;
+	top: 80px;
 	position: absolute;
 	background: rgb(105,105,105);
 }
@@ -150,6 +144,26 @@ header .links #menu a:last-of-type {
 header .links #menu a:hover {
 	text-decoration: underline;
 	font-style: italic;
+}
+
+header .links #menu a#b {
+	animation-delay: 0.05s;
+}
+
+header .links #menu a#c {
+	animation-delay: 0.1s;	
+}
+
+header .links #menu a#d {
+	animation-delay: 0.15s;	
+}
+
+header .links #menu a#e {
+	animation-delay: 0.2s;	
+}
+
+header .links #menu a#f {
+	animation-delay: 0.25s;	
 }
 
 
@@ -234,33 +248,41 @@ header .links #menu a:hover {
 
 .home section.projects .project#b {
 	background: rgb(217,217,217);
+	animation-delay: 0.1s;
 }
 
 .home section.projects .project#c {
 	background: rgb(255,252,252);
+	animation-delay: 0.2s;
 }
 
 .home section.projects .project#d {
+	animation-delay: 0.3s;
 }
 
 .home section.projects .project#e {
 	background: rgb(193,176,176);
+	animation-delay: 0.4s;
 }
 
 .home section.projects .project#f {
 	background: rgb(159,159,159);
+	animation-delay: 0.5s;
 }
 
 .home section.projects .project#g {
 	background: rgb(206,226,212);
+	animation-delay: 0.6s;
 }
 
 .home section.projects .project#h {
 	background: rgb(242,242,242);
+	animation-delay: 0.7s;
 }
 
 .home section.projects .project#i {
 	background: rgb(213,213,213);
+	animation-delay: 0.8s;
 }
 
 
@@ -294,11 +316,22 @@ header .links #menu a:hover {
 	font-weight: 200;
 	letter-spacing: 0.87px;
 	line-height: 29px;
+	display: none;
 }
 
 .home section.about p:last-of-type {
 	margin: 0;
 }
+
+.home section.about p#mandarin{
+	animation-delay: 0.1s;
+}
+
+.home section.about p#french{
+	animation-delay: 0.2s;
+}
+
+
 
 /* Education section */
 
@@ -319,10 +352,19 @@ header .links #menu a:hover {
 	height: 345px;
 	float: left;
 	margin-right: 45px;
+	display: none;
 }
 
 .home section.education .educard:last-of-type {
 	margin-right: 0;
+}
+
+.home section.education .educard#lewes{
+	animation-delay: 0.1s;
+}
+
+.home section.education .educard#bedes{
+	animation-delay: 0.2s;
 }
 
 .home section.education .educard img {
@@ -383,10 +425,11 @@ header .links #menu a:hover {
 	float: left;
 	margin: 0 30px;
 	text-align: center;
+	display: none;
 }
 
-.home section.contact .contactcircle:hover {
-	opacity: 0.6;
+.home section.contact .contactcircle img:hover {
+	opacity: 0.4;
 }
 
 .home section.contact a:first-of-type .contactcircle {
