@@ -280,6 +280,13 @@
 	font-size: 0; /* Fix inline-block whitespace */
 }
 
+.home section.contact .container {
+	text-align: center;
+}
+
+.home section.contact .description {
+	text-align: left;
+}
 
 .home section.contact .description h1 {
 	color: rgb(217,157,37);
