@@ -462,8 +462,7 @@ header .links #menu a#f {
 
 footer {
 	background: rgb(233,233,233);
-	border: 1px solid rgb(188,188,188);
-	border-bottom: none;
+	border-top: 1px solid rgb(188,188,188);
 }
 
 footer img {
