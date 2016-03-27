@@ -43,6 +43,10 @@
 		margin-top: 10px;
 	}
 
+	.home section.welcome {
+		padding: 110px 25px;
+	}
+
 	.home section.projects .container {
 		width: 100%;
 		height: auto;

@@ -5,8 +5,7 @@
 /* Welcome section */
 
 .home section.welcome {
-	padding-top: 150px;
-	height: 335px;
+	padding: 150px 0 80px;
 	text-align: center;
 	width: 100%;
 	color: rgb(83,87,96);
