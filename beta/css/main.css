@@ -126,7 +126,6 @@ header .links #menu {
 	top: 80px;
 	position: absolute;
 	background: rgb(105,105,105);
-	z-index:1000000;
 }
 
 header .links #menu a {
