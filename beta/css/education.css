@@ -63,11 +63,11 @@
 
 .education section.modules .module {
 	width: 230px;
-	height: 365px;
 	font-size: 20px;
 	border: 1px solid rgb(211,211,211);
 	display: inline-block;
 	margin: 0 6px 20px 0;
+	vertical-align: top;
 }
 
 .education section.modules .module:last-of-type {
@@ -75,17 +75,31 @@
 }
 
 .education section.modules .module h1 {
-	padding: 20px 15px 2px;
+	padding: 20px 15px 8px;
 	font-weight: 100;
 	letter-spacing: 0.5px;
 	line-height: 25px;
 }
 
 .education section.modules .module h2 {
+	margin: 6px 0 17px 15px;
+	float: left;
 	font-size: 13px;
-	display: inline-block;
-	padding: 0 0 17px 15px;
 	font-weight: 300;
+}
+
+.education section.modules .module .grade {
+	background: rgb(213, 213, 213);
+	margin: 0 15px 0 75px;
+}
+
+.education section.modules .module .grade span {
+	display: inline-block;
+	padding: 6px 0 4px 6px;
+	font-size: 13px;
+	font-weight: 300;
+	color: rgb(255, 255, 255);
+	background: rgb(121, 160, 4);
 }
 
 .education section.modules .module img {
@@ -106,7 +120,7 @@
 }
 
 .education section.modules .module .link {
-	margin: 0 15px;
+	margin: 0 15px 20px;
 	font-size: 18px;
 	color: rgb(121, 160, 4);
 	padding-bottom: 5px;
@@ -121,7 +135,7 @@
 	color: rgb(255, 255, 255);
 	background: rgb(121, 160, 4);
 	padding: 9px 10px 5px;
-	margin: -9px 15px;
+	margin: -9px 15px 20px;
 }
 
 
