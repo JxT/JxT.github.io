@@ -290,6 +290,7 @@
 }
 
 .home section.contact .contactcircle {
+	width: 100px;
 	height: 200px;
 	margin: 0 30px 50px;
 	text-align: center;
@@ -318,6 +319,6 @@
 }
 
 .home section.contact .contactcircle img {
-	width: 100px;
+	width: 100%;
 	padding-bottom: 15px;
 }
