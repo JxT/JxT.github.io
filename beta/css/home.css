@@ -76,45 +76,46 @@
 
 .home section.projects .project#a {
 	background: rgb(241,208,154);
+	animation-delay: 0.1s;
 }
 
 .home section.projects .project#b {
 	background: rgb(217,217,217);
-	animation-delay: 0.1s;
+	animation-delay: 0.2s;
 }
 
 .home section.projects .project#c {
 	background: rgb(255,252,252);
-	animation-delay: 0.2s;
+	animation-delay: 0.3s;
 }
 
 .home section.projects .project#d {
-	animation-delay: 0.3s;
+	animation-delay: 0.4s;
 }
 
 .home section.projects .project#e {
 	background: rgb(193,176,176);
-	animation-delay: 0.4s;
+	animation-delay: 0.5s;
 }
 
 .home section.projects .project#f {
 	background: rgb(159,159,159);
-	animation-delay: 0.5s;
+	animation-delay: 0.6s;
 }
 
 .home section.projects .project#g {
 	background: rgb(206,226,212);
-	animation-delay: 0.6s;
+	animation-delay: 0.7s;
 }
 
 .home section.projects .project#h {
 	background: rgb(242,242,242);
-	animation-delay: 0.7s;
+	animation-delay: 0.8s;
 }
 
 .home section.projects .project#i {
 	background: rgb(213,213,213);
-	animation-delay: 0.8s;
+	animation-delay: 0.9s;
 }
 
 

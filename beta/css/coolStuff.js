@@ -44,7 +44,7 @@ $(window).scroll(function (event) {
 
 $(window).on('scroll', function(){
 
-	if ($(".about").visible()){
+	if ($(".about h1").visible()){
 		$(".about p").css("display", "inline-block");
 	}
 
