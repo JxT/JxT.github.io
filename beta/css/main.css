@@ -99,6 +99,7 @@ header {
 	background: rgb(255,255,255);
 	position: fixed;
 	transition: padding 0.5s;
+	z-index: 1;
 }
 
 header .logo {
