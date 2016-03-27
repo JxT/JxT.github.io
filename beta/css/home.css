@@ -65,7 +65,8 @@
 }
 
 .home section.projects .project .icon img {
-	width: 260px;
+	max-width: 90%;
+	max-height: 90%;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -83,16 +84,16 @@
 	position: relative; /* Fixes issues with overlapping .icon */
 }
 
-.home section.projects .project .hover p {
+.home section.projects .project .hover h2 {
 	height: 165px;
 }
 
-.home section.projects .project .hover a {
+.home section.projects .project .hover p {
 	font-weight: 300;
 	font-size: 20px;
 }
 
-.home section.projects .project .hover a:hover {
+.home section.projects .project .hover p:hover {
 	text-decoration: underline;
 }
 
