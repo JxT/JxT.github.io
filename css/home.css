@@ -48,7 +48,6 @@
 .home section.projects .project {
 	width: 342px;
 	height: 242px;
-	padding: 25px;
 	display: inline-block;
 	text-align: center;
 	vertical-align: top; /* Fix weird position when displaying .hover */
@@ -64,8 +63,8 @@
 }
 
 .home section.projects .project .icon img {
-	max-width: 90%;
-	max-height: 90%;
+	max-width: 100%;
+	height: 100%;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -76,8 +75,9 @@
 	font-weight: 200;
 	line-height: 32px;
 	text-align: left;
+	padding: 25px;
 	font-size: 25px;
-	margin-top: -191px;
+	margin-top: -241px;
 	opacity: 0;
 	transition: opacity 0.5s;
 	position: relative; /* Fixes issues with overlapping .icon */
