@@ -1,0 +1,115 @@
+
+
+/* Project pages styling */
+
+/* Welcome section */
+
+.project section.welcome {
+	padding: 150px 0 50px;
+	text-align: center;
+	width: 100%;
+	color: rgb(83,87,96);
+}
+
+.project section.welcome h1 {
+	color: rgb(0,0,0);
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 3.6px;
+}
+
+.project section.welcome p {
+	font-size: 18px;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	line-height: 32px;
+	padding-top: 10px;
+}
+
+
+/* Images */
+
+.project section.intro .topImage {
+	height: 500px;
+}
+
+
+/* Titles */
+
+.project .title {
+	width: 100%;
+	border-top: 5px solid rgb(189,176,176);
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.project .title .logo path {
+	fill: rgb(189,176,176);
+}
+
+.project .title h1 {
+	font-size: 21px;
+	padding-top: 10px;
+}
+
+/* About section */
+
+.project section.about {
+	margin-bottom: 55px;
+}
+
+.project section.about p {
+	width: 280px;
+	margin-right: 45px;
+	color: rgb(109,109,109);
+	font-size: 17px;
+	font-weight: 200;
+	letter-spacing: 0.87px;
+	line-height: 29px;
+    vertical-align: top;
+	display: none;
+}
+
+.project section.about p:last-of-type {
+	margin: 0;
+}
+
+.project section.about p#secondcolumn{
+	animation-delay: 0.1s;
+}
+
+.project section.about p#thirdcolumn{
+	animation-delay: 0.2s;
+}
+
+/* Tools section */
+
+
+.project section.tools {
+	margin-bottom: 60px;
+}
+
+.project section.tools .tool {
+	width: 120px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 80px;
+}
+
+
+.project section.tools .tool:last-of-type {
+	margin: 0;
+}
+
+.project section.tools .tool img {
+	width: 65px;
+}
+
+.project section.tools .tool p {
+	letter-spacing: 0.7px;
+	font-size: 15px;
+	padding-top: 15px;
+}
+
+
+
