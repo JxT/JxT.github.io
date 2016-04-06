@@ -114,7 +114,7 @@
 }
 
 .home section.projects .project#b {
-	background: rgb(217,217,217);
+	background: rgb(93,190,227);
 	animation-delay: 0.2s;
 }
 
@@ -124,31 +124,30 @@
 }
 
 .home section.projects .project#d {
+	background: rgb(36,36,36);
 	animation-delay: 0.4s;
 }
 
 .home section.projects .project#e {
-	background: rgb(193,176,176);
 	animation-delay: 0.5s;
 }
 
 .home section.projects .project#f {
-	background: rgb(159,159,159);
+	background: rgb(12,65,122);
 	animation-delay: 0.6s;
 }
 
 .home section.projects .project#g {
-	background: rgb(206,226,212);
 	animation-delay: 0.7s;
 }
 
 .home section.projects .project#h {
-	background: rgb(242,242,242);
+	background: rgb(137,10,10);
 	animation-delay: 0.8s;
 }
 
 .home section.projects .project#i {
-	background: rgb(213,213,213);
+	background: rgb(64,165,234);
 	animation-delay: 0.9s;
 }
 
