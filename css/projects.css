@@ -29,6 +29,7 @@
 	font-weight: 200;
 	letter-spacing: 0.5px;
 	float: right;
+	text-align:right;
 	padding-top: 5.5px;
 	display: inline-block;
 }
@@ -41,9 +42,26 @@
 	color: rgb(93, 190, 227);
 }
 
-.project section.welcome h1#jam {
-	color: rgb(241, 208, 154);
+.project section.welcome h1#lingoflow {
+	color: rgb(59, 65, 72);
 }
+
+.project section.welcome h1#appsforgood {
+	color: rgb(58, 145, 190);
+}
+
+.project section.welcome h1#unituhack {
+	color: rgb(82, 63, 56);
+}
+
+.project section.welcome h1#warwickhack {
+	color: rgb(69, 94, 65);
+}
+
+.project section.welcome h1#usika {
+	color: rgb(189, 176, 176);
+}
+
 
 
 /* Images */
