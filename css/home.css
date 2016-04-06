@@ -129,6 +129,7 @@
 }
 
 .home section.projects .project#e {
+	background: rgb(144,104,53);
 	animation-delay: 0.5s;
 }
 
@@ -138,6 +139,7 @@
 }
 
 .home section.projects .project#g {
+	background: rgb(177,180,151);
 	animation-delay: 0.7s;
 }
 
