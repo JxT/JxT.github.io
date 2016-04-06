@@ -31,10 +31,12 @@ $(window).scroll(function (event) {
 	if (scroll > 280) {
 	  	$("header").css("padding-top", "20px");
 	  	$("header .links #menu").css("top", "57px");
+	  	$(".project header .container h1").css("display", "block");
     }
     if (scroll < 280) {
 	  	$("header").css("padding-top", "40px");
 	  	$("header .links #menu").css("top", "80px");
+	  	$(".project header .container h1").css("display", "none");
     }
 
 });
