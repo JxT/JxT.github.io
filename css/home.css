@@ -80,26 +80,31 @@
 	margin-top: -241px;
 	opacity: 0;
 	transition: opacity 0.5s;
-	position: relative; /* Fixes issues with overlapping .icon */
+	position: relative;
+	/* Fixes issues with overlapping .icon */
 }
 
 .home section.projects .project .hover h2 {
 	height: 200px;
+	font-family: "Calendas";
 	background: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
-	padding: 25px;
-	font-size: 21px;
-	line-height: 30px;
+	padding: 22px;
+	font-size: 19px;
+	letter-spacing: 0.1px;
+	line-height: 27px;
 }
 
 .home section.projects .project .hover p {
 	font-weight: 300;
-	font-size: 17px;
+	font-size: 16px;
 	float: left;
 	color: rgb(0, 0, 0);
-	padding: 2px 11px 1px;
-	margin: -55px 20px 0;
 	background: rgb(255, 255, 255);
+	line-height: 27px;
+	letter-spacing: 0px;
+	margin: -51px 20px 0;
+	padding: 3px 9px 1px;
 }
 
 .home section.projects .project .hover p:hover {
