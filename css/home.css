@@ -84,12 +84,20 @@
 }
 
 .home section.projects .project .hover h2 {
-	height: 165px;
+	height: 200px;
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	padding: 25px;
 }
 
 .home section.projects .project .hover p {
 	font-weight: 300;
-	font-size: 20px;
+	font-size: 19px;
+	float: left;
+	color: rgb(0, 0, 0);
+	padding: 8px 12px 5px;
+	margin: -60px 20px 0;
+	background: rgb(255, 255, 255);
 }
 
 .home section.projects .project .hover p:hover {
