@@ -2,44 +2,13 @@
 
 /** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
 
-/* Fonts */
-
-@font-face {
-    font-family: Theinhardt;
-    src: url(fonts/theinhardtthin-webfont.ttf);
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: Theinhardt;
-    src: url(fonts/theinhardtlight-webfont.ttf);
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: Theinhardt;
-    src: url(fonts/theinhardtreg-webfont.ttf);
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: Calendas;
-    src: url(fonts/calendas_plus-webfont.ttf);
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: Calendas;
-    src: url(fonts/calendas_plus_italic-webfont.ttf);
-    font-weight: 300;
-    font-style: italic;
-}
-
 
 /* Global styles */
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
 html, body {
-	font-family: 'Theinhardt', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 a, a:visited, a:hover, a:active {
@@ -62,39 +31,6 @@ section {
 }
 
 
-.topImage {
-	width: 100%;
-	height: 390px;
-	object-fit: cover;
-	margin-bottom: 50px;
-}
-
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
-
-
-.container h1 {
-	font-size: 40px;
-	font-weight: 300;
-	color: rgb(83,87,96);
-}
-
-.container h2 {
-	font-size: 27px;
-	color: rgb(83,87,96);
-	font-weight: 200;
-	line-height: 34px;
-	padding-top: 7px;
-}
-
-.downArrow {
-	width: 30px;
-	margin: 0 auto;
-}
-
-
 /* Header bar styling */
 
 header {
@@ -103,217 +39,244 @@ header {
 }
 
 header nav {
-	padding-top: 40px;
+	width: 900px;
+	padding-top: 25px;
+	margin: 0 auto;
 }
 
-header .logo {
+header img {
 	float: left;
-	width: 33px;
+	width: 200px;
 }
 
 header .links {
-	width: 84px;
-	height: 17px;
 	padding-top: 8px;
 	float: right;
 }
 
-header .links:hover {
-    cursor: pointer;
+header .links a {
+	color: rgb(255,255,255);
+	font-weight: 500;
+	font-size: 14px;
+	margin-left: 20px;
+	letter-spacing: 0.5px;
 }
 
-header .links:hover svg path {
-    fill: red !IMPORTANT;
-}
-
-header .links #menu {
-	width: 100%;
-	left: 0;
-	top: 100px;
-	padding-bottom: 200px;
-	position: absolute;
-	background: dimgray;
-}
-
-header .links #menu a {
-	color: rgb(255, 255, 255);
-	width: 100%;
-	text-align: right;
-	display: block;
-	font-size: 80px;
-	margin: 40px 0 0 -150px;
-}
-
-header .links #menu a:hover {
+header .links a:hover {
+	color: rgba(255,255,255,0.5);
 	text-decoration: underline;
-	font-style: italic;
 }
 
 
 /* Homepage styling */
 
 .home section.welcome {
-	padding-top: 230px;
-	height: 880px;
+	padding-top: 100px;
+	height: 602px;
 	text-align: center;
-	width: 100%;
-	color: rgb(83,87,96);
+	background-image: url('../img/pier.png');
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
 }
 
-.home section.welcome .container {
-	width: 720px;
+.home section.welcome .main {
+	width: 100%;
+	color: rgb(255,255,255);
+}
+
+.home section.welcome .main .container {
+	width: 800px;
 	height: 451px;
 	margin: 0 auto;
 	text-align: left;
 }
 
-.home section.welcome img.cartoon{
+.home section.welcome .main img{
 	height: 450px;
 	float: left;
-	padding-right: 50px;
+	padding-right: 150px;
 }
 
-.home section.welcome h1 {
+.home section.welcome .main h1 {
 	padding-top: 150px;
 	font-size: 40px;
-	font-weight: 200;
+	font-weight: 400;
 }
 
-.home section.welcome span {
-	font-family: "Calendas";
-	font-style: italic;
-	color: rgb(0,190,185);
-	margin-right: 15px;
-}
 
-.home section.welcome p {
-	font-size: 27px;
-	font-weight: 100;
-	line-height: 34px;
+.home section.welcome .main p {
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 27px;
 	padding-top: 10px;
 }
 
-.home section.welcome .downArrow {
-	padding-top: 80px;
+
+.home section.welcome .cv {
+	background: rgba(255,255,255,0.6);
+}
+
+.home section.welcome .cv .container {
+	width: 900px;
+	height: 150px;
+	margin: 0 auto;
+	text-align: left;
 }
 
 
-/* Who am I section */
-
-.home section.whoamI {
-	height: 1024px;
+.home section.welcome .cv h1 {
+	font-size: 27px;
+	padding-top: 35px;
 }
 
-.home section.whoamI .container h1 {
-	color: rgb(103,172,18);
+.home section.welcome .cv p {
+	width: 500px;
+	font-size: 20px;
+	color: rgba(0,0,0,0.7);
+	line-height: 25px;
+	padding-top: 8px;
+	float: left;
+}
+
+.home section.welcome .cv .button {
+	float: right;
+	color: rgb(255,255,255);
+	font-weight: 500;
+	font-size: 23px;
+	background: rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.7);
+}
+
+.home section.welcome .cv .button:hover {
+	background: rgba(0,0,0,0.6);
 }
 
 
 /* Featured projects section */
 
 .home section.projects {
-	height: 1500px;
+	width: 900px;
+	height: 390px;
+	margin: 0 auto;
+	padding: 40px 0;
 }
 
 .home section.projects h1 {
+	font-size: 32px;
 	color: rgb(255,121,62);
 }
 
 .home section.projects h2 {
-	padding-bottom: 40px;
+	padding: 7px 0 30px;
+	line-height: 25px;
+	font-size: 20px;
+	color: rgb(115,115,115);
 }
 
 .home section.projects .project {
-	width: 445px;
-	height: 165px;
+	text-align: center;
+	width: 165px;
+	padding: 15px 5px 10px;
 	float: left;
-	margin: 20px 20px 20px 0;
-	padding: 25px;
-	font-size: 18px;
-	font-weight: 200;
-	line-height: 21px;
+	margin: 0 2px;
+	border-radius: 3px;
+}
+
+.home section.projects .project:hover {
+	background: rgba(0,0,0,0.15);
+}
+
+.home section.projects .project:first-of-type {
+	margin-left: 0;
 }
 
 .home section.projects .project:last-of-type {
 	margin-right: 0;
 }
 
+.home section.projects .project img{
+	width: 92px;
+	padding-bottom: 10px;
+}
+
+.home section.projects .project h1{
+	font-size: 17px;
+	color: rgb(0,0,0);
+}
+
 .home section.projects .project p {
-	height: 100px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.5);
+	padding-top: 5px;
+	letter-spacing: 0.2px;
+	line-height: 18px;
 }
 
-.home section.projects .project a {
-	font-weight: 300;
-}
-
-.home section.projects .project a:hover {
-	text-decoration: underline;
-}
-
-
-/* Specific projects */
-
-.home section.projects .project#pinpoint {
-	color: rgb(86,62,57);
-	background: url('../img/projects/pinpoint.png');
-	background-size: cover;
-}
-
-.home section.projects .project#pinpoint a {
-	color: rgb(86,62,57);
-}
-
-.home section.projects .project#msft {
+.home section.projects .project .button {
+	width: 130px;
+	font-size: 15px;
+	display: inline-block;
+	padding: 7px 5px; 
+	margin-top: 10px;
 	color: rgb(255,255,255);
-	background: url('../img/projects/msft.png');
-	background-size: cover;
+	background: rgb(255,121,62);
 }
 
-.home section.projects .project#msft a {
-	color: rgb(255,255,255);
-}
-
-.home section.projects .project#javoo {
-	background: url('../img/projects/javoo.png');
-	background-size: cover;
-}
-
-.home section.projects .project#unitu {
-	background: url('../img/projects/unitu.png');
-	background-size: cover;
-}
-
-.home section.projects .project#afg {
-	background: url('../img/projects/afg.png');
-	background-size: cover;
-}
-
-.home section.projects .project#lingoflow {
-	color: rgb(255,255,255);
-	background: url('../img/projects/lingoflow.png');
-	background-size: cover;
-}
-
-.home section.projects .project#lingoflow a{
-	color: rgb(255,255,255);
+.home section.projects .project .button:hover {
+	background: rgb(225,91,32);
 }
 
 
 /* Education section */
 
 .home section.education {
-	height: 1700px;
+	width: 100%;
+	height: 500px;
+	padding: 40px 0;
+	background-image: url('../img/bedes.png');
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+}
+
+.home section.education .container {
+	width: 900px;
+	margin: 0 auto;
 }
 
 .home section.education h1 {
+	font-size: 32px;
 	color: rgb(228,92,120);
 }
 
+.home section.education h2 {
+	padding: 7px 0 30px;
+	line-height: 25px;
+	font-size: 20px;
+	color: rgb(115,115,115);
+}
+
+.home section.education img {
+	float: left;
+}
+
 .home section.education .educard {
-	width: 285px;
-	height: 345px;
+	width: 210px;
+	height: 280px;
+	background: rgb(255,255,255);
+	border-radius: 6px;
+	padding: 20px 10px 10px;
 	float: left;
 	margin: 10px;
+	text-align: center;
+
 }
 
 .home section.education .educard:first-of-type {
@@ -325,60 +288,80 @@ header .links #menu a:hover {
 }
 
 .home section.education .educard img {
-	object-fit: cover;
-	height: 155px;
+	width: 100px;
+	float: none;
 }
 
 .home section.education .educard h1 {
+	font-weight: 500;
+	font-size: 20px;
+	padding-top: 10px;
+	line-height: 22px;
 	color: rgb(0,0,0);
-	font-weight: 300;
-	font-size: 22px;
-	padding-top: 25px;
 }
 
 .home section.education .educard h2 {
-	height: 112px;
 	color: rgb(0,0,0);
-	font-weight: 200;
-	font-size: 17px;
+	font-size: 15px;
 	line-height: 20px;
+	padding-bottom: 25px;
 }
 
-.home section.education .educard .link {
-	font-size: 18px;
-	color: rgb(228,92,120);
-	padding-bottom: 5px;
-	border-bottom: 1px solid rgb(228,92,120);
+.home section.education .educard .button {
+	background: rgb(228,92,120);
+	color: rgb(255,255,255);
 }
 
-.home section.education .educard .link span {
-	float: right;
+.home section.education .educard .button:hover {
+	background: rgb(198,62,90);
+	color: rgb(255,255,255);
 }
 
-.home section.education .educard .link:hover {
-	color: rgb(0, 0, 0);
-	border-color: rgb(0,0,0);
+.home section.education .educard:last-of-type .button {
+	margin-top: 20px;
 }
+
 
 /* Blog section */
 
 .home section.blog {
-	height: 1700px;
+	width: 100%;
+	height: 300px;
+	padding: 40px 0;
+	background-image: url('../img/shanghai.png');
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+}
+
+.home section.blog .container {
+	width: 900px;
+	margin: 0 auto;
 }
 
 .home section.blog h1 {
-	color: rgb(79,183,187);
+	font-size: 32px;
+	color: rgb(0,91,180);
 }
 
 .home section.blog h2 {
-	padding-bottom: 80px;
+	padding: 7px 0 30px;
+	line-height: 25px;
+	font-size: 20px;
+	color: rgb(30,30,30);
 }
 
 .home section.blog .blogsquare {
-	width: 275px;
+	background: rgba(255,255,255,0.8);
+	width: 290px;
 	height: 200px;
-	float: left;
-	margin: 0 8px;
+	border-radius: 3px;
+	float:left;
+	margin: 0 7.5px;
+	text-align: center;
 }
 
 .home section.blog .blogsquare:first-of-type {
@@ -411,29 +394,31 @@ header .links #menu a:hover {
 /* Contact section */
 
 .home section.contact {
-	height: 1700px;
+	width: 900px;
+	height: 390px;
+	margin: 0 auto;
+	padding: 40px 0;
 }
 
 .home section.contact h1 {
-	color: rgb(217,157,37);
+	font-size: 32px;
+	color: rgb(1,190,186);
 }
 
 .home section.contact h2 {
-	padding-bottom: 100px;
+	padding: 7px 0 30px;
+	line-height: 25px;
+	font-size: 20px;
+	color: rgb(115,115,115);
 }
 
 .home section.contact h2 a {
 	color: rgb(51,168,202);
-	font-weight: 300;
 	text-decoration: underline;
 }
 
 .home section.contact h2 a:hover {
-	color: rgb(0,0,0);
-}
-
-.home section.contact h2 span {
-	font-weight: 300;
+	color: rgb(21, 138, 172);
 }
 
 .home section.contact .contactcircle {
