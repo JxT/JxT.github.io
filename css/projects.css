@@ -31,6 +31,8 @@
 
 .project section.intro {
 	margin-bottom: 50px;
+	height: 500px; /* Fix white space and overflow issues */
+	font-size: 0; /* Fix white space and overflow issues */
 	background: rgb(26, 26, 26);
 }
 
