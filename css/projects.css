@@ -48,6 +48,9 @@
 	color: rgb(241, 208, 154);
 }
 
+.project section.welcome h1#jam {
+	color: rgb(0, 183, 232);
+}
 .project section.welcome h1#javoo {
 	color: rgb(93, 190, 227);
 }
