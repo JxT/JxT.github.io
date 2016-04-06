@@ -88,15 +88,17 @@
 	background: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
 	padding: 25px;
+	font-size: 21px;
+	line-height: 30px;
 }
 
 .home section.projects .project .hover p {
 	font-weight: 300;
-	font-size: 19px;
+	font-size: 17px;
 	float: left;
 	color: rgb(0, 0, 0);
-	padding: 8px 12px 5px;
-	margin: -60px 20px 0;
+	padding: 2px 11px 1px;
+	margin: -55px 20px 0;
 	background: rgb(255, 255, 255);
 }
 
