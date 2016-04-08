@@ -1,4 +1,11 @@
 
+/* 
+	Responsive site CSS
+	http://jordanthom.as 
+	© 2016 Jordan Thomas
+*/
+
+/* Main and home page styling */
 
 @media screen and (max-height: 350px) {
 	header .links #menu a {
@@ -63,6 +70,7 @@
 	.home section.about p {	
 		width: 100%;
 		margin: 20px 0;
+		display: inline-block;
 	}
 
 	.home section.about p:last-of-type {	
@@ -73,18 +81,19 @@
 		width: 100%;
 		margin: 0;
 		margin-bottom: 40px;
+		display: inline-block;
 	}
 
 	.home section.contact .contactcircle {
 		margin: 0 15px;
 		max-width: 35%;
+		display: inline-block;
 	}
 }
 
 
 
 /* Project pages styling */
-
 
 @media screen and (max-width: 1025px) {
 

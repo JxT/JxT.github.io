@@ -2,7 +2,7 @@
 /* 
 	Animations and other JS tricks 
 	http://jordanthom.as 
-	2016 Jordan Thomas
+	© 2016 Jordan Thomas
 */
 
 /* Smooth scrolling */
