@@ -126,10 +126,9 @@
 		height: 40%;
 	}
 
-	.project section.about p.fadeInUp{
+	.project section.about p{
 		width: 100%;
 		margin: 0;
-		display: inline;
 	}
 
 }

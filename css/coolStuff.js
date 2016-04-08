@@ -24,39 +24,44 @@ $(document).ready(function(){
 
 /* Scroll effects */
 
-$(window).scroll(function (event) {
-    
-    var scroll = $(window).scrollTop();
 
-	if (scroll > 280) {
-	  	$("header").css("padding-top", "20px");
-	  	$("header .links #menu").css("top", "57px");
-	  	$(".project header .container h1").css("display", "block");
-    }
-    if (scroll < 280) {
-	  	$("header").css("padding-top", "40px");
-	  	$("header .links #menu").css("top", "80px");
-	  	$(".project header .container h1").css("display", "none");
-    }
+@media (min-width: 1024px) {
 
-});
+	$(window).scroll(function (event) {
+	    
+	    var scroll = $(window).scrollTop();
+
+		if (scroll > 280) {
+		  	$("header").css("padding-top", "20px");
+		  	$("header .links #menu").css("top", "57px");
+		  	$(".project header .container h1").css("display", "block");
+	    }
+	    if (scroll < 280) {
+		  	$("header").css("padding-top", "40px");
+		  	$("header .links #menu").css("top", "80px");
+		  	$(".project header .container h1").css("display", "none");
+	    }
+
+	});
 
 
-/* Animate on visible */
+	/* Animate on visible */
 
-$(window).on('scroll', function(){
+	$(window).on('scroll', function(){
 
-	if ($(".about h1").visible()){
-		$(".about p").css("display", "inline-block");
-	}
+		if ($(".about h1").visible()){
+			$(".about p").css("display", "inline-block");
+		}
 
-	if ($(".education .container").visible()){
-		$(".education .educard").css("display", "inline-block");
-	}
+		if ($(".education .container").visible()){
+			$(".education .educard").css("display", "inline-block");
+		}
 
-	if ($(".contact .container").visible()){
-		$(".contact .contactcircle").css("display", "inline-block");
-	}
+		if ($(".contact .container").visible()){
+			$(".contact .contactcircle").css("display", "inline-block");
+		}
 
- });
+	 });
+
+}
 
