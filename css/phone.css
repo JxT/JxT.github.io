@@ -123,12 +123,7 @@
 	}
 
 	.project section.intro {
-		height: 500px;
-	}
-
-
-	.project section.intro .topImage {
-		height: 500px;
+		height: 40%;
 	}
 
 }
