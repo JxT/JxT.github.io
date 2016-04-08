@@ -279,17 +279,20 @@
 		margin-bottom: 30px;
 	}
 
-	.project .title {
+	.project .title,
+	.education section.modules .title {
 		border-top: 2.5px solid rgb(189, 176, 176);
 		padding-bottom: 15px;
 	}
 
-	.project .title h1 {
+	.project .title h1,
+	.education section.modules .title h1 {
 		font-size: 19px;
 		padding-top: 9px;
 	}
 
-	.project .title svg.logo {
+	.project .title svg.logo,
+	.education section.modules .title svg.logo {
 		width: 29px;
 		height: 14px;
 	}
@@ -353,4 +356,18 @@
 		background: rgb(189, 176, 176);
 	}
 
+}
+
+
+/* Education pages styling */
+
+@media screen and (max-width: 1025px) {
+	.education section.welcome {
+		padding: 100px 0 30px;
+	}
+
+	.education section.intro .container p {
+		font-size: 17px;
+		line-height: 28px;
+	}
 }
