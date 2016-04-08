@@ -47,6 +47,10 @@
 		padding: 0 30px;
 	}
 
+	.container .description {
+		padding-bottom: 25px;
+	}
+
 	.container .description h1 {
 		width: 100%;
 	}
@@ -101,19 +105,52 @@
 
 	.home section.education .educard {
 		width: 100%;
-		height: 200px;
+		height: 150px;
 		margin: 0;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
+		border-radius: 3px;
 		display: inline-block;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		overflow: hidden;
 	}
 
 	.home section.education .educard img {
-		height: 50px;
+		width: 65%;
+		margin-left: 35%;
+	}
+
+	.home section.education .educard h1 {
+		font-size: 16px;
+		padding: 0;
+		margin: -125px 0 0 25px;
+		background: rgb(255, 255, 255);
 	}
 
 	.home section.education .educard h2 {
 		height: auto;
-		padding-bottom: 30px;
+		padding-bottom: 15px;
+		margin-left: 25px;
+		background: rgb(255,255,255);
+	}
+
+	.home section.education .educard .link {
+		margin-left: 25px;
+		display: inline-block;
+	}
+
+	.home section.education .educard .link span {
+		float: none;
+		font-size: 13px;
+		padding-left: 9px;
+	}
+
+	.home section.education .educard .link:hover {
+		margin: -5px 0 0 25px;
+		padding: 6px 5px 3px 6px;
+	}
+
+	.home section.contact .container{
+		padding-bottom: 50px;
 	}
 
 	.home section.contact .contactcircle {
@@ -142,6 +179,52 @@
 	}
 }
 
+@media screen and (max-width: 600px) {
+	.home section.education .educard img {
+		width: 25%;
+		margin-left: 75%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 755px) {
+	.home section.education .educard img {
+		width: 55%;
+		margin-left: 45%;
+	}
+}
+
+@media screen and (max-width: 345px) {
+
+	.home section.education .educard {
+		height: auto;
+	}
+
+	.home section.education .educard h1 {
+		margin: -135px 0 0 15px;
+		width: 68%;
+	}
+
+	.home section.education .educard h2 {
+		margin-left: 15px;
+		width: 65%;
+	}
+
+	.home section.education .educard .link {
+		margin: -1px 0 15px 15px;
+		font-size: 15px;
+	}
+
+	.home section.education .educard .link:hover {
+		margin: -5px 0 15px 15px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.home section.education .educard h2 {
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
 
 
 /* Project pages styling */
@@ -262,6 +345,3 @@
 	}
 
 }
-
-
-
