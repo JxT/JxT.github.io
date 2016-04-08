@@ -28,18 +28,21 @@ $(document).ready(function(){
 $(window).scroll(function (event) {
     
     var scroll = $(window).scrollTop();
+	var width = window.matchMedia('(min-width: 1025px)');
 
-	if (scroll > 280) {
-	  	$("header").css("padding-top", "20px");
-	  	$("header .links #menu").css("top", "57px");
-	  	$(".project header .container h1").css("display", "block");
-    }
+	if (width.matches) {
+		if (scroll > 280) {
+		  	$("header").css("padding-top", "20px");
+		  	$("header .links #menu").css("top", "57px");
+		  	$(".project header .container h1").css("display", "block");
+	    }
 
-    if (scroll < 280) {
-	  	$("header").css("padding-top", "40px");
-	  	$("header .links #menu").css("top", "80px");
-	  	$(".project header .container h1").css("display", "none");
-    }
+	    if (scroll < 280) {
+		  	$("header").css("padding-top", "40px");
+		  	$("header .links #menu").css("top", "80px");
+		  	$(".project header .container h1").css("display", "none");
+	    }
+	}
 
 });
 
