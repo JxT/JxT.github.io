@@ -40,6 +40,7 @@
 
 html, body {
 	font-family: 'Theinhardt', sans-serif;
+	height: 100%;
 }
 
 a, a:visited, a:hover, a:active {
