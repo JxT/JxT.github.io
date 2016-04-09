@@ -64,11 +64,15 @@
 	background: rgb(26, 26, 26);
 }
 
+.project section.intro .container {
+	height: 100%;
+}
+
 .project section.intro iframe {
 	margin: 0 auto;
 	display: block;
 	width: 100%;
-	height: 500px;
+	height: 100%;
 }
 
 .project section.intro .topImage {
