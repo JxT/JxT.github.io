@@ -42,6 +42,11 @@
 
 /* Featured projects section */
 
+a#projects {
+	top: -80px;
+	position: relative;
+}
+
 .home section.projects .container{
 	width: 1026px;
 	height: 726px;
