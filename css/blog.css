@@ -30,6 +30,7 @@ header nav {
 
 .article img {
   object-fit: cover;
+  font-family: 'object-fit: cover'; /* Microsoft Edge */
 }
 
 .category {

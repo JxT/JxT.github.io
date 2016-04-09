@@ -254,6 +254,7 @@
 
 .home section.education .educard img {
 	object-fit: cover;
+	font-family: 'object-fit: cover'; /* Microsoft Edge */
 	height: 155px;
 	width: 100%;
 }
