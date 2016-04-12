@@ -290,14 +290,14 @@
 	.mobileAbout section.aboutText h1 {
 		font-size: 15px;
 		font-weight: 300;
-		padding-top: 18px;
+		padding-top: 14px;
 	}
 
 	.mobileAbout section.aboutText h2 {
 		font-size: 15px;
-		font-weight: 100;
-		line-height: 24px;
-		padding-top: 3px;
+		font-weight: 200;
+		line-height: 23px;
+		padding-top: 5px;
 	}
 
 	.mobileAbout section.aboutText a {
