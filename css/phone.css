@@ -156,14 +156,12 @@
 	/* Welcome message */
 
 	.home section.welcome {
-		position: fixed;
 		margin: 48px 0 0 0;
 		padding: 15px 15px 15px 15px;
 		border-bottom: 1px solid rgba(83,87,96,0.5);
 		text-align: left;
 		box-shadow: 0 0 5px rgba(0,0,0,0.5);
 		background: rgb(255,255,255);
-		z-index: 2;
 	}
 
 	.home section.welcome h1 {
@@ -184,7 +182,7 @@
 	/* Mobile style descriptions */
 
 	.home section.projects {
-		padding: 165px 0 50px 0;
+		padding: 0 0 50px 0;
 	}
 
 	.home section.projects .container {
