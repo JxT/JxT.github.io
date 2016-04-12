@@ -101,19 +101,6 @@
 @media screen and (max-width: 1025px) {
 
 	/* Hide objects not used in mobile style homepage */
-	.home section.welcome {
-		display: none;
-	}
-
-	.home section.projects {
-		padding: 48px 0 50px 0;
-	}
-
-	.home section.projects .container {
-		width: 100%;
-		height: auto;
-		padding: 0;
-	}
 
 	.home section.about {
 		display: none;
@@ -166,7 +153,45 @@
 		opacity: 1;
 	}
 
+	/* Welcome message */
+
+	.home section.welcome {
+		position: fixed;
+		margin: 48px 0 0 0;
+		padding: 15px 15px 15px 15px;
+		border-bottom: 1px solid rgba(83,87,96,0.5);
+		text-align: left;
+		box-shadow: 0 0 5px rgba(0,0,0,0.5);
+		background: rgb(255,255,255);
+		z-index: 2;
+	}
+
+	.home section.welcome h1 {
+		font-size: 20px;
+	}
+
+	.home section.welcome p {
+		font-size: 15px;
+		letter-spacing: 0.5px;
+		line-height: 26px;
+		padding-top: 5px;
+	}
+
+	.home section.welcome br {
+		display: none;
+	}
+
 	/* Mobile style descriptions */
+
+	.home section.projects {
+		padding: 165px 0 50px 0;
+	}
+
+	.home section.projects .container {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
 
 	.home section.projects .project {
 		display: block;
