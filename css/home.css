@@ -67,6 +67,10 @@ a#projects {
 	margin-right: 0;
 }
 
+.home section.projects .project .mobileInfo {
+	display: none;
+}
+
 .home section.projects .project .icon {
 	width: 100%;
 	height: 100%;

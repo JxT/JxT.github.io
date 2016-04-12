@@ -38,7 +38,7 @@
 /* Default styles */
 
 @media screen and (max-width: 1025px) {
-	
+
 	.topImage {
 		height: 170px;
 		margin-bottom: 35px;
@@ -116,10 +116,6 @@
 		padding: 0;
 	}
 
-	.home section.projects .project {
-		width: 100%;
-	}
-
 	.home section.about {
 		display: none;
 	}
@@ -175,6 +171,30 @@
 	.home section.projects .project {
 		display: block;
 		height: auto;
+		width: 100%;
+	}
+
+	.home section.projects .project .mobileInfo {
+		display: block;
+		text-align: left;
+		padding: 10px 15px;
+	}
+
+	.home section.projects .project .mobileInfo img {
+		float: left;
+		width: 32px;
+		margin-right: 8px;
+	}
+
+	.home section.projects .project .mobileInfo h1 {
+		font-size: 17px;
+		color: rgb(83,87,96);
+		padding-bottom: 2px;
+	}
+
+	.home section.projects .project .mobileInfo h2 {
+		font-size: 15px;
+		color: rgb(170,170,170);
 	}
 
 	.home section.projects .project .icon {
