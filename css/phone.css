@@ -5,7 +5,7 @@
 	© 2016 Jordan Thomas
 */
 
-/* Main and home page styling */
+/* Adapt desktop menu to screen height */
 
 @media screen and (max-height: 350px) {
 	header .links #menu a {
@@ -35,8 +35,10 @@
 	}
 }
 
-@media screen and (max-width: 1025px) {
+/* Default styles */
 
+@media screen and (max-width: 1025px) {
+	
 	.topImage {
 		height: 170px;
 		margin-bottom: 35px;
@@ -44,7 +46,7 @@
 
 	.container {
 		width: 100%;
-		padding: 0 30px;
+		padding: 0 20px;
 	}
 
 	.container .description {
@@ -67,185 +69,193 @@
 		display: none;
 	}
 
+	/* Top header bar */
+
 	header {
-		padding: 20px 0 15px 0;
-		border-bottom: 1px solid rgba(0,0,0,0.4);
-		background: rgb(120,120,120)
+		padding: 18px 0 13px 0;
+		background: rgb(83,87,96)
 	}
 
 	header svg path {
 		fill: rgb(255,255,255);
 	}
 
-	header .links:hover svg path {
-	    fill: rgb(0,0,0) !IMPORTANT;
+	header .links {
+		display: none;
 	}
+}
 
-	header .links #menu {
-		top: 53px;
+
+
+
+
+
+
+/* ------------------------ */
+/* Homepage styling */
+
+@media screen and (max-width: 1025px) {
+
+	/* Hide objects not used in mobile style homepage */
+
+	.home header {
+		margin-top: 90px; /* Fix position in homepage */
 	}
 
 	.home section.welcome {
-		padding: 100px 25px 40px;
+		display: none;
 	}
 
-	.home section.welcome br {
-		display: none;
+	.home section.projects {
+		padding: 48px 0 50px 0;
 	}
 
 	.home section.projects .container {
 		width: 100%;
 		height: auto;
+		padding: 0;
 	}
 
 	.home section.projects .project {
 		width: 100%;
 	}
 
-	.home section.about img {
-		height: 125px;
-		width: 70px;
-		margin: 20px 0 0 0;
+	.home section.about {
+		display: none;
 	}
 
-	.home section.about p {	
+	.home section.education {
+		display: none;
+	}
+
+	.home section.contact {
+		display: none;
+	}
+
+	.home footer {
+		display: none;
+	}
+
+	/* Show mobile nav */
+	section.mobileNav {
+		display: block;
 		width: 100%;
-		margin: 20px 0;
+		height: 60px;
+		background: rgb(37,39,42);
+		position: fixed;
+		bottom: 0;
+		border: 0;
+		z-index: 99999;
+	}
+
+	section.mobileNav a {
+		width: 75px;
+		height: 100%;
 		display: inline-block;
-		font-size: 15px;
-		letter-spacing: 0.5px;
-		line-height: 25px;
+		text-align: center;
+		vertical-align: top;
 	}
 
-	.home section.about p:last-of-type {	
-		padding-bottom: 60px;
+	section.mobileNav img {
+		opacity: 0.6;
+		margin-top: 15px;
 	}
 
-	.home section.education .educard {
-		width: 100%;
-		height: 150px;
-		margin: 0;
-		margin-bottom: 20px;
-		border-radius: 3px;
-		display: inline-block;
-		border: 1px solid rgba(0, 0, 0, 0.2);
-		overflow: hidden;
+	section.mobileNav a.selected {
+		background: rgb(0, 0, 0);
+		border-bottom: 5px solid rgb(255,255,255);
 	}
 
-	.home section.education .educard img {
-		width: 65%;
-		margin-left: 35%;
+	section.mobileNav a.selected img {
+		opacity: 1;
 	}
 
-	.home section.education .educard h1 {
-		font-size: 16px;
-		padding: 0;
-		margin: -125px 0 0 25px;
-		background: rgb(255, 255, 255);
-	}
+	/* Mobile style descriptions */
 
-	.home section.education .educard h2 {
+	.home section.projects .project {
+		display: block;
 		height: auto;
-		padding-bottom: 15px;
-		margin-left: 25px;
+	}
+
+	.home section.projects .project .icon {
+		height: auto;
+	}
+
+	.home section.projects .project .icon img {
+		top: 0;
+		transform: none;
+	}
+
+	.home section.projects .project:hover .icon img {
+		opacity: 1;
+	}
+
+	.home section.projects .project .hover {
+		opacity: 1;
+		margin: 0;
+		padding: 0;
+	}
+
+	.home section.projects .project .hover h2 {
+		height: auto;
+		background: none;
+		color: rgb(0, 0, 0);
+		font-family: "Theinhardt";
+		font-size: 15px;
+		line-height: 20px;
+		padding: 15px 15px 2px;
+	}
+
+	.home section.projects .project .hover h3 {
+		display: block;
+		color: rgb(166, 168, 171);
+		font-family: "Theinhardt";
+		font-size: 12px;
+		line-height: 15px;
+		padding: 0px 15px 5px;
+	}
+
+	.home section.projects .project .hover p {
+		color: rgb(166, 168, 171);
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 5.4px;
+		font-weight: 200;
+		font-size: 12px;
+
+		padding: 7px 0 4px;
+		margin: 10px 15px 40px;
+		border: 1px solid rgb(166, 168, 171);
+		border-radius: 5px;
+		float: none;
+	}
+
+	.home section.projects .project .hover p:hover {
+		text-decoration: none;
+	}
+
+	.home section.projects .project#a,
+	.home section.projects .project#b,
+	.home section.projects .project#c,
+	.home section.projects .project#d,
+	.home section.projects .project#e,
+	.home section.projects .project#f,
+	.home section.projects .project#g,
+	.home section.projects .project#h,
+	.home section.projects .project#i {
 		background: rgb(255,255,255);
 	}
-
-	.home section.education .educard .link {
-		margin-left: 25px;
-		display: inline-block;
-	}
-
-	.home section.education .educard .link span {
-		float: none;
-		font-size: 13px;
-		padding-left: 9px;
-	}
-
-	.home section.education .educard .link:hover {
-		margin: -5px 0 0 25px;
-		padding: 6px 5px 3px 6px;
-	}
-
-	.home section.contact .container{
-		padding-bottom: 50px;
-	}
-
-	.home section.contact .contactcircle {
-		width: 60px;
-		height: 110px;
-		margin: 0 12px;
-		display: inline-block;
-	}
-
-	.home section.contact a:first-of-type .contactcircle{
-		margin: 0 12px;
-	}
-
-	.home section.contact a:last-of-type .contactcircle{
-		margin: 0 12px;
-	}
-	
-	
-	.home section.contact .contactcircle h1 {
-		font-size: 14px;
-		line-height: 17px;
-	}
-
-	.home section.contact .contactcircle img {
-		padding-bottom: 5px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.home section.education .educard img {
-		width: 25%;
-		margin-left: 75%;
-	}
-}
-
-@media screen and (min-width: 600px) and (max-width: 755px) {
-	.home section.education .educard img {
-		width: 55%;
-		margin-left: 45%;
-	}
-}
-
-@media screen and (max-width: 345px) {
-
-	.home section.education .educard {
-		height: auto;
-	}
-
-	.home section.education .educard h1 {
-		margin: -135px 0 0 15px;
-		width: 68%;
-	}
-
-	.home section.education .educard h2 {
-		margin-left: 15px;
-		width: 65%;
-	}
-
-	.home section.education .educard .link {
-		margin: -1px 0 15px 15px;
-		font-size: 15px;
-	}
-
-	.home section.education .educard .link:hover {
-		margin: -5px 0 15px 15px;
-	}
-}
-
-@media screen and (max-width: 410px) {
-	.home section.education .educard h2 {
-		font-size: 14px;
-		line-height: 19px;
-	}
 }
 
 
+
+
+
+
+
+/* ------------------------ */
 /* Project pages styling */
+
 
 @media screen and (max-width: 1025px) {
 
@@ -368,7 +378,14 @@
 }
 
 
+
+
+
+
+
+/* ------------------------ */
 /* Education pages styling */
+
 
 @media screen and (max-width: 1025px) {
 	.education section.welcome {

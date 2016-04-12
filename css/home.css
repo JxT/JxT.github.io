@@ -105,6 +105,10 @@ a#projects {
 	line-height: 27px;
 }
 
+.home section.projects .project .hover h3 {
+	display: none;
+}
+
 .home section.projects .project .hover p {
 	font-weight: 300;
 	font-size: 16px;
