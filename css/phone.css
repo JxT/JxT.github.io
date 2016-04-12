@@ -142,10 +142,11 @@
 		bottom: 0;
 		border: 0;
 		z-index: 99999;
+		text-align: center;
 	}
 
 	section.mobileNav a {
-		width: 75px;
+		width: 18.4%;
 		height: 100%;
 		display: inline-block;
 		text-align: center;
