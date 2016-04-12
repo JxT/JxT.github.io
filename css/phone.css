@@ -212,8 +212,9 @@
 
 	.home section.projects .project .hover {
 		opacity: 1;
-		margin: 0;
+		margin: 0 15px 2px;
 		padding: 0;
+		border-bottom: 1px solid rgb(214, 214, 214);
 	}
 
 	.home section.projects .project .hover h2 {
@@ -223,7 +224,7 @@
 		font-family: "Theinhardt";
 		font-size: 15px;
 		line-height: 20px;
-		padding: 15px 15px 2px;
+		padding: 15px 0 2px;
 	}
 
 	.home section.projects .project .hover h3 {
@@ -232,7 +233,7 @@
 		font-family: "Theinhardt";
 		font-size: 12px;
 		line-height: 15px;
-		padding: 0px 15px 5px;
+		padding: 0px 0 5px;
 	}
 
 	.home section.projects .project .hover p {
@@ -244,7 +245,7 @@
 		font-size: 12px;
 
 		padding: 7px 0 4px;
-		margin: 10px 15px 40px;
+		margin: 10px 0 20px;
 		border: 1px solid rgb(166, 168, 171);
 		border-radius: 5px;
 		float: none;
