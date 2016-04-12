@@ -101,11 +101,6 @@
 @media screen and (max-width: 1025px) {
 
 	/* Hide objects not used in mobile style homepage */
-
-	.home header {
-		margin-top: 90px; /* Fix position in homepage */
-	}
-
 	.home section.welcome {
 		display: none;
 	}
