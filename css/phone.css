@@ -353,6 +353,132 @@
 
 
 /* ------------------------ */
+/* Mobile education page styling */
+
+@media screen and (max-width: 1025px) {
+
+	.mobileEducation section.education .topImage {
+		height: 90px;
+	}
+
+	.mobileEducation section.education .container .description h1 {
+		margin-top: -64px;
+		font-size: 24px;
+		float: none;
+		color: rgb(255, 255, 255);
+	}
+
+	.mobileEducation section.education .container .description h2 {
+		border: none;
+		padding: 15px 0 0 0;
+	}
+
+	.mobileEducation section.education .educard {
+		width: 100%;
+		height: 150px;
+		margin: 0;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		display: inline-block;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+	}
+
+	.mobileEducation section.education .educard:last-of-type {
+		margin-bottom: 90px;
+	}
+
+	.mobileEducation section.education .educard img {
+		width: 65%;
+		margin-left: 35%;
+	}
+
+	.mobileEducation section.education .educard h1 {
+		font-size: 16px;
+		padding: 0;
+		margin: -125px 0 0 25px;
+		background: rgb(255, 255, 255);
+	}
+
+	.mobileEducation section.education .educard h2 {
+		height: auto;
+		padding-bottom: 15px;
+		margin-left: 25px;
+		background: rgb(255,255,255);
+	}
+
+	.mobileEducation section.education .educard .link {
+		margin-left: 25px;
+		display: inline-block;
+	}
+
+	.mobileEducation section.education .educard .link span {
+		float: none;
+		font-size: 13px;
+		padding-left: 9px;
+	}
+
+	.mobileEducation section.education .educard .link:hover {
+		margin: -5px 0 0 25px;
+		padding: 6px 5px 3px 6px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.mobileEducation section.education .educard img {
+		width: 25%;
+		margin-left: 75%;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 755px) {
+	.mobileEducation section.education .educard img {
+		width: 55%;
+		margin-left: 45%;
+	}
+}
+
+@media screen and (max-width: 345px) {
+
+	.mobileEducation section.education .educard {
+		height: auto;
+	}
+
+	.mobileEducation section.education .educard h1 {
+		margin: -135px 0 0 15px;
+		width: 68%;
+	}
+
+	.mobileEducation section.education .educard h2 {
+		margin-left: 15px;
+		width: 65%;
+	}
+
+	.mobileEducation section.education .educard .link {
+		margin: -1px 0 15px 15px;
+		font-size: 15px;
+	}
+
+	.mobileEducation section.education .educard .link:hover {
+		margin: -5px 0 15px 15px;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	.mobileEducation section.education .educard h2 {
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+
+
+
+
+
+
+
+
+/* ------------------------ */
 /* Project pages styling */
 
 

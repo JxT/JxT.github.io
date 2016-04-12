@@ -234,18 +234,22 @@ a#projects {
 
 /* Education section */
 
+.mobileEducation section.education,
 .home section.education {
 	font-size: 0; /* Fix inline-block whitespace */
 }
 
+.mobileEducation section.education .description h1,
 .home section.education .description h1 {
 	color: rgb(121,160,4);
 }
 
+.mobileEducation section.education .description h2,
 .home section.education .description h2 {
 	border-color: rgb(121,160,4);
 }
 
+.mobileEducation section.education .educard,
 .home section.education .educard {
 	width: 285px;
 	height: 345px;
@@ -255,18 +259,22 @@ a#projects {
 	display: none;
 }
 
+.mobileEducation section.education .educard:last-of-type,
 .home section.education .educard:last-of-type {
 	margin-right: 0;
 }
 
+.mobileEducation section.education .educard#lewes,
 .home section.education .educard#lewes{
 	animation-delay: 0.1s;
 }
 
+.mobileEducation section.education .educard#bedes,
 .home section.education .educard#bedes{
 	animation-delay: 0.2s;
 }
 
+.mobileEducation section.education .educard img,
 .home section.education .educard img {
 	object-fit: cover;
 	font-family: 'object-fit: cover'; /* Microsoft Edge */
@@ -274,6 +282,7 @@ a#projects {
 	width: 100%;
 }
 
+.mobileEducation section.education .educard h1,
 .home section.education .educard h1 {
 	color: rgb(0,0,0);
 	font-weight: 300;
@@ -281,6 +290,7 @@ a#projects {
 	padding-top: 25px;
 }
 
+.mobileEducation section.education .educard h2,
 .home section.education .educard h2 {
 	height: 112px;
 	color: rgb(0,0,0);
@@ -290,6 +300,7 @@ a#projects {
 	padding-top: 5px;
 }
 
+.mobileEducation section.education .educard .link,
 .home section.education .educard .link {
 	font-size: 18px;
 	color: rgb(121,160,4);
@@ -297,10 +308,12 @@ a#projects {
 	border-bottom: 1px solid rgb(121,160,4);
 }
 
+.mobileEducation section.education .educard .link span,
 .home section.education .educard .link span {
 	float: right;
 }
 
+.mobileEducation section.education .educard .link:hover,
 .home section.education .educard .link:hover {
 	color: rgb(255, 255, 255);
 	background: rgb(121, 160, 4);
