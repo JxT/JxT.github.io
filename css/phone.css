@@ -280,17 +280,55 @@
 @media screen and (max-width: 1025px) {
 
 	.mobileAbout section.infobox {
+		width: 100%;
 		padding-top: 70px;
 	}
 
 	.mobileAbout section.infobox img {
 		width: 85px;
+		float: left;
+	}
+
+	.mobileAbout section.infobox .stats{
+		text-align: center;
+		width: auto;
+		overflow: hidden;
+	}
+
+	.mobileAbout section.infobox a.number{
+		width: 30%;
+		height: 50px;
+		font-size: 19px;
+		vertical-align: top;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.mobileAbout section.infobox a.number span {
+		display: block;
+		font-weight: 200;
+		font-size: 13px;
+		padding-top: 3px;
+		color: rgb(165,167,170)
+	}
+
+	.mobileAbout section.infobox a.button {
+		width: 100%;
+		font-size: 16px;
+		padding: 0;
+	}
+
+	.mobileAbout section.infobox a.button div {
+		background: rgb(237, 238, 238);
+		border-radius: 5px;
+		margin: 0 5%;
+		padding: 6px 0;
 	}
 
 	.mobileAbout section.aboutText h1 {
 		font-size: 15px;
 		font-weight: 300;
-		padding-top: 14px;
+		padding-top: 22px;
 	}
 
 	.mobileAbout section.aboutText h2 {
