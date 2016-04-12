@@ -324,26 +324,32 @@ a#projects {
 
 /* Contact section */
 
+.mobileContact section.contact,
 .home section.contact {
 	font-size: 0; /* Fix inline-block whitespace */
 }
 
+.mobileContact section.contact .container,
 .home section.contact .container {
 	text-align: center;
 }
 
+.mobileContact section.contact .description,
 .home section.contact .description {
 	text-align: left;
 }
 
+.mobileContact section.contact .description h1,
 .home section.contact .description h1 {
 	color: rgb(217,157,37);
 }
 
+.mobileContact section.contact .description h2,
 .home section.contact .description h2 {
 	border-color: rgb(217,157,37);
 }
 
+.mobileContact section.contact .contactcircle,
 .home section.contact .contactcircle {
 	width: 100px;
 	height: 200px;
@@ -353,18 +359,22 @@ a#projects {
 	display: none;
 }
 
+.mobileContact section.contact .contactcircle img:hover,
 .home section.contact .contactcircle img:hover {
 	opacity: 0.4;
 }
 
+.mobileContact section.contact a:first-of-type .contactcircle,
 .home section.contact a:first-of-type .contactcircle {
 	margin-left: 0;
 }
 
+.mobileContact section.contact a:last-of-type .contactcircle,
 .home section.contact a:last-of-type .contactcircle{
 	margin-right: 0;
 }
 
+.mobileContact section.contact .contactcircle h1,
 .home section.contact .contactcircle h1 {
 	font-size: 19px;
 	font-weight: 300;
@@ -373,6 +383,7 @@ a#projects {
 	line-height: 23px;
 }
 
+.mobileContact section.contact .contactcircle img,
 .home section.contact .contactcircle img {
 	width: 100%;
 	padding-bottom: 15px;

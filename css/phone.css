@@ -476,6 +476,47 @@
 
 
 
+/* ------------------------ */
+/* Mobile contact page styling */
+
+@media screen and (max-width: 1025px) {
+
+	.mobileContact section.contact .container{
+		padding-bottom: 50px;
+	}
+
+	.mobileContact section.contact .contactcircle {
+		width: 60px;
+		height: 110px;
+		margin: 0 12px;
+		display: inline-block;
+	}
+
+	.mobileContact section.contact a:first-of-type .contactcircle{
+		margin: 0 12px;
+	}
+
+	.mobileContact section.contact a:last-of-type .contactcircle{
+		margin: 0 12px;
+	}
+	
+	
+	.mobileContact section.contact .contactcircle h1 {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.mobileContact section.contact .contactcircle img {
+		padding-bottom: 5px;
+	}
+}
+
+
+
+
+
+
+
 
 /* ------------------------ */
 /* Project pages styling */
