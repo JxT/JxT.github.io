@@ -293,6 +293,7 @@
 		text-align: center;
 		width: auto;
 		overflow: hidden;
+		padding-top: 2.5px;
 	}
 
 	.mobileAbout section.infobox a.number{
@@ -322,7 +323,7 @@
 		background: rgb(237, 238, 238);
 		border-radius: 5px;
 		margin: 0 5%;
-		padding: 6px 0;
+		padding: 7px 0 6px;
 	}
 
 	.mobileAbout section.aboutText h1 {
