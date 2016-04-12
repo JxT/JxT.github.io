@@ -160,7 +160,7 @@
 
 	section.mobileNav a.selected {
 		background: rgb(0, 0, 0);
-		border-bottom: 5px solid rgb(255,255,255);
+		border-bottom: 4px solid rgb(255,255,255);
 	}
 
 	section.mobileNav a.selected img {
