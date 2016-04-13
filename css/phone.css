@@ -200,7 +200,7 @@
 	.home section.projects .project .mobileInfo {
 		display: block;
 		text-align: left;
-		padding: 10px 15px;
+		padding: 15px 15px;
 	}
 
 	.home section.projects .project .mobileInfo img {
@@ -221,12 +221,14 @@
 	}
 
 	.home section.projects .project .icon {
-		height: auto;
+		max-height: 270px;
 	}
 
 	.home section.projects .project .icon img {
 		top: 0;
 		transform: none;
+		object-fit: cover;
+		width: 100%;
 	}
 
 	.home section.projects .project:hover .icon img {
@@ -256,22 +258,11 @@
 		font-family: "Theinhardt";
 		font-size: 12px;
 		line-height: 15px;
-		padding: 0px 0 5px;
+		padding: 0px 0 15px;
 	}
 
 	.home section.projects .project .hover p {
-		color: rgb(166, 168, 171);
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 5.4px;
-		font-weight: 200;
-		font-size: 12px;
-
-		padding: 7px 0 4px;
-		margin: 10px 0 20px;
-		border: 1px solid rgb(166, 168, 171);
-		border-radius: 5px;
-		float: none;
+		display: none;
 	}
 
 	.home section.projects .project .hover p:hover {
