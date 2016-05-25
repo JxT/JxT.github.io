@@ -74,7 +74,7 @@ nav.mainMenu {
 	width: 100%;
 	height: 55px;
 	position: fixed;
-	background: rgb(255, 255, 255);
+	background: rgb(0, 0, 0);
 	border-bottom: 1px solid rgb(151, 151, 151);
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
@@ -85,17 +85,18 @@ nav.mainMenu .container {
 
 nav.mainMenu a {
 	float: right;
-	font-size: 15px;
+	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	padding-top: 5.5px;
+	padding-top: 3px;
 	padding-left: 25px;
-	background: rgb(255,255,255);
+	color: rgb(255,255,255);
+	font-weight: 400;
 }
 
 nav.mainMenu a#projects, nav.mainMenu a#university, nav.mainMenu a#technology,
 nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life {
-	background: rgb(255,255,255);
+	background: rgb(0,0,0);
 }
 
 nav.mainMenu a:hover {
@@ -105,7 +106,7 @@ nav.mainMenu a:hover {
 	height: 34px;
 	padding-right: 10px;
 	padding-left: 15px;
-	padding-top: 21px;
+	padding-top: 18px;
 	margin-top: -15px;
 	margin-left: 10.5px;
 	margin-right: -10.5px;
