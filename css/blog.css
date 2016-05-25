@@ -1,28 +1,79 @@
 
 /* 
-	Blog styling
+	Main site styling
 	http://jordanthom.as 
 	© 2016 Jordan Thomas
 */
 
-/* Global nav */
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
 
-header {
-	position: static;
-	background: rgb(0,0,0);
+/** Fonts **/
+
+@font-face {
+    font-family: Theinhardt;
+    src: url(fonts/theinhardtlight-webfont.ttf);
+    font-weight: 100;
 }
 
-header nav {
-	padding-top: 5px;
-	height: 35px;
+@font-face {
+    font-family: Theinhardt;
+    src: url(fonts/theinhardtreg-webfont.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: Theinhardt;
+    src: url(fonts/theinhardtbold-webfont.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Calendas;
+    src: url(fonts/calendas_plus-webfont.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Calendas;
+    src: url(fonts/calendas_plus_italic-webfont.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+/** Global styles **/
+
+html, body {
+	font-family: 'Theinhardt', sans-serif;
+	height: 100%;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: black;
 }
 
 .container {
-	max-width: 980px;
+	max-width: 1105px;
 	margin: 0 auto;
 }
 
-/* Global */
+section {
+	width: 100%;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 4px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+
+/* Article, tags, category */
 
 .article h1:hover {
 	text-decoration: underline;
@@ -68,7 +119,7 @@ header nav {
 }
 
 
-/* Zest nav */
+/** Navigation **/
 
 nav.mainMenu {
 	width: 100%;
@@ -84,33 +135,84 @@ nav.mainMenu .container {
 }
 
 nav.mainMenu a {
-	float: right;
-	font-size: 18px;
+	float: left;
+	font-size: 19px;
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding-top: 3px;
-	padding-left: 25px;
+	letter-spacing: 2.09px;
+	padding-top: 4.5px;
+	margin-left: 35px;
 	color: rgb(255,255,255);
-	font-weight: 400;
-}
-
-nav.mainMenu a#projects, nav.mainMenu a#university, nav.mainMenu a#technology,
-nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life {
-	background: rgb(0,0,0);
+	font-weight: 200;
 }
 
 nav.mainMenu a:hover {
 	text-decoration: none;
 	background: rgb(0, 0, 0);
 	color: rgb(255, 255, 255);
-	height: 34px;
+	height: 55px;
 	padding-right: 10px;
-	padding-left: 15px;
-	padding-top: 18px;
+	padding-left: 16px;
+	padding-top: 20px;
 	margin-top: -15px;
-	margin-left: 10.5px;
-	margin-right: -10.5px;
-	border-bottom: 3px solid rgb(255,255,255);
+	margin-left: 18.5px;
+	margin-right: -9.5px;
+	border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+nav.mainMenu img {
+	height: 25px;
+}
+
+/* Logo */
+
+nav.mainMenu a.logo {
+	float:left;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+nav.mainMenu a.logo:hover {
+	background: none;
+	height: 40px;
+	padding: 0;
+	margin: 0 10px 0 0;
+	border-bottom: 3px solid rgb(23, 243, 8);
+}
+
+/* Dropdown menu */
+
+nav.mainMenu .links {
+	width: 45px;
+	float: left;
+}
+
+nav.mainMenu .links img {
+	cursor: pointer;
+}
+
+/* Social links */
+
+nav.mainMenu .social a {
+	float: right;
+	padding-left: 20px;
+	margin-left: 0;
+}
+
+nav.mainMenu .social a:hover {
+	margin-left: 8px;
+	margin-right: -10px;
+	padding-top: 20px;
+	padding-left: 12px;
+}
+
+nav.mainMenu .social img {
+	height: 16px;
+}
+
+/* Category colouring */
+nav.mainMenu a#projects, nav.mainMenu a#university, nav.mainMenu a#technology,
+nav.mainMenu a#people, nav.mainMenu a#travel, nav.mainMenu a#life {
+	background: rgb(0,0,0);
 }
 
 nav.mainMenu a#projects:hover {
@@ -138,33 +240,7 @@ nav.mainMenu a#technology:hover {
 }
 
 
-nav.mainMenu a.logo {
-	float:left;
-	padding: 0;
-}
-
-nav.mainMenu a.logo img.jt {
-	height: 15px;
-	padding-top: 6px;
-	padding-right: 10px;
-	float: left;
-}
-
-nav.mainMenu a.logo:hover {
-	background: none;
-	color: none;
-	height: none;
-	padding: 0 0 6px; 0;
-	margin: 0;
-	border-bottom: 3px solid rgb(23,243,8);
-}
-
-nav.mainMenu img {
-	height: 25px;
-}
-
-
-/* Showcase main */
+/** Showcase main **/
 
 section.showcase {
 	background: url('../img/dailyzest/showcase/articleBackground.png');
@@ -245,7 +321,7 @@ section.showcase .picks .article h1 {
 	line-height: 20px;
 }
 
-/* Showcase story description */
+/** Showcase story description **/
 
 section.showcaseDescription .container {
 	border-bottom: 1px solid rgba(0,0,0,0.5);
@@ -265,7 +341,7 @@ section.showcaseDescription h2:hover {
 }
 
 
-/* Top articles section */
+/** Top articles section **/
 
 section.topArticles {
 	text-align: center;
@@ -300,7 +376,7 @@ section.topArticles .article h1 {
 }
 
 
-/* Photo article section */
+/** Photo article section **/
 
 section.photoArticle {
 	width: 100%;
@@ -339,7 +415,7 @@ section.photoArticle p {
 }
 
 
-/* Bottom article section */
+/** Bottom article section **/
 
 section.bottomArticles {
 	margin: 0 auto;
@@ -374,7 +450,7 @@ section.bottomArticles .article h1 {
 }
 
 
-/* Connect section */
+/** Connect section **/
 
 section.connect h1{
 	font-weight: 600;
@@ -394,7 +470,7 @@ section.connect #twitter-widget-0 {
 }
 
 
-/* Recent articles */
+/** Recent articles **/
 
 section.recentArticles {
 	margin-top: 40px;
