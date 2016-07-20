@@ -635,7 +635,7 @@
 
 @media screen and (min-width: 1025px) {
 	.project section.welcome h1#pinpoint {
-		background: rgb(241, 208, 154);
+		background: #DD3C3C;
 	}
 
 	.project section.welcome h1#jam {
