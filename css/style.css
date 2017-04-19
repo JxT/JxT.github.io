@@ -422,16 +422,16 @@ footer {
 
 footer .bottom h1,
 footer .bottom h2 {
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: 'Helvetica', sans-serif;
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: 600;
 	display: inline-block;
 	padding: 6px 0 3px;
 	margin: 0;
 }
 
 footer .bottom h2 {
-	font-weight: 600;
+	font-weight: 300;
 }
 
 footer .bottom .languages {
