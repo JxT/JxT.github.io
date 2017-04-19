@@ -23,7 +23,7 @@ section.questionnaire .progress {
 
 section.questionnaire .progress h1::before {
     content: "";
-    background-image: url(../../img/icons/browse.svg);
+    background-image: url(../../img/icons/project.svg);
     background-size: 24px;
     float: left;
     width: 24px;

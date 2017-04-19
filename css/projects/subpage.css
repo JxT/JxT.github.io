@@ -1,0 +1,197 @@
+
+/** Projects subpage styling **/
+
+/* Header */
+
+header {
+	background: rgb(255,255,255);
+	padding: 90px 0 20px 0;
+}
+
+header .blurb h1 {
+	font-size: 24px;
+	color: rgb(0,0,0);
+}
+
+header .blurb h2 {
+	width: 345px;
+	font-size: 20px;
+	color: #9B9B9B;
+}
+
+header .about {
+	width: 300px;
+	float: right;
+}
+
+header .about svg {
+	width: 18px;
+	height: 18px;
+	float: left;
+}
+
+header .about h1 {
+	font-size: 16px;
+	font-weight: 300;
+	color: #9B9B9B;
+	margin: 0 0 5px 8px;
+	display: inline-block;
+}
+
+header .about ul {
+	margin: 0;
+	padding: 0;
+	border-top: 2px solid #D8D8D8;
+}
+
+header .about ul li {
+	list-style: none;
+	border-bottom: 1px solid #D8D8D8;
+	padding: 12px 0 8px;
+}
+
+header .about ul li:last-of-type {
+	border: none;
+}
+
+header .about ul li h2 {
+	width: 70px;
+	font-size: 13px;
+	font-weight: 300;
+	color: #9B9B9B;
+	margin: 0;
+	float: left;
+}
+
+header .about ul li p {
+	font-size: 13px;
+	font-weight: 300;
+	margin: 0;
+}
+
+
+/* Screenshot */
+
+section.screenshot {
+	background: #D8D8D8;
+	text-align: center;
+}
+
+section.screenshot img {
+	width: 765px;
+	padding: 20px 0;
+}
+
+
+/* Key points */
+
+section.keypoints {
+	font-size: 0;
+	padding: 20px 0;
+}
+
+section.keypoints .point {
+	width: 30%;
+	border-right: 1px solid black;
+	margin: 0 28px 0 0;
+	display: inline-block;
+}
+
+section.keypoints .point:last-of-type {
+	border: none;
+}
+
+section.keypoints .point h1 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+section.keypoints .point h2 {
+	width: 265px;
+	font-size: 16px;
+	font-weight: 300;
+	color: rgba(0,0,0,0.5);
+}
+
+
+/* Key feature */
+
+section.keyfeature {
+	padding: 60px 0;
+	background: #2B2B2B;
+}
+
+section.keyfeature h1 {
+	font-size: 24px;
+	color: rgb(255,255,255);
+	margin: 0;
+}
+
+section.keyfeature h2 {
+	width: 320px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #9B9B9B;
+}
+
+section.keyfeature img {
+	float: right;
+}
+
+
+/* Contact */
+
+section.contact {
+	background: #FAFAFA;
+	padding: 60px 0;
+}
+
+section.contact h1 {
+	font-size: 24px;
+	color: #4A4A4A;
+	margin: 0 0 6px 0;
+}
+
+section.contact h2 {
+	font-size: 20px;
+	font-weight: 300;
+	color: #9B9B9B;
+	margin: 0 0 30px 0;
+}
+
+section.contact .smiley {
+	display: inline-block;
+	float: right;
+	margin-top: -80px;
+}
+
+
+/* Share */
+
+section.share {
+	padding: 60px 0;
+}
+
+section.share svg.titleIcon {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+section.share h1 {
+	font-size: 20px;
+	color: #9B9B9B;
+	margin: 0;
+}
+
+section.share .button {
+
+}
+
+
+
+
+
+
+

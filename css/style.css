@@ -533,6 +533,87 @@ header .blurb h2 {
 }
 
 
+/* Featured projects */
+
+section.featured#featuredProjects {
+	width: 100%;
+	background: #3E3E3E;
+	padding: 30px 0;
+	text-align: center;
+}
+
+section.featured#featuredProjects h1.title {
+	font-weight: 600;
+	font-size: 20px;
+	color: rgb(255,255,255);
+	margin: 0 0 20px 0;
+	text-align: left;
+}
+
+section.featured#featuredProjects .titleIcon {
+	float: left;
+	width: 24px;
+	height: 19.2px;
+	margin-right: 10px;
+}
+
+section.featured#featuredProjects .work {
+	font-size: 0;
+}
+
+section.featured#featuredProjects .work div {
+	width: 33.3%;
+	height: 250px;
+	text-align: left;
+	color: rgb(255,255,255);
+	display: inline-block;
+	vertical-align: top;
+}
+
+section.featured#featuredProjects .work div img {
+	width: 100%;
+}
+
+section.featured#featuredProjects .work div p {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 15px 0 0 25px;
+}
+
+section.featured#featuredProjects .work div b {
+	font-size: 17px;
+	font-weight: 300;
+	display: block;
+	margin-top: 2px;
+}
+
+section.featured#featuredProjects .work div.one {
+	background: #0077CF;
+} 
+
+section.featured#featuredProjects .work div.two {
+	background: #EA9600;
+} 
+
+section.featured#featuredProjects .work div.three {
+	background: #00A792;
+} 
+
+section.featured#featuredProjects .work div:hover {
+	background: rgb(0,0,0);
+} 
+
+section.featured#featuredProjects .work div:active {
+	background: #FFC800;
+	color: rgb(0,0,0);
+}
+
+section.featured#featuredProjects .work div:hover img,
+section.featured#featuredProjects .work div:active img {
+	opacity: 0.5;
+} 
+
+
 
 
 

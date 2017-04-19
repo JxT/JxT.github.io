@@ -97,7 +97,7 @@ section.browse h1#title {
 
 section.browse h1#title::before{
 	content: "";
-	background-image: url(../img/icons/browse.svg);
+	background-image: url(../img/icons/project.svg);
 	background-size: 24px;
 	width: 24px;
 	height: 19.2px;
@@ -341,89 +341,6 @@ section.testimonials .controls {
 	float: right;
 }
 
-
-/* Featured work */
-
-section.featured {
-	width: 100%;
-	background: #3E3E3E;
-	padding: 30px 0;
-	text-align: center;
-}
-
-section.featured h1.title {
-	font-weight: 600;
-	font-size: 20px;
-	color: rgb(255,255,255);
-	margin: 0 0 20px 0;
-	text-align: left;
-}
-
-section.featured h1.title::before {
-	content: "";
-	background-image: url(../img/icons/browse.svg);
-	background-size: 24px;
-	float: left;
-	width: 24px;
-	height: 19.2px;
-	margin-right: 10px;
-}
-
-section.featured .work {
-	font-size: 0;
-}
-
-section.featured .work div {
-	width: 33.3%;
-	height: 250px;
-	text-align: left;
-	color: rgb(255,255,255);
-	display: inline-block;
-	vertical-align: top;
-}
-
-section.featured .work div img {
-	width: 100%;
-}
-
-section.featured .work div p {
-	font-size: 20px;
-	font-weight: 600;
-	margin: 15px 0 0 25px;
-}
-
-section.featured .work div b {
-	font-size: 17px;
-	font-weight: 300;
-	display: block;
-	margin-top: 2px;
-}
-
-section.featured .work div.one {
-	background: #0077CF;
-} 
-
-section.featured .work div.two {
-	background: #EA9600;
-} 
-
-section.featured .work div.three {
-	background: #00A792;
-} 
-
-section.featured .work div:hover {
-	background: rgb(0,0,0);
-} 
-
-section.featured .work div:active {
-	background: #FFC800;
-	color: rgb(0,0,0);
-}
-
-section.featured .work div:hover img,
-section.featured .work div:active img {
-	opacity: 0.5;
-} 
 
 /* Keep in touch */
 

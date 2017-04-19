@@ -14,7 +14,9 @@ function onLoad() {
 function loadSharedElements(callback) {
 	loadElement('mainNav', 'elements/mainNav.html', function(){
 		loadElement('mainFooter', 'elements/footer.html', function(){
-			callback();
+			loadElement('featuredProjects', 'elements/featuredProjects.html', function(){
+				callback();
+			});
 		});
 	});
 }

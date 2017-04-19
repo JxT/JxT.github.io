@@ -7,7 +7,8 @@
 	<title>JordanThom.as - Projects - EAHRNK</title>
 	<link rel='stylesheet' type='text/css' href='css/normalize.min.css'/>
 	<link rel='stylesheet' type='text/css' href='css/style.css'/>
-	<link rel='stylesheet' type='text/css' href='css/project.css'/>
+	<link rel='stylesheet' type='text/css' href='css/projects/index.css'/>
+	<link rel='stylesheet' type='text/css' href='css/projects/subpage.css'/>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src='js/skrollr.min.js'></script>
@@ -37,6 +38,7 @@
 			</a>
 		</section>
 		<section class='about'>
+			<img src='img/icons/project.svg'>
 			<h1>About this project</h1>
 			<ul>
 				<li>
@@ -68,7 +70,9 @@
 	</header>
 
 	<section class='screenshot'>
+	<div class='container'>
 		<img src='img/projects/eahrnk/screenshot.png'>
+	</div>
 	</section>
 
 	<section class='keypoints'>
@@ -122,12 +126,13 @@
 			Get in touch
 		</div>
 
-		<img src='img/projects/getintouch.svg'>
+		<img class='smiley' src='img/projects/getintouch.svg'>
 	</div>
 	</section>
 	
 	<section class='share'>
 	<div class='container'>
+		<img class='titleIcon' src='img/icons/project.svg'>
 		<h1>Share this project</h1>
 
 		<div class='button' id='facebook'>
@@ -147,69 +152,10 @@
 		</div>
 	</div>
 	</section>
-	
-	<section class='recommended'>
-	<div class='container'>
-		<h1 class='title'>
-			<span id='en'>Recommended projects</span>
-			<span id='fr'>Projets en vedette</span>
-			<span id='cn-s'>特色项目</span>
-			<span id='cn-t'>特色項目</span>
-			<span id='jp'>注目作品</span>
-		</h1>
 
-		<div class='work'>
-			<a href='projects/eahrnk'>
-			<div class='one'>
-				<img src='img/home/featured/eahrnk.png'>
-				<p>
-					<span id='en'>Web Developer</span>
-					<span id='fr'>Développeur web</span>
-					<span id='cn-s'>Web开发人员</span>
-					<span id='cn-t'>Web開發人員</span>
-					<span id='jp'>英国慈善団体の</span>
-					<b>
-						<span id='en'>for a UK charity</span>
-						<span id='fr'>à une organisation caritative britannique</span>
-						<span id='cn-s'>在一个英国慈善组织</span>
-						<span id='cn-t'>在一個英國慈善組織</span>
-						<span id='jp'>ウェブ開発者</span>
-					</b>
-				</p>
-			</div>
-			</a>
-
-			<a href='projects/unituhack'>
-			<div class='two'>
-				<img src='img/home/featured/unitu.png'>
-				<p>
-					<span id='en'>UnituHack winner</span>
-					<span id='fr'>Gagnant de “UnituHack”</span>
-					<span id='cn-s'>“UnituHack”的赢家</span>
-					<span id='cn-t'>“UnituHack”的贏家</span>
-					<span id='jp'>“UnituHack”の获胜者</span>
-					<b>
-						<span id='en'>as part of the eduTrail project</span>
-					</b>
-				</p>
-			</div>
-			</a>
-
-			<a href='projects/javoo'>
-			<div class='three'>
-				<img src='img/home/featured/javoo.png'>
-				<p>
-					<span id='en'>Server developer</span>
-					<b>
-						<span id='en'>for a healthcare startup</span>
-					</b>
-				</p>
-			</div>
-			</a>
-		</div>
-	</div>
+	<section id='featuredProjects' class='featured'>
 	</section>
-
+	
 	<footer id='mainFooter'>
 	</footer>
 </body>
