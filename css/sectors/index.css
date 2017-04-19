@@ -1,0 +1,70 @@
+
+/** Sectors page styling **/
+
+/* Header */
+
+header {
+	background: #9B9B9B;
+}
+
+header img {
+	width: 387px;
+	float: right;
+	margin-top: -80px;
+}
+
+
+/* Sector */
+
+section.sector {
+	width: 100%;
+	padding: 40px 0;
+	background: #F4F4F4;
+	font-size: 0;
+}
+
+section.sector:nth-child(even) {
+	background: #FBFBFB;
+}
+
+section.sector .icon {
+	display: inline-block;
+	float: left;
+}
+
+section.sector .icon g {
+	fill: black;
+}
+
+section.sector h1 {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0;
+	padding: 5px 0 0 7.5px;
+	display: inline-block;
+}
+
+section.sector h2 {
+	width: 415px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #9B9B9B;
+	margin: 10px 0 30px 0;
+}
+
+section.sector .button {
+	float: right;
+}
+
+section.sector#startups .icon g { fill: #006DEC; }
+section.sector#startups .button { background: #006DEC; box-shadow: 0 2px #003068;}
+section.sector#startups .button:hover { background: #003068;}
+
+section.sector#charity .icon g { fill: #D0011B; }
+section.sector#charity .button { background: #D0011B; box-shadow: 0 2px #940012;}
+section.sector#charity .button:hover { background: #940012;}
+
+section.sector#smes .icon g { fill: #9B9B9B; }
+section.sector#smes .button { background: #9B9B9B; box-shadow: 0 2px #777777;}
+section.sector#smes .button:hover { background: #777777;}
+

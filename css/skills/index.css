@@ -4,37 +4,13 @@
 /* Header */
 
 header {
-	width: 100%;
-	background: #93B70F;
-	padding-top: 175px;
-	/**background: url('../img/contact/header.png');
-	background-size: cover;*/
-}
-
-header .blurb {
-	display: inline-block;
-}
-
-header .blurb h1 {
-	font-size: 32px;
-	font-weight: 600;
-	color: rgb(255,255,255);
-	margin: 0;
-}
-
-header .blurb h2 {
-	width: 280px;
-	font-size: 24px;
-	font-weight: 300;
-	color: rgba(255,255,255,0.7);
-	margin: 0;
-	padding: 7px 0 35px 0;
+	background: #9B9B9B;
 }
 
 header img {
-	width: 285px;
+	width: 373px;
 	float: right;
-    margin-top: -148px;
+	margin-top: -101px;
 }
 
 
@@ -51,10 +27,21 @@ section.skillset:nth-child(even) {
 	background: #FBFBFB;
 }
 
+section.skillset .icon {
+	display: inline-block;
+	float: left;
+}
+
+section.skillset .icon g {
+	fill: black;
+}
+
 section.skillset h1 {
 	font-size: 24px;
 	font-weight: 600;
 	margin: 0;
+	padding: 5px 0 0 7.5px;
+	display: inline-block;
 }
 
 section.skillset h2 {
@@ -68,6 +55,18 @@ section.skillset h2 {
 section.skillset .button {
 	float: right;
 }
+
+section.skillset#design .icon g { fill: #F6A623; }
+section.skillset#design .button { background: #F6A623; box-shadow: 0 2px #C58722;}
+section.skillset#design .button:hover { background: #C58722;}
+
+section.skillset#development .icon g { fill: #01CEA8; }
+section.skillset#development .button { background: #01CEA8; box-shadow: 0 2px #007963;}
+section.skillset#development .button:hover { background: #007963;}
+
+section.skillset#enterprise .icon g { fill: #E16C76; }
+section.skillset#enterprise .button { background: #E16C76; box-shadow: 0 2px #C0565F;}
+section.skillset#enterprise .button:hover { background: #C0565F;}
 
 
 /* Skill */

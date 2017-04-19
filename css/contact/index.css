@@ -2,34 +2,6 @@
 
 /* Header */
 
-header {
-	width: 100%;
-	background: #93B70F;
-	padding-top: 175px;
-	/**background: url('../img/contact/header.png');
-	background-size: cover;*/
-}
-
-header .blurb {
-	display: inline-block;
-}
-
-header .blurb h1 {
-	font-size: 32px;
-	font-weight: 600;
-	color: rgb(255,255,255);
-	margin: 0;
-}
-
-header .blurb h2 {
-	width: 280px;
-	font-size: 24px;
-	font-weight: 600;
-	color: rgba(255,255,255,0.7);
-	margin: 0;
-	padding: 7px 0 35px 0;
-}
-
 header img {
 	width: 285px;
 	float: right;
@@ -51,7 +23,7 @@ section.questionnaire .progress {
 
 section.questionnaire .progress h1::before {
     content: "";
-    background-image: url(../img/icons/browse.svg);
+    background-image: url(../../img/icons/browse.svg);
     background-size: 24px;
     float: left;
     width: 24px;
@@ -135,7 +107,7 @@ section.questionnaire .question .option input[type='checkbox']{
 }
 
 section.questionnaire .question .option input[type="checkbox"]:checked + label .check {
-    background: url('../img/icons/form-checkbox.svg') 5px 6px no-repeat;
+    background: url('../../img/icons/form-checkbox.svg') 5px 6px no-repeat;
 }
 
 section.questionnaire .question .option label {

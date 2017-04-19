@@ -3,9 +3,8 @@
 /* Header */
 
 header {
-	width: 100%;
 	margin-top: 4px;
-	padding-bottom: 140px;
+	padding: 0 0 140px 0;
 	background: #3E3E3E;
 	background: url('../img/home/header.png');
 	background-size: cover;

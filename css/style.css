@@ -2,12 +2,6 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('fonts/HelveticaNeueMedium.ttf');
-  font-weight: 500;
-}
-
-@font-face {
   font-family: 'Helvetica';
   src: url('fonts/HelveticaLight.ttf');
   font-weight: 200;
@@ -17,6 +11,12 @@
   font-family: 'Helvetica';
   src: url('fonts/Helvetica.ttf');
   font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeueMedium.ttf');
+  font-weight: 500;
 }
 
 @font-face {
@@ -443,8 +443,8 @@ footer .bottom .languages {
 /* Buttons */
 
 .button {
-	background: #F24D5B;
-	box-shadow: 0 2px 0 #901B25;
+	background: #237FEB;
+	box-shadow: 0 2px 0 #004CA5;
 	color: rgb(255,255,255);
 	font-size: 20px;
 	font-weight: 600;
@@ -472,7 +472,7 @@ footer .bottom .languages {
 }
 
 .button:hover {
-	background: #9B002A;
+	background: #004CA5;
 	box-shadow: none;
 	margin-top: 2px;
 	margin-bottom: -2px;
@@ -504,7 +504,33 @@ footer .bottom .languages {
 }
 
 
+/* Header */
 
+header {
+	width: 100%;
+	background: #93B70F;
+	padding-top: 175px;
+}
+
+header .blurb {
+	display: inline-block;
+}
+
+header .blurb h1 {
+	font-size: 32px;
+	font-weight: 600;
+	color: rgb(255,255,255);
+	margin: 0;
+}
+
+header .blurb h2 {
+	width: 280px;
+	font-size: 24px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.7);
+	margin: 0;
+	padding: 7px 0 35px 0;
+}
 
 
 
