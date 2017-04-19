@@ -1,0 +1,209 @@
+/** Contact page styling **/
+
+/* Header */
+
+header {
+	width: 100%;
+	background: #93B70F;
+	padding-top: 175px;
+	/**background: url('../img/contact/header.png');
+	background-size: cover;*/
+}
+
+header .blurb {
+	display: inline-block;
+}
+
+header .blurb h1 {
+	font-size: 32px;
+	font-weight: 600;
+	color: rgb(255,255,255);
+	margin: 0;
+}
+
+header .blurb h2 {
+	width: 280px;
+	font-size: 24px;
+	font-weight: 600;
+	color: rgba(255,255,255,0.7);
+	margin: 0;
+	padding: 7px 0 35px 0;
+}
+
+header img {
+	width: 285px;
+	float: right;
+    margin-top: -148px;
+}
+
+
+/** Questionnaire **/
+
+section.questionnaire {
+	margin-top: 35px;
+}
+
+/* Progress section */
+
+section.questionnaire .progress {
+	color: rgb(74,74,74);
+}
+
+section.questionnaire .progress h1::before {
+    content: "";
+    background-image: url(../img/icons/browse.svg);
+    background-size: 24px;
+    float: left;
+    width: 24px;
+    height: 19.2px;
+    margin-top: 2.5px;
+    margin-right: 10px;
+}
+
+section.questionnaire .progress h1 {
+	font-size: 20px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	float: left;
+	display: inline-block;
+	margin: 0;
+}
+
+section.questionnaire .progress h2 {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 2px 0 0 6px;
+	display: inline-block;
+}
+
+section.questionnaire .bar {
+	width: 50%;
+	height: 20px;
+	float: right;
+	background: rgb(203,203,203);
+	border: 1px solid rgb(203,203,203);
+}
+
+section.questionnaire .bar span {
+	width: 0%;
+	height: 100%;
+	background: rgb(244,244,244);
+	display: inline-block;
+}
+
+section.questionnaire .bar span#thirty {
+	width: 30%;
+}
+
+/* Content */
+
+section.questionnaire .content {
+	margin-top: 15px;
+}
+
+section.questionnaire .question {
+	padding: 14px 0;
+}
+
+section.questionnaire .question h1 {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0;
+}
+
+section.questionnaire .question h2 {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 0;
+}
+
+/* Checkbox questions */
+
+section.questionnaire .question .option {
+	width: 100%;
+	display: inline-block;
+}
+
+section.questionnaire .question .option input[type='checkbox']{
+	/* Hidden, but display to allow check box using spacebar  */
+    width: 0;
+	height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    display: block;
+}
+
+section.questionnaire .question .option input[type="checkbox"]:checked + label .check {
+    background: url('../img/icons/form-checkbox.svg') 5px 6px no-repeat;
+}
+
+section.questionnaire .question .option label {
+	width: 100%;
+	padding: 10px;
+	margin: 0 0 0 -10px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+section.questionnaire .question .option input:hover + label,
+section.questionnaire .question .option label:hover {
+	background: rgb(240,240,240);
+}
+
+section.questionnaire .question .option input:active + label,
+section.questionnaire .question .option label:active {
+	background: #FFC800;
+}
+
+section.questionnaire .question .option input:focus + label,
+section.questionnaire .question .option label:focus {
+	border: 3px solid #FFC800;
+	color: rgb(0,0,0);
+	margin: 7px 0 -3px -13px;
+}
+
+section.questionnaire .question .option label .check {
+	width: 32px;
+	height: 32px;
+	border: 2px solid rgb(0,0,0);
+	float: left;
+}
+
+section.questionnaire .question .option label p {
+	font-size: 20px;
+	margin: 7px 0 0 20px;
+	display: inline-block;
+}
+
+/* Text area questions */
+
+section.questionnaire .question textarea {
+	width: 100%;
+	height: 230px;
+	margin-top: 15px;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+section.questionnaire .question textarea:focus {
+	box-shadow: none;
+	border-radius: 0;
+	border: 3px solid #FFC800;
+	padding: 9px;
+}
+
+/* Date questions */
+
+section.questionnaire .question input[type='date'] {
+	margin-top: 15px;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+section.questionnaire .question input[type='date']:focus {
+	box-shadow: none;
+	border-radius: 0;
+	border: 3px solid #FFC800;
+	padding: 9px;
+}

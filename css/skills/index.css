@@ -1,0 +1,100 @@
+
+/** Skills page styling **/
+
+/* Header */
+
+header {
+	width: 100%;
+	background: #93B70F;
+	padding-top: 175px;
+	/**background: url('../img/contact/header.png');
+	background-size: cover;*/
+}
+
+header .blurb {
+	display: inline-block;
+}
+
+header .blurb h1 {
+	font-size: 32px;
+	font-weight: 600;
+	color: rgb(255,255,255);
+	margin: 0;
+}
+
+header .blurb h2 {
+	width: 280px;
+	font-size: 24px;
+	font-weight: 300;
+	color: rgba(255,255,255,0.7);
+	margin: 0;
+	padding: 7px 0 35px 0;
+}
+
+header img {
+	width: 285px;
+	float: right;
+    margin-top: -148px;
+}
+
+
+/* Skillset */
+
+section.skillset {
+	width: 100%;
+	padding: 40px 0;
+	background: #F4F4F4;
+	font-size: 0;
+}
+
+section.skillset:nth-child(even) {
+	background: #FBFBFB;
+}
+
+section.skillset h1 {
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0;
+}
+
+section.skillset h2 {
+	width: 415px;
+	font-size: 20px;
+	font-weight: 300;
+	color: #9B9B9B;
+	margin: 10px 0 30px 0;
+}
+
+section.skillset .button {
+	float: right;
+}
+
+
+/* Skill */
+
+section.skillset .skill {
+	text-align: center;
+	background: rgb(255,255,255);
+	padding: 20px;
+	display: inline-block;
+	margin: 0 0 4px 4px;
+}
+
+section.skillset .skill:hover {
+	background: rgb(235,235,235);
+}
+
+section.skillset .skill:hover p {
+	color: rgb(0,0,0);
+}
+
+section.skillset .skill img {
+	width: 70px;
+	height: 70px;
+}
+
+section.skillset .skill p {
+	font-size: 16px;
+	color: #9B9B9B;
+	margin: 10px 0 0 0;
+}

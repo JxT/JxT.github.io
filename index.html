@@ -1,368 +1,354 @@
-<!DOCTYPE html>
+<!doctype html>
+<meta charset="UTF-8"> 
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>JordanThom.as - Student, Developer, Entrepreneur</title>
+	<title>JordanThom.as</title>
+	<link rel='stylesheet' type='text/css' href='css/normalize.min.css'/>
+	<link rel='stylesheet' type='text/css' href='css/style.css'/>
+	<link rel='stylesheet' type='text/css' href='css/index.css'/>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- Android / Chrome -->
-	<meta name="theme-color" content="#535760">
-	<link rel="icon" sizes="192x192" href='img/favicon.png'>
-	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="manifest" href="img/webAppManifest.json">
-
-	<!-- iOS -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="JordanThom.as">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57"    href="img/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"    href="img/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"  href="img/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"  href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/favicon.png">
-
-    <!-- Windows 10/8 -->
-    <meta name="application-name" content="JordanThom.as">
-    <meta name="msapplication-TileImage" content="img/favicon.png">
-    <meta name="msapplication-TileColor" content="#535760">
-    <meta http-equiv="cleartype" content="on">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/animate.css">
-
-	<script src="js/jquery-visible-min.js"></script>
- 	<script src="js/coolStuff.js"></script>
- 	<script src="js/ofi.browser.js"></script><!-- Microsoft Edge object-fit -->
-
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-	<link rel="stylesheet" type="text/css" href="css/home.css"/>
-	<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src='js/skrollr.min.js'></script>
+	<script src='js/svgimport.js'></script>
+	<script src='js/main.js'></script>
 </head>
 
-<body class='home'>
-	<header>
+<body onload="onLoad()">
+
+	<nav id='mainNav' class='fixed' data-40="opacity: 0;" data-400="opacity: 1;">
+	</nav>
+		
+	<header data-0="opacity: 1;" data-400="opacity: 0.25;"> 
 		<div class='container'>
-			<a href='/'>
-			<!-- Inline svg for CSS :/ -->
-			<svg class='logo' width="34px" height="17px" viewBox="0 0 34 17" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-label='Logo'>
-			    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-			        <g transform="translate(-59.000000, -39.000000)" fill="#535760">
-			            <path d="M78.6176394,39.0240264 L92.5836352,39.0240264 L92.5836352,41.3846954 L81.1228669,41.3846954 L81.1228669,55.8 L78.6176394,55.8 L78.6176394,39.0240264 Z M59,39 L76.7837248,39 C76.7837248,39 77.3953594,47.4072227 72.4148816,52.007274 C67.4344038,56.6073254 59,55.7338229 59,55.7338229 L59,53.3056897 C59,53.3056897 65.3578855,53.8520794 69.7125174,50.418523 C74.0671493,46.9849666 74.0671493,41.3915475 74.0671493,41.3915475 L59,41.3915474 L59,39 Z" id="Rectangle-1"></path>
-			        </g>
-			    </g>
-			</svg>
-			</a>
-
-			<div class='links' data-toggle="collapse" data-target="#menu">
-				<!-- Inline svg for CSS :/ -->
-				<svg width="84px" height="17px" viewBox="0 0 84 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label='Menu button'>
-				    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				        <g transform="translate(-879.000000, -39.000000)" >
-				            <path fill="#535760" d="M942,39 L963,39 L963,41 L942,41 L942,39 Z M942,53 L963,53 L963,55 L942,55 L942,53 Z M942,46 L963,46 L963,48 L942,48 L942,46 Z M879.510742,55 L879.510742,40.0361328 L881.132812,40.0361328 L885.515625,50.5957031 C886.01693,51.7988341 886.296224,52.5615218 886.353516,52.8837891 L886.375,52.8837891 C886.475261,52.3395155 886.715167,51.5839892 887.094727,50.6171875 L891.262695,40.0361328 L892.949219,40.0361328 L892.949219,55 L891.563477,55 L891.563477,45.9550781 C891.563477,44.0787667 891.610026,42.7145225 891.703125,41.8623047 L891.670898,41.8623047 C891.405923,42.8577524 891.040692,43.9498638 890.575195,45.1386719 L886.729492,55 L885.891602,55 L881.841797,45.2353516 C881.354815,44.0751895 880.996746,43.0475305 880.767578,42.1523438 L880.746094,42.1523438 C880.846355,42.9472696 880.896484,44.0823494 880.896484,45.5576172 L880.896484,55 L879.510742,55 Z M895.742188,49.6933594 C895.742188,48.0963462 896.179032,46.7965545 897.052734,45.7939453 C897.926437,44.7913361 899.065097,44.2900391 900.46875,44.2900391 C901.936856,44.2900391 903.066565,44.7913361 903.85791,45.7939453 C904.649255,46.7965545 905.044922,48.1035076 905.044922,49.7148438 L905.044922,49.8974609 L897.084961,49.8974609 L897.084961,50.0478516 C897.084961,51.3512435 897.417965,52.355628 898.083984,53.0610352 C898.750003,53.7664423 899.598628,54.1191406 900.629883,54.1191406 C902.226896,54.1191406 903.397783,53.3421302 904.142578,51.7880859 L905.141602,52.421875 C904.203446,54.3125095 902.685232,55.2613932 900.586914,55.2685547 C899.090162,55.2685547 897.908533,54.77979 897.041992,53.8022461 C896.175451,52.8247021 895.742188,51.4550869 895.742188,49.6933594 L895.742188,49.6933594 Z M897.12793,48.8447266 L903.637695,48.8447266 C903.637695,47.9352168 903.349449,47.1277705 902.772949,46.4223633 C902.196449,45.7169561 901.430181,45.3642578 900.474121,45.3642578 C899.518062,45.3642578 898.742842,45.6757781 898.148438,46.2988281 C897.554033,46.9218781 897.213868,47.7705024 897.12793,48.8447266 L897.12793,48.8447266 Z M907.859375,55 L907.859375,44.5263672 L909.15918,44.5263672 L909.15918,46.2666016 C909.381186,45.708005 909.780433,45.2389342 910.356934,44.859375 C910.933434,44.4798158 911.640621,44.2900391 912.478516,44.2900391 C913.595709,44.2900391 914.458656,44.6266242 915.067383,45.2998047 C915.418296,45.6936869 915.659993,46.1430639 915.79248,46.6479492 C915.924968,47.1528346 915.991211,47.9638616 915.991211,49.0810547 L915.991211,55 L914.702148,55 L914.702148,49.3710938 C914.702148,47.7024656 914.480145,46.6318383 914.036133,46.1591797 C913.627928,45.7080056 913.004887,45.4788412 912.166992,45.4716797 C911.271805,45.4716797 910.559247,45.7581352 910.029297,46.3310547 C909.442054,46.9326202 909.152018,47.7454376 909.15918,48.7695312 L909.15918,55 L907.859375,55 Z M919.224609,51.0791016 L919.224609,44.5263672 L920.513672,44.5263672 L920.513672,50.5097656 C920.513672,51.906257 920.735675,52.8587214 921.179688,53.3671875 C921.587893,53.8183616 922.210933,54.047526 923.048828,54.0546875 C924.044276,54.0546875 924.78727,53.7252637 925.277832,53.0664062 C925.768394,52.4075488 926.013672,51.6376997 926.013672,50.7568359 L926.013672,44.5263672 L927.313477,44.5263672 L927.313477,55 L926.013672,55 L926.013672,53.28125 C925.791666,53.8398465 925.39958,54.3107077 924.837402,54.6938477 C924.275225,55.0769876 923.5752,55.2685547 922.737305,55.2685547 C921.620112,55.2685547 920.757165,54.9283888 920.148438,54.2480469 C919.532549,53.5605434 919.224609,52.5042389 919.224609,51.0791016 L919.224609,51.0791016 Z"></path>
-				        </g>
-				    </g>
-				</svg>
-
-				<div id="menu" class="collapse">
-					<div class='container'>
-						<a class='animated slideInRight' id='a' href='#home'>Home</a>
-						<a class='animated slideInRight' id='b' href='http://blog.jordanthom.as'>Blog</a>
-						<a class='animated slideInRight' id='c' href='#about'>Who am I?</a>
-						<a class='animated slideInRight' id='d' href='#projects'>Projects</a>
-						<a class='animated slideInRight' id='f' href='#contact'>Contact</a>
-					</div>
+			<nav>
+				<img src='img/logo.svg'>
+				<div class='langswitch' id='headerLangswitch'>
+					<a id='langtog-en' href="#" onclick="switchLanguage('en'); return false;"><span>English</span></a>
+					<a id='langtog-fr' href="#" onclick="switchLanguage('fr'); return false;"><span>Français</span></a>
+					<a id='langtog-cn-s' href="#" onclick="switchLanguage('cn-s'); return false;"><span>中文(简)</span></a>
+					<a id='langtog-cn-t' href="#" onclick="switchLanguage('cn-t'); return false;"><span>中文(繁)</span></a>
+					<a id='langtog-jp' href="#" onclick="switchLanguage('jp'); return false;"><span>日本語</span></a>
 				</div>
-			</div>
+			</nav>
+
+			<h1>
+				<span id='en'>Hi! I’m Jordan.</span>
+				<span id='cn-s'>您好！我叫佐敦。</span>
+				<span id='cn-t'>您好！我叫佐敦。</span>
+				<span id='fr'>Salut! Je suis Jordan.</span>
+				<span id='jp'>今日は! ジョルダンです。</span>
+			</h1>
+
+			<p>
+				<span id='en'>Freelance software developer, specialising in UX and web.</span>
+				<span id='cn-s'>我是设计师-开发人员。<br>有跨工业和跨文化的经验。</span>
+				<span id='cn-t'>我是設計師-開發人員。<br> 有跨工業和跨文化的經驗。</span>
+				<span id='fr'>Développeur avec de  l’expérience en<br>design UX et développement web.</span>
+				<span id='jp'>設計者ー開発者です。異文化経験と色々産業経験を持っています。</span>
+			</p>
+			
+			<section class='buttons'>
+				<a class='button' href='contact'>
+					<img src='img/icons/cv.svg'>
+					<span id='en'>Get a free quote</span>
+					<span id='cn-s'>简历下载</span>
+					<span id='cn-t'>簡歷下載</span>
+					<span id='fr'>Obtener devis gratuit</span>
+					<span id='jp'>作業見積りを求める</span>
+				</a>
+
+				<span id='en'>
+				<a class='button' id='grey' href='img/cv.pdf' target="_blank">
+					<img src='img/icons/cv.svg'>
+					<span>Download CV</span>
+				</a>
+				</span>
+
+				<span id='cn-s'>
+				<a class='button' id='grey' href='img/cv.pdf' target="_blank">
+					<img src='img/icons/cv.svg'>
+					<span>简历下载</span>
+				</a>
+				</span>
+
+				<span id='cn-t'>
+				<a class='button' id='grey' href='img/cv.pdf' target="_blank">
+					<img src='img/icons/cv.svg'>
+					<span>簡歷下載</span>
+				</a>
+				</span>
+
+				<span id='fr'>
+				<a class='button' id='grey' href='img/cv.pdf' target="_blank">
+					<img src='img/icons/cv.svg'>
+					<span>Télécharger CV</span>
+				</a>
+				</span>
+
+				<span id='jp'>
+				<a class='button' id='jp' href='img/rirekisho.pdf' target="_blank">
+					<img src='img/icons/cv.svg'>
+					<span>履歴書ダウンロード</span>
+				</a>
+				</span>
+			</section>
 		</div>
 	</header>
 
-	<section class='mobileNav'>
-		<a id='a' href='/' alt='Home' class='selected'>
-			<img src='img/mobile/home.svg'/>
-		</a>
-		<a id='b' href='/mobile/about.html' alt-'About me'>
-			<img src='img/mobile/about.svg'/>
-		</a>
-		<a id='d' href='/mobile/contact' alt='Contact'>
-			<img src='img/mobile/contact.svg'/>
-		</a>
-		<a id='e' href='http://blog.jordanthom.as' alt='Blog'>
-			<img src='img/mobile/blog.svg'/>
-		</a>
+	<div class='container'>
+		<section class='browse' data-0="opacity: 0.25;" data-400="opacity: 1;"> 
+			<h1 id='title'>
+				<span id='en'>View projects</span>
+				<span id='cn-s'>按技能浏览</span>
+				<span id='cn-t'>按技能瀏覽</span>
+				<span id='fr'>Par compétence</span>
+				<span id='jp'>スキルを見る</span>
+			</h1>
+			<div class='skill'>
+				<h1>
+					<span id='en'>By skill</span>
+					<span id='cn-s'>按技能浏览</span>
+					<span id='cn-t'>按技能瀏覽</span>
+					<span id='fr'>Par compétence</span>
+					<span id='jp'>スキルを見る</span>
+				</h1>
+
+				<a class='design' href='skills/design'>
+					<p>
+						<img src='img/icons/design.svg'>
+						<span id='en'>Design</span>
+						<span id='fr'>Design</span>
+						<span id='cn-s'>平面设计</span>
+						<span id='cn-t'>平面設計</span>
+						<span id='jp'>デザイン</span>
+					</p>
+				</a> 
+
+				<a class='develop' href='skills/development'>
+					<p>
+						<img src='img/icons/develop.svg'>
+						<span id='en'>Development</span>
+						<span id='fr'>Développement</span>
+						<span id='cn-s'>开发</span>
+						<span id='cn-t'>開發</span>
+						<span id='jp'>開発</span>
+					</p>
+				</a> 
+
+				<a class='business' href='skills/business'>
+					<p>
+						<img src='img/icons/business.svg'>
+						<span id='en'>Business</span>
+						<span id='fr'>Entreprise</span>
+						<span id='cn-s'>商业</span>
+						<span id='cn-t'>商業</span>
+						<span id='jp'>事業</span>
+					</p>
+				</a> 
+			</div>
+
+			<div class='sector'>
+				<h1>
+					<span id='en'>By sector</span>
+					<span id='cn-s'>按企业类型浏览</span>
+					<span id='cn-t'>按企業類型瀏覽</span>
+					<span id='fr'>Par secteur</span>
+					<span id='jp'>セクタを見る</span>
+				</h1>
+
+				<a class='startups' href='sectors/startups'>
+					<p>
+						<img src='img/icons/startups.svg'>
+						<span id='en'>Startups</span>
+						<span id='fr'>Start-ups</span>
+						<span id='cn-s'>初创企业</span>
+						<span id='cn-t'>初創企業</span>
+						<span id='jp'>ベンチャー</span>
+					</p>
+				</a> 
+
+				<a class='charity' href='sectors/charity'>
+					<p>
+						<img src='img/icons/charity.svg'>
+						<span id='en'>Charity</span>
+						<span id='fr'>Bénévolat</span>
+						<span id='cn-s'>慈善组织</span>
+						<span id='cn-t'>慈善組織</span>
+						<span id='jp'>慈善団体</span>
+					</p>
+				</a> 
+
+				<a class='smes' href='sectors/smes'>
+					<p>
+						<img src='img/icons/business.svg'>
+						<span id='en'>Small business</span>
+						<span id='fr'>Petits entreprises</span>
+						<span id='cn-s'>中小企</span>
+						<span id='cn-t'>中小企</span>
+						<span id='jp'>中小企業</span>
+					</p>
+				</a> 
+			</div>
+		</section>
+	</div>
+
+	<section class='who'>
+	<div class='container'>
+		<div class='text'>
+			<h1>
+				<span id='en'>Who are you, again?</span>
+				<span id='fr'>Mais t'es qui, exactement?</span>
+			</h1>
+			<h2>
+				<span id='en'>My name is Jordan and<br>I make nice things.</span>
+				<span id='fr'>Je m'appelle Jordan and<br>je crée des belles choses.</span>
+			</h2>
+			<p>
+				<span id='en'>I have years of experience in design, print, web, apps and software.</span>
+				<span id='fr'>J'ai des années de l'experience en design, imprimerie, web et logiciels.</span>
+			</p>
+		</div>
+		<img src='img/home/cartoon.svg'>
+	</div>
 	</section>
 
-	<section class='welcome animated fadeIn' id='home'>
-		<h1>JORDAN THOMAS</h1>
-		<p>I am a <a href='#about'>developer/designer</a> living between<br>
-		<a href='https://www.google.co.uk/maps/place/Eastbourne,+East+Sussex'>the seaside</a> and <a href='http://nottingham.ac.uk'>university</a>, who loves languages.</p>
+	<section class='testimonials'>
+	<div class='container'>
+		<div class='quote'>
+			<h1>
+				“Throughout the countless projects that I've worked on with Jordan, I've always been deeply <b>inspired</b> by his creative process and <b>unique ideas.</b> He's a pleasure to work with and I would <b>highly recommend</b> him.”
+			</h1>
+		</div>
+		<div class='person'>
+			<img src='img/home/quotes/lukas.png'>
+			<h1>Lukas Ondrej</h1>
+			<h2>Code Arrows Ltd</h2>
+			<div class='controls'>
+				<a href='#'><img src='img/icons/backarrow.svg'></a>
+				<a href='#'><img src='img/icons/forwardarrow.svg'></a>
+			</div>
+		</div>
+	</div>
 	</section>
 
-	<a id='projects'></a>
-	<section class='projects'>
-		<div class='container'>
+	<section class='featured'>
+	<div class='container'>
+		<h1 class='title'>
+			<span id='en'>Featured work</span>
+			<span id='fr'>Projets en vedette</span>
+			<span id='cn-s'>特色项目</span>
+			<span id='cn-t'>特色項目</span>
+			<span id='jp'>注目作品</span>
+		</h1>
 
-
-			<a href='projects/pinpoint'>
-			<div class='project animated fadeInUp' id='a'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>PinPoint</h1>
-					<h2>Website + branding</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/pinpoint.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>I built the first website for social startup PinPoint</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
-			</div>
-			</a>
-
-			<a href='projects/javoo'>
-			<div class='project animated fadeInUp' id='b'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>Javoo</h1>
-					<h2>Node.js server + API</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/javoo.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>I built Javoo a Node.js server using Azure for their prototype app</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
-			</div>
-			</a>
-
-			<a href='projects/jam'>
-			<div class='project animated fadeInUp' id='c'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>Jam</h1>
-					<h2>Cloud service for managing print work</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/jam.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>I made a cloud-based CMS to help Custard Design manage their orders</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
-			</div>
-			</a>
-
-			<a href='projects/lingoflow'>
-			<div class='project animated fadeInUp' id='d'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>Lingoflow</h1>
-					<h2>Startup advice + design concepts</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/lingoflow.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>I helped out Lingoflow with idea generation and business development</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
+		<div class='work'>
+			<a href='projects/eahrnk'>
+			<div class='one'>
+				<img src='img/home/featured/eahrnk.png'>
+				<p>
+					<span id='en'>Web Developer</span>
+					<span id='fr'>Développeur web</span>
+					<span id='cn-s'>Web开发人员</span>
+					<span id='cn-t'>Web開發人員</span>
+					<span id='jp'>英国慈善団体の</span>
+					<b>
+						<span id='en'>for a UK charity</span>
+						<span id='fr'>à une organisation caritative britannique</span>
+						<span id='cn-s'>在一个英国慈善组织</span>
+						<span id='cn-t'>在一個英國慈善組織</span>
+						<span id='jp'>ウェブ開発者</span>
+					</b>
+				</p>
 			</div>
 			</a>
 
 			<a href='projects/unituhack'>
-			<div class='project animated fadeInUp' id='e'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>UnituHack</h1>
-					<h2>Winner of inaugural hackathon!</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/unituhack.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>Our brilliant team of 4 won 1st place at the first ever UnituHack education hackathon</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
+			<div class='two'>
+				<img src='img/home/featured/unitu.png'>
+				<p>
+					<span id='en'>UnituHack winner</span>
+					<span id='fr'>Gagnant de “UnituHack”</span>
+					<span id='cn-s'>“UnituHack”的赢家</span>
+					<span id='cn-t'>“UnituHack”的贏家</span>
+					<span id='jp'>“UnituHack”の获胜者</span>
+					<b>
+						<span id='en'>as part of the eduTrail project</span>
+					</b>
+				</p>
 			</div>
 			</a>
 
-			<a href='projects/custard'>
-			<div class='project animated fadeInUp' id='f'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>Custard</h1>
-					<h2>Website</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/custard.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>I created a website for Custard Design to showcase their creative business</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
-			</div>
-			</a>
-
-			<a href='projects/warwickhack'>
-			<div class='project animated fadeInUp' id='g'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>WarwickHack</h1>
-					<h2>Hackathon at University of Warwick</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/warwickhack.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>Our crazy 4 man team tried making a game with Bloomberg's API at WarwickHack 2014</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
-			</div>
-			</a>
-
-			<a href='projects/usika'>
-			<div class='project animated fadeInUp' id='h'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>Ūsika</h1>
-					<h2>App design concept</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/usika.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>I made a mockup for a cool mobile music player app</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
-			</div>
-			</a>
-
-			<a href='projects/appsforgood'>
-			<div class='project animated fadeInUp' id='i'>
-				<div class='mobileInfo'>
-					<img src='img/mobile/projects/default.png'>
-					<h1>Apps for Good</h1>
-					<h2>App design + business pitch</h2>
-				</div>
-
-				<div class='icon'>
-					<img src='img/home/projects/appsforgood.png'>
-				</div>
-		
-				<div class='hover'>
-					<h2>Our app project was a runner up for Apps for Good 2014! We visited Facebook!</h2>
-					<h3>2016.01.02</h3>
-					<p>View Project ></p>
-				</div>
+			<a href='projects/javoo'>
+			<div class='three'>
+				<img src='img/home/featured/javoo.png'>
+				<p>
+					<span id='en'>Server developer</span>
+					<b>
+						<span id='en'>for a healthcare startup</span>
+					</b>
+				</p>
 			</div>
 			</a>
 		</div>
+	</div>
 	</section>
 
+	<div class='container'>
+		<section class='keepintouch'>
+			
+			<div class='text'>
+				<h1>
+					<span id='en'>Let's keep in touch!</span>
+					<span id='fr'>Restons-nous en contact!</span>
+					<span id='cn-s'>让我们保持联系</span>
+					<span id='cn-t'>讓我們保持聯繫</span>
+					<span id='jp'>連絡してください！</span>
+				</h1>
+				
+				<h2>
+					<span id='en'>Add me on social media<br>for work updates</span>
+					<span id='fr'>M'ajoutez sur les réseaux sociaux pour les mises à jour de travail</span>
+					<span id='cn-s'>在社交媒体,<br>让我们保持联系.</span>
+					<span id='cn-t'>在社交媒體,<br>讓我們保持聯繫.</span>
+					<span id='jp'>SNSで私を追加して、<br>私の最新作品を見る。</span>
+				</h2>
+			</div>
 
-	<section class='about' id='about'>
-		<div class='container'>
-			<h1>About Jordan.</h1>
-			<img src="img/home/cartoon.svg" alt='My cartoon of me! What do you think? ;)'>
-	
-			<p id='english' class='animated fadeInUp'>Jordan Thomas is a designer and developer from Eastbourne, UK. A student at Nottingham University, he has a vast knowledge of HTML and JavaScript, Node.js, Django and PHP, as well as C++, Python and Java.</p>
-	
-			<p id='mandarin' class='animated fadeInUp'>陶佐敦是一个很好的电脑<br>业者。他也是学生在英国诺丁汉大学。他有很多的HTML和CSS经验。他能编码 Node.js，Django，PHP，也 C++，Python 和 Java！但是，他的中文知识不真好。</p>
-	
-			<p id='french' class='animated fadeInUp'>Jordan Thomas est designer/developpeur qui vient de Eastbourne, R-U. Un étudiant à l’Université de Nottingham, il a un bon savoir de PHP, JavaScript, HTML, Node.js, Django et est bien versé en C++, Python et Java.</p>
-		</div>
-	</section>
-
-	<section class='contact' id='contact'>
-		<img class='topImage' src="img/home/me.png" alt='My cartoon of me! What do you think? ;)'>
-		<div class='container'>
-			<section class='description'>
-				<h1>Contact</h1>
-				<h2>Get in touch to talk about how we can work together
-				<br>or check out my social media to see what's going on</h2>
+			<section class='buttons'>
+				<div class='top'>
+					<a class='button' href='https://www.behance.net/JordanxThomas' target="_blank">
+						<img src='img/home/keepintouch/behance.png'>
+						<span>Behance</span>
+					</a>
+					<a class='button' href='https://dribbble.com/JxT' target="_blank">
+						<img src='img/home/keepintouch/dribbble.png'>
+						<span>Dribbble</span>
+					</a>
+					<a class='button' href='https://medium.com/@thisisjxt' target="_blank">
+						<img src='img/home/keepintouch/medium.png'>
+						<span>Medium</span>
+					</a>
+				<br>
+				</div>
+				<div class='bottom'>
+					<a class='button' href='https://www.linkedin.com/in/jordanxthomas' target="_blank">
+						<img src='img/home/keepintouch/linkedin.png'>
+						<span>LinkedIn</span>
+					</a>
+					<a class='button' href='https://twitter.com/ThisIsJxT' target="_blank">
+						<img src='img/home/keepintouch/twitter.png'>
+						<span>Twitter</span>
+					</a>
+					<a class='button' href='https://www.instagram.com/jordanxthomas' target="_blank">
+						<img src='img/home/keepintouch/instagram.png'>
+						<span>Instagram</span>
+					</a>
+				</div>
 			</section>
-
-			<a href='http://twitter.com/ThisIsJxT'>
-				<div class='contactcircle animated zoomIn'>
-					<img src='img/home/contact/twitter.png' alt='Twitter logo in blue'>
-					<h1>Twitter</h1>
-					<h1>(Work)</h1>
-				</div>
-			</a>
-
-			<a href='https://www.linkedin.com/in/jordanxthomas'>
-				<div class='contactcircle animated zoomIn'>
-					<img src='img/home/contact/linkedin.png' alt='LinkedIn logo'>
-					<h1>LinkedIn</h1>
-				</div>
-			</a>
-
-			<a href='https://www.behance.net/JordanxThomas'>
-				<div class='contactcircle animated zoomIn'>
-					<img src='img/home/contact/behance.png' alt='Behance logo'>
-					<h1>Behance</h1>
-				</div>
-			</a>
-
-			<a href='http://twitter.com/j0x0t'>
-				<div class='contactcircle animated zoomIn'>
-					<img src='img/home/contact/twitteralt.png' alt='Twitter logo in black'>
-					<h1>Twitter</h1>
-					<h1>(Personal)</h1>
-				</div>
-			</a>
-
-			<a href='https://www.facebook.com/jordanxthomas'>
-				<div class='contactcircle animated zoomIn'>
-					<img src='img/home/contact/facebook.png' alt='Facebook logo'>
-					<h1>Facebook</h1>
-				</div>
-			</a>
-
-			<a href='http://instagram.com/JordanxThomas'>
-				<div class='contactcircle animated zoomIn'>
-					<img src='img/home/contact/instagram.png' alt='Instagram logo'>
-					<h1>Instagram</h1>
-				</div>
-			</a>
-		</div>
-	</section>
-
-
-	<footer>
-		<div class='container'>
-			<img src='img/logo.svg' alt='Logo'>
-			<p>&copy; 2016 Jordan Thomas</p>
-		</div>
-	</footer>
+		</section>
+	</div>
 	
- 	<script>objectFitImages();</script><!-- Microsoft Edge object-fit -->
+	<footer id='mainFooter'>
+	</footer>
 </body>
 </html>
