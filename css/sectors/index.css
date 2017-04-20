@@ -28,6 +28,8 @@ section.sector:nth-child(even) {
 }
 
 section.sector .icon {
+	width: 30px;
+	height: 30px;
 	display: inline-block;
 	float: left;
 }

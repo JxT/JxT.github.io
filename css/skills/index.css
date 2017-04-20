@@ -28,6 +28,8 @@ section.skillset:nth-child(even) {
 }
 
 section.skillset .icon {
+	width: 30px;
+	height: 30px;
 	display: inline-block;
 	float: left;
 }
