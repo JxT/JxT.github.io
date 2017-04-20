@@ -458,9 +458,10 @@ footer .bottom .languages {
 
 .button svg,
 .button img {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
 	float: left;
-	width: 17px;
-	margin-right: 10px;
 }
 
 .button svg g {
@@ -501,6 +502,62 @@ footer .bottom .languages {
 
 .button#grey:hover {
 	background: #555555;
+}
+
+
+/* Background-less buttons */
+
+.textButton {
+	background: #237FEB;
+	box-shadow: 0 2px 0 #004CA5;
+	color: rgb(255,255,255);
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: -0.1px;
+	text-decoration: none;
+	padding: 13px 15px 10px;
+	vertical-align: top;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.textButton svg,
+.textButton img {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+	float: left;
+}
+
+.textButton svg g {
+	fill: rgb(255,255,255);
+}
+
+.textButton span {
+	border-bottom: 1.5px solid rgb(255,255,255);
+}
+
+.textButton:hover {
+	background: #004CA5;
+	box-shadow: none;
+	margin-top: 2px;
+	margin-bottom: -2px;
+}
+
+.textButton:active {
+	background: #FFC800 !important;
+	box-shadow: none;
+	margin-top: 2px;
+	margin-bottom: -2px;
+	color: rgb(0,0,0);
+}
+
+.textButton:active svg g {
+	fill: rgb(0,0,0);
+}
+
+.textButton:active span {
+	border-color: rgb(0,0,0);
 }
 
 

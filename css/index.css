@@ -100,8 +100,7 @@ section.browse h1#title::before{
 	background-image: url(../img/icons/project.svg);
 	background-size: 24px;
 	width: 24px;
-	height: 19.2px;
-	margin-top: 2px;
+	height: 24px;
 	margin-right: 10px;
 	float: left;
 }
