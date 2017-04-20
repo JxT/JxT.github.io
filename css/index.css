@@ -78,6 +78,25 @@ header p {
 	margin: 10px 0 75px 0;
 }
 
+header .buttons .button {
+	background: #979797;
+	box-shadow: 0 2px 0 #555555;
+	margin-right: 10px;
+}
+
+header .buttons .button:hover {
+	background: #555555;
+}
+
+header .buttons .button:nth-child(1) {
+	background: #237FEB;
+	box-shadow: 0 2px 0 #004CA5;
+}
+
+header .buttons .button:nth-child(1):hover {
+	background: #004CA5;
+}
+
 
 /* Browse section */
 
@@ -112,12 +131,31 @@ section.browse .sector {
 
 section.browse .skill h1, 
 section.browse .sector h1 {
-	width: 120px;
 	font-size: 20px;
 	font-weight: 300;
 	color: #9B9B9B;
 	float: left;
 	margin: 0;
+}
+
+section.browse .skill h1 span,
+section.browse .sector h1 span {
+	width: 120px;
+}
+
+section.browse .skill h1 span#fr,
+section.browse .sector h1 span#fr {
+	width: 160px;
+}
+
+section.browse .skill h1 span#cn-s, section.browse .skill h1 span#cn-t,
+section.browse .sector h1 span#cn-s, section.browse .sector h1 span#cn-t {
+	width: 150px;
+}
+
+section.browse .skill h1 span#jp,
+section.browse .sector h1 span#jp {
+	width: 150px;
 }
 
 section.browse .skill a,

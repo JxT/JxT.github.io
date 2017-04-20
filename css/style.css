@@ -472,6 +472,10 @@ footer .bottom .languages {
 	border-bottom: 1.5px solid rgb(255,255,255);
 }
 
+.button span#jp {
+	font-weight: 300;
+}
+
 .button:hover {
 	background: #004CA5;
 	box-shadow: none;
@@ -493,15 +497,6 @@ footer .bottom .languages {
 
 .button:active span {
 	border-color: rgb(0,0,0);
-}
-
-.button#grey {
-	background: #979797;
-	box-shadow: 0 2px 0 #555555;
-}
-
-.button#grey:hover {
-	background: #555555;
 }
 
 
