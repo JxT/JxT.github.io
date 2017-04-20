@@ -64,6 +64,13 @@ body#enterprise header .blurb .icon g { fill: #E16C76; }
 body#enterprise header .blurb h1 { color: #E16C76; }
 
 
+/* Footer */
+
+footer {
+	margin-top: 30px;
+}
+
+
 /* Projects */
 
 .project {

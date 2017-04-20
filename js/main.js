@@ -6,7 +6,6 @@ function onLoad() {
 	loadSharedElements(function() {
 		loadLanguages(); /* Languages after all data loaded */
 	})
-
 	var s = skrollr.init();
 	loseHeaderLangFocus();
 }
@@ -15,7 +14,9 @@ function loadSharedElements(callback) {
 	loadElement('mainNav', 'elements/mainNav.html', function(){
 		loadElement('mainFooter', 'elements/footer.html', function(){
 			loadElement('featuredProjects', 'elements/featuredProjects.html', function(){
-				callback();
+				replaceSVGs(function(){
+					callback();
+				});
 			});
 		});
 	});
@@ -32,6 +33,38 @@ function loadElement(elementId, URL, callback) {
 	}
 
 	else { callback(); }
+}
+
+
+/* Replace img tags with SVG code */
+
+function replaceSVGs(callback) {
+    $('img[src$=".svg"]').each(function() {
+
+        var $img = jQuery(this);
+
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Remove any invalid XML tags
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Loop through IMG attributes and apply on SVG
+            $.each(attributes, function() {
+                $svg.attr(this.name, this.value);
+            });
+
+            // Replace IMG with SVG
+            $img.replaceWith($svg);
+        }, 'xml');
+
+    	callback();
+    });
 }
 
 

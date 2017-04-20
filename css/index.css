@@ -146,6 +146,11 @@ section.browse .sector a p svg {
 	height: 24px;
 }
 
+section.browse .skill a p svg g,
+section.browse .sector a p svg g {
+	fill: rgb(255,255,255);
+}
+
 section.browse .skill a:hover,
 section.browse .sector a:hover {
 	background: rgb(0,0,0) !important;
