@@ -1,0 +1,139 @@
+
+/** Sectors subpage styling **/
+
+/* Header */
+
+header {
+	background: rgb(250,250,250);
+	padding: 70px 0 18px 0;
+	border-bottom: 4px solid;
+	margin: 0 0 30px 0;
+}
+
+header .blurb {
+	width: 100%;
+}
+
+header .blurb h3 { 
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	margin: 0 0 5px;
+}
+
+header .blurb .icon {
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+header .blurb .icon g {
+	fill: rgb(100, 100, 100);
+}
+
+header .blurb h1 {
+	color: rgb(100, 100, 100);
+	display: inline-block;
+	padding: 0 0 0 5px;
+}
+
+header .blurb h2 {
+	width: 390px;
+	font-size: 16px;
+	line-height: 21px;
+	color: #4A4A4A;	
+	border-left: 1px solid #4A4A4A;
+
+	margin: -20px 0 -10px 0;
+	padding: 10px 0 10px 20px;
+	display: inline-block;
+	float: right;
+}
+
+body#startups header { border-color: #006DEC; }
+body#startups header .blurb .icon g { fill: #006DEC; }
+body#startups header .blurb h1 { color: #006DEC; }
+
+body#smes header { border-color: #9B9B9B; }
+body#smes header .blurb .icon g { fill: #9B9B9B; }
+body#smes header .blurb h1 { color: #9B9B9B; }
+
+body#charity header { border-color: #D0011B; }
+body#charity header .blurb .icon g { fill: #D0011B; }
+body#charity header .blurb h1 { color: #D0011B; }
+
+
+/* Footer */
+
+footer {
+	margin-top: 30px;
+}
+
+
+/* Projects */
+
+.project {
+	height: 260px;
+	background: #F4F4F4;
+	padding: 40px;
+	margin: 4px 0;
+}
+
+.project:nth-child(even) {
+	background: #FBFBFB;
+}
+
+.project .thumb {
+	width: 480px;
+	margin-top: -40px;
+	float: right;
+}
+
+.project h1 {
+	font-weight: 600;
+	font-size: 24px;
+	margin: 0;
+}
+
+.project h2 {
+	width: 345px;
+	font-weight: 300;
+	font-size: 20px;
+	color: #9B9B9B;
+	margin: 8px 0 25px 0;
+}
+
+/* Skills */
+
+.project .skillset {
+	width: auto;
+	padding: 0 0 80px 0;
+	background: none !important;
+}
+
+.project .skillset .skill {
+	float: left;
+	padding: 0;
+	margin: 0 10px 0 0;
+	background: none;
+}
+
+.project .skillset .skill:hover {
+	background: none;
+}
+
+.project .skillset .skill img {
+	width: 35px;
+	height: 35px;
+}
+
+.project .skillset .skill p {
+	display: none;
+}
+
+
+
+
+
+
