@@ -503,17 +503,15 @@ footer .bottom .languages {
 /* Background-less buttons */
 
 .textButton {
-	background: #237FEB;
-	box-shadow: 0 2px 0 #004CA5;
-	color: rgb(255,255,255);
+	color: #006DEC;
 	font-size: 20px;
 	font-weight: 600;
 	letter-spacing: -0.1px;
+	padding: 0 2px 4px 2px;
+	border-bottom: 1.5px solid #006DEC;
 	text-decoration: none;
-	padding: 13px 15px 10px;
 	vertical-align: top;
 	display: inline-block;
-	border-radius: 3px;
 }
 
 .textButton svg,
@@ -525,18 +523,16 @@ footer .bottom .languages {
 }
 
 .textButton svg g {
-	fill: rgb(255,255,255);
-}
-
-.textButton span {
-	border-bottom: 1.5px solid rgb(255,255,255);
+	fill: #006DEC;
 }
 
 .textButton:hover {
-	background: #004CA5;
-	box-shadow: none;
-	margin-top: 2px;
-	margin-bottom: -2px;
+	color: rgb(0,0,0);
+	border-bottom: 1.5px solid #000000;
+}
+
+.textButton:hover svg g {
+	fill: rgb(0,0,0);
 }
 
 .textButton:active {

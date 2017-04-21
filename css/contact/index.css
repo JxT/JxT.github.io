@@ -39,13 +39,12 @@ section.questionnaire .progress {
 
 section.questionnaire .progress h1::before {
     content: "";
-    background-image: url(../../img/icons/project.svg);
-    background-size: 24px;
-    float: left;
-    width: 24px;
-    height: 19.2px;
-    margin-top: 2.5px;
-    margin-right: 10px;
+	background-image: url(../../img/icons/project.svg);
+	background-size: 24px;
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
 }
 
 section.questionnaire .progress h1 {
