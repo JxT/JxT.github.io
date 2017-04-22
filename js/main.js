@@ -6,7 +6,9 @@ function onLoad() {
 	loadSharedElements(function() {
 		loadLanguages(); /* Languages after all data loaded */
 	})
-	var s = skrollr.init();
+	var s = skrollr.init({
+                forceHeight: false
+            });
 	loseHeaderLangFocus();
 }
 
