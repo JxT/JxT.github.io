@@ -290,5 +290,14 @@
 	
 	<footer id='mainFooter'>
 	</footer>
+
+	<script type='text/javascript'>
+
+
+		var $logo = $('#mainNav');
+		$(document).scroll(function() {
+		    $logo.css({opacity: $(this).scrollTop() > 700? "1":"0"});
+		});
+		</script>
 </body>
 </html>

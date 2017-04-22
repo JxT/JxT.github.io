@@ -1,5 +1,11 @@
 /** Homepage styling **/
 
+
+
+#mainNav {
+	opacity: 0;
+}
+
 /* Header */
 
 header {
