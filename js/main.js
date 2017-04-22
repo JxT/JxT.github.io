@@ -5,10 +5,13 @@
 function onLoad() {
 	loadSharedElements(function() {
 		loadLanguages(); /* Languages after all data loaded */
+
+		var $logo = $('#mainNav');
+		$(document).scroll(function() {
+		    $logo.css({opacity: $(this).scrollTop() > 700? "1":"0"});
+		});
+
 	})
-	var s = skrollr.init({
-                forceHeight: false
-            });
 	loseHeaderLangFocus();
 }
 
